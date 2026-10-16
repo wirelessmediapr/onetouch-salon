@@ -15,7 +15,7 @@ Instrucciones para agentes (OpenCode / Claude / Cursor) trabajando en `wirelessm
 ## Proyecto
 
 Landing + reserva en línea (booking) para **OneTouch Salon**, salón de belleza en Puerto Rico.
-Dominio: `onetouch.salon` · Deploy: **Vercel** (lo ejecuta el usuario; el agente nunca despliega).
+Dominio: `onetouch.salon` · Deploy: **Vercel** — auto-deploy con cada push a `main` (agente no despliega manualmente; los commits se tratan como deploys: nunca pushear algo roto o experimental).
 
 ## Estado actual
 
