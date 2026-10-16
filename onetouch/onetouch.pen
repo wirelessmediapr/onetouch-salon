@@ -5834,8 +5834,8 @@
     {
       "type": "frame",
       "id": "f4zgZQ",
-      "x": 2431,
-      "y": 0,
+      "x": 2812,
+      "y": -452,
       "name": "Onetouch — Componentes",
       "width": 1680,
       "fill": "$ot-paper",
@@ -7738,6 +7738,1609 @@
               ]
             }
           ]
+        },
+        {
+          "type": "frame",
+          "id": "zRxhv",
+          "name": "Admin Row",
+          "width": "fill_container",
+          "gap": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "s3K7ym",
+              "name": "Plate · Admin nav item",
+              "width": 340,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Kqd0a",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "ADMIN NAV ITEM",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "hvVUs",
+                  "name": "Admin Nav Item",
+                  "reusable": true,
+                  "width": "fill_container",
+                  "cornerRadius": 6,
+                  "gap": 10,
+                  "padding": [
+                    10,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "LHYzK",
+                      "name": "Icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "calendar-check",
+                      "library": "lucide",
+                      "fill": "$ot-dark-muted"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KZu7E",
+                      "name": "Label",
+                      "fill": "$ot-dark-muted",
+                      "content": "Agenda",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "id": "tUozO",
+                  "type": "ref",
+                  "ref": "hvVUs",
+                  "name": "Nav item — activo",
+                  "fill": "#B9502C26",
+                  "descendants": {
+                    "LHYzK": {
+                      "fill": "$ot-accent-warm"
+                    },
+                    "KZu7E": {
+                      "fill": "$ot-accent-warm",
+                      "fontWeight": "600"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SxCma",
+              "name": "Plate · Estado badge",
+              "width": 560,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C23HOz",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "ESTADO BADGE",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "o4r67U",
+                  "name": "Badges",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "EC5Z4",
+                      "name": "Estado Badge",
+                      "reusable": true,
+                      "fill": "#B9502C26",
+                      "cornerRadius": 999,
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Kabdc",
+                          "name": "Badge Label",
+                          "fill": "$ot-accent",
+                          "content": "PENDIENTE",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "exQAa",
+                      "type": "ref",
+                      "ref": "EC5Z4",
+                      "name": "Estado Badge — Confirmada",
+                      "fill": "#3E8E5A26",
+                      "descendants": {
+                        "Kabdc": {
+                          "content": "CONFIRMADA",
+                          "fill": "$ot-success"
+                        }
+                      }
+                    },
+                    {
+                      "id": "a1ujA",
+                      "type": "ref",
+                      "ref": "EC5Z4",
+                      "name": "Estado Badge — Completada",
+                      "fill": "#85787026",
+                      "descendants": {
+                        "Kabdc": {
+                          "content": "COMPLETADA",
+                          "fill": "$ot-muted"
+                        }
+                      }
+                    },
+                    {
+                      "id": "GAhnd",
+                      "type": "ref",
+                      "ref": "EC5Z4",
+                      "name": "Estado Badge — Cancelada",
+                      "fill": "#6E625A26",
+                      "descendants": {
+                        "Kabdc": {
+                          "content": "CANCELADA",
+                          "fill": "$ot-disabled"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "r3gBc8",
+              "name": "Plate · Filter chip",
+              "width": 360,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QNvSV",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "FILTER CHIP",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "YBZ8N",
+                  "name": "Chips",
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BDbXn",
+                      "name": "Filter Chip",
+                      "reusable": true,
+                      "cornerRadius": 999,
+                      "stroke": "$ot-line",
+                      "strokeWidth": 1,
+                      "padding": [
+                        7,
+                        14
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "eYLf8",
+                          "name": "Chip Label",
+                          "fill": "$ot-ink-soft",
+                          "content": "Todas",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "zlUci",
+                      "type": "ref",
+                      "ref": "BDbXn",
+                      "name": "Filter Chip — activo",
+                      "fill": "$ot-ink",
+                      "stroke": "$ot-ink",
+                      "descendants": {
+                        "eYLf8": {
+                          "fill": "$ot-bone",
+                          "fontWeight": "600"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JgZ9h",
+              "name": "Plate · Appointment card",
+              "width": 340,
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AFMjU",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "APPOINTMENT CARD",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "NNuOA",
+                  "name": "Appointment Card",
+                  "reusable": true,
+                  "width": "fill_container",
+                  "fill": "$ot-paper",
+                  "cornerRadius": 6,
+                  "stroke": "$ot-line",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    12,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jkEFA",
+                      "name": "Top",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZwdSo",
+                          "name": "Time",
+                          "fill": "$ot-ink-soft",
+                          "content": "11:00 AM",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cZWgV",
+                          "name": "Price",
+                          "fill": "$ot-ink",
+                          "content": "$210",
+                          "fontFamily": "$ot-display",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Mc8rx",
+                      "name": "Client",
+                      "fill": "$ot-ink",
+                      "content": "Natalia R.",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bq8Ow",
+                      "name": "Services",
+                      "fill": "$ot-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Balayage a mano alzada",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "id": "Nh3Wr",
+                      "type": "ref",
+                      "ref": "EC5Z4",
+                      "name": "Badge"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "wAryv",
+      "x": 2431,
+      "y": 3482,
+      "name": "Onetouch — Admin",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": 64,
+      "children": [
+        {
+          "type": "text",
+          "id": "evtB6",
+          "name": "Admin Title",
+          "fill": "$ot-ink",
+          "content": "Onetouch — Admin",
+          "fontFamily": "$ot-display",
+          "fontSize": 40,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "HhT6Z",
+          "name": "Admin Note",
+          "fill": "$ot-ink-soft",
+          "textGrowth": "fixed-width",
+          "width": 720,
+          "content": "Pantallas del panel de administración. Datos de ejemplo para el diseño; el contenido real vendrá de Supabase.",
+          "fontFamily": "$ot-body",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "uHZGv",
+          "name": "Screens Row",
+          "gap": 64,
+          "children": [
+            {
+              "type": "frame",
+              "id": "uzmoc",
+              "name": "Admin — Agenda (día)",
+              "clip": true,
+              "width": 1440,
+              "height": 900,
+              "fill": "$ot-bone",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "obyB2",
+                  "name": "Sidebar",
+                  "width": 240,
+                  "height": "fill_container",
+                  "fill": "$ot-ink",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": [
+                    28,
+                    16,
+                    20,
+                    16
+                  ],
+                  "justifyContent": "space_between",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "K5rlZ",
+                      "name": "Sidebar Top",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 36,
+                      "children": [
+                        {
+                          "id": "BWszP",
+                          "type": "ref",
+                          "ref": "X6xI40",
+                          "name": "Logo",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "alignItems": "start",
+                          "descendants": {
+                            "AFq9Q": {
+                              "fill": "$ot-bone"
+                            },
+                            "QeKXM": {
+                              "fill": "$ot-dark-muted",
+                              "content": "SALÓN · ADMIN"
+                            }
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "k6UXdW",
+                          "name": "Nav",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "VecJe",
+                              "name": "Nav Caption Wrap",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "padding": [
+                                0,
+                                12,
+                                10,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "mDRPS",
+                                  "name": "Nav Caption",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "GESTIÓN",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "M4W01J",
+                              "type": "ref",
+                              "ref": "hvVUs",
+                              "name": "Nav — Agenda",
+                              "fill": "#B9502C26",
+                              "descendants": {
+                                "LHYzK": {
+                                  "icon": "calendar-check",
+                                  "fill": "$ot-accent-warm"
+                                },
+                                "KZu7E": {
+                                  "content": "Agenda",
+                                  "fill": "$ot-accent-warm",
+                                  "fontWeight": "600"
+                                }
+                              }
+                            },
+                            {
+                              "id": "ASGZY",
+                              "type": "ref",
+                              "ref": "hvVUs",
+                              "name": "Nav — Servicios",
+                              "descendants": {
+                                "LHYzK": {
+                                  "icon": "scissors",
+                                  "fill": "$ot-dark-muted"
+                                },
+                                "KZu7E": {
+                                  "content": "Servicios",
+                                  "fill": "$ot-dark-muted",
+                                  "fontWeight": "normal"
+                                }
+                              }
+                            },
+                            {
+                              "id": "EMyqP",
+                              "type": "ref",
+                              "ref": "hvVUs",
+                              "name": "Nav — Equipo",
+                              "descendants": {
+                                "LHYzK": {
+                                  "icon": "users",
+                                  "fill": "$ot-dark-muted"
+                                },
+                                "KZu7E": {
+                                  "content": "Equipo",
+                                  "fill": "$ot-dark-muted",
+                                  "fontWeight": "normal"
+                                }
+                              }
+                            },
+                            {
+                              "id": "q2rWxX",
+                              "type": "ref",
+                              "ref": "hvVUs",
+                              "name": "Nav — Clientes",
+                              "descendants": {
+                                "LHYzK": {
+                                  "icon": "user",
+                                  "fill": "$ot-dark-muted"
+                                },
+                                "KZu7E": {
+                                  "content": "Clientes",
+                                  "fill": "$ot-dark-muted",
+                                  "fontWeight": "normal"
+                                }
+                              }
+                            },
+                            {
+                              "id": "XiAzF",
+                              "type": "ref",
+                              "ref": "hvVUs",
+                              "name": "Nav — Métricas",
+                              "descendants": {
+                                "LHYzK": {
+                                  "icon": "trending-up",
+                                  "fill": "$ot-dark-muted"
+                                },
+                                "KZu7E": {
+                                  "content": "Métricas",
+                                  "fill": "$ot-dark-muted",
+                                  "fontWeight": "normal"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qzgWT",
+                      "name": "Sidebar Bottom",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "GwOSV",
+                          "name": "Divider",
+                          "fill": "$ot-dark-line",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZdGYo",
+                          "name": "User",
+                          "width": "fill_container",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "k88w72",
+                              "name": "Avatar",
+                              "width": 34,
+                              "height": 34,
+                              "fill": "$ot-dark-card",
+                              "cornerRadius": 999,
+                              "stroke": "$ot-dark-line",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "NJ1I6",
+                                  "name": "Avatar Initials",
+                                  "fill": "$ot-bone",
+                                  "content": "OT",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 10,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "n8kGhx",
+                              "name": "User Info",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 1,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "hPalM",
+                                  "name": "User Name",
+                                  "fill": "$ot-bone",
+                                  "content": "Dueña",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 13,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "BA2J1",
+                                  "name": "User Email",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "admin@onetouchsalon.com",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "d6vne",
+                          "name": "Logout",
+                          "gap": 8,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "s1XWz",
+                              "name": "Logout Icon",
+                              "width": 15,
+                              "height": 15,
+                              "icon": "log-out",
+                              "library": "lucide",
+                              "fill": "$ot-dark-muted"
+                            },
+                            {
+                              "type": "text",
+                              "id": "dFG6o",
+                              "name": "Logout Label",
+                              "fill": "$ot-dark-muted",
+                              "content": "Cerrar sesión",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KLHeQ",
+                  "name": "Main",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": "$ot-bone",
+                  "layout": "vertical",
+                  "gap": 24,
+                  "padding": [
+                    28,
+                    40,
+                    40,
+                    40
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zhbJq",
+                      "name": "Title Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "AcBFu",
+                          "name": "Title Col",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "o5ZgH",
+                              "name": "Page Title",
+                              "fill": "$ot-ink",
+                              "content": "Agenda",
+                              "fontFamily": "$ot-display",
+                              "fontSize": 40,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "VHo1t",
+                              "name": "Page Sub",
+                              "fill": "$ot-ink-soft",
+                              "content": "Viernes 16 de octubre · 13 citas hoy",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "WgboA",
+                          "type": "ref",
+                          "ref": "otRZb",
+                          "name": "Nueva cita",
+                          "padding": [
+                            12,
+                            22
+                          ],
+                          "descendants": {
+                            "Hm3Nm": {
+                              "content": "Nueva cita",
+                              "fontSize": 14
+                            },
+                            "CDvAL": {
+                              "icon": "plus",
+                              "width": 16,
+                              "height": 16
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kxQ6I",
+                      "name": "Controls",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "w1FjQS",
+                          "name": "Stylist Filter",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "id": "SFfbG",
+                              "type": "ref",
+                              "ref": "BDbXn",
+                              "name": "Chip — Todas",
+                              "fill": "$ot-ink",
+                              "stroke": "$ot-ink",
+                              "descendants": {
+                                "eYLf8": {
+                                  "fill": "$ot-bone",
+                                  "fontWeight": "600"
+                                }
+                              }
+                            },
+                            {
+                              "id": "d39HJ",
+                              "type": "ref",
+                              "ref": "BDbXn",
+                              "name": "Chip — Andrea",
+                              "descendants": {
+                                "eYLf8": {
+                                  "content": "Andrea"
+                                }
+                              }
+                            },
+                            {
+                              "id": "EkF9S",
+                              "type": "ref",
+                              "ref": "BDbXn",
+                              "name": "Chip — Camila",
+                              "descendants": {
+                                "eYLf8": {
+                                  "content": "Camila"
+                                }
+                              }
+                            },
+                            {
+                              "id": "S18Jo",
+                              "type": "ref",
+                              "ref": "BDbXn",
+                              "name": "Chip — Valeria",
+                              "descendants": {
+                                "eYLf8": {
+                                  "content": "Valeria"
+                                }
+                              }
+                            },
+                            {
+                              "id": "vPZs2",
+                              "type": "ref",
+                              "ref": "BDbXn",
+                              "name": "Chip — Sofía",
+                              "descendants": {
+                                "eYLf8": {
+                                  "content": "Sofía"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "czh7G",
+                          "name": "Day Nav",
+                          "gap": 8,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "p0Hcg",
+                              "name": "Prev day",
+                              "width": 36,
+                              "height": 36,
+                              "cornerRadius": 999,
+                              "stroke": "$ot-line",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "kZbqp",
+                                  "name": "Icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "icon": "chevron-left",
+                                  "library": "lucide",
+                                  "fill": "$ot-ink-soft"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "o9yUY",
+                              "name": "Next day",
+                              "width": 36,
+                              "height": 36,
+                              "cornerRadius": 999,
+                              "stroke": "$ot-line",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "Z9vtw",
+                                  "name": "Icon",
+                                  "width": 16,
+                                  "height": 16,
+                                  "icon": "chevron-right",
+                                  "library": "lucide",
+                                  "fill": "$ot-ink-soft"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "J7eZO",
+                              "type": "ref",
+                              "ref": "BDbXn",
+                              "name": "Chip — Hoy",
+                              "descendants": {
+                                "eYLf8": {
+                                  "content": "Hoy"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "m3STq",
+                      "name": "Board",
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ypclF",
+                          "name": "Col — Andrea Ríos",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "MayJS",
+                              "name": "Col Head",
+                              "width": "fill_container",
+                              "gap": 10,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "sbfpW",
+                                  "name": "Avatar",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "generated-3.png",
+                                    "mode": "cover"
+                                  },
+                                  "cornerRadius": 999
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "fLXUj",
+                                  "name": "Col Info",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": 1,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "XchSb",
+                                      "name": "Stylist Name",
+                                      "fill": "$ot-ink",
+                                      "content": "Andrea Ríos",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "oIU2a",
+                                      "name": "Stylist Count",
+                                      "fill": "$ot-muted",
+                                      "content": "3 citas",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "ucKTf",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Natalia R.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "9:00 AM"
+                                },
+                                "cZWgV": {
+                                  "content": "$210"
+                                },
+                                "Mc8rx": {
+                                  "content": "Natalia R."
+                                },
+                                "bq8Ow": {
+                                  "content": "Balayage a mano alzada"
+                                },
+                                "Nh3Wr": {
+                                  "fill": "#3E8E5A26"
+                                },
+                                "Nh3Wr/Kabdc": {
+                                  "content": "CONFIRMADA",
+                                  "fill": "$ot-success"
+                                }
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "vjumq",
+                              "name": "Libre — 1",
+                              "width": "fill_container",
+                              "fill": "#FFFFFF66",
+                              "cornerRadius": 6,
+                              "stroke": "$ot-line",
+                              "strokeWidth": 1,
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "AEJhO",
+                                  "name": "Libre Label",
+                                  "fill": "$ot-muted",
+                                  "content": "12:00 – 1:15 · libre",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "XGspI",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Génesis M.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "1:15 PM"
+                                },
+                                "cZWgV": {
+                                  "content": "$165"
+                                },
+                                "Mc8rx": {
+                                  "content": "Génesis M."
+                                },
+                                "bq8Ow": {
+                                  "content": "Babylights"
+                                }
+                              }
+                            },
+                            {
+                              "id": "UC2uZ",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Lourdes P.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "4:00 PM"
+                                },
+                                "cZWgV": {
+                                  "content": "$180"
+                                },
+                                "Mc8rx": {
+                                  "content": "Lourdes P."
+                                },
+                                "bq8Ow": {
+                                  "content": "Keratina alisadora"
+                                },
+                                "Nh3Wr": {
+                                  "fill": "#3E8E5A26"
+                                },
+                                "Nh3Wr/Kabdc": {
+                                  "content": "CONFIRMADA",
+                                  "fill": "$ot-success"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "FWCRD",
+                          "name": "Col — Camila Ortiz",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "PNaB7",
+                              "name": "Col Head",
+                              "width": "fill_container",
+                              "gap": 10,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "cSB0c",
+                                  "name": "Avatar",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "generated-2.png",
+                                    "mode": "cover"
+                                  },
+                                  "cornerRadius": 999
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "rtOYE",
+                                  "name": "Col Info",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": 1,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "S7svjI",
+                                      "name": "Stylist Name",
+                                      "fill": "$ot-ink",
+                                      "content": "Camila Ortiz",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "TYPGR",
+                                      "name": "Stylist Count",
+                                      "fill": "$ot-muted",
+                                      "content": "3 citas",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "X7bJ6",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Yaris V.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "9:30 AM"
+                                },
+                                "cZWgV": {
+                                  "content": "$55"
+                                },
+                                "Mc8rx": {
+                                  "content": "Yaris V."
+                                },
+                                "bq8Ow": {
+                                  "content": "Corte & estilizado"
+                                },
+                                "Nh3Wr": {
+                                  "fill": "#85787026"
+                                },
+                                "Nh3Wr/Kabdc": {
+                                  "content": "COMPLETADA",
+                                  "fill": "$ot-muted"
+                                }
+                              }
+                            },
+                            {
+                              "id": "Pmm7p",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Maribel S.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "10:45 AM"
+                                },
+                                "cZWgV": {
+                                  "content": "$75"
+                                },
+                                "Mc8rx": {
+                                  "content": "Maribel S."
+                                },
+                                "bq8Ow": {
+                                  "content": "Peinado para eventos"
+                                },
+                                "Nh3Wr": {
+                                  "fill": "#3E8E5A26"
+                                },
+                                "Nh3Wr/Kabdc": {
+                                  "content": "CONFIRMADA",
+                                  "fill": "$ot-success"
+                                }
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "YCtCO",
+                              "name": "Libre — 1",
+                              "width": "fill_container",
+                              "fill": "#FFFFFF66",
+                              "cornerRadius": 6,
+                              "stroke": "$ot-line",
+                              "strokeWidth": 1,
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "n83Ho4",
+                                  "name": "Libre Label",
+                                  "fill": "$ot-muted",
+                                  "content": "11:45 – 1:30 · libre",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "gOsA7",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Dayana C.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "1:30 PM"
+                                },
+                                "cZWgV": {
+                                  "content": "$55"
+                                },
+                                "Mc8rx": {
+                                  "content": "Dayana C."
+                                },
+                                "bq8Ow": {
+                                  "content": "Corte & estilizado"
+                                },
+                                "Nh3Wr": {
+                                  "fill": "#3E8E5A26"
+                                },
+                                "Nh3Wr/Kabdc": {
+                                  "content": "CONFIRMADA",
+                                  "fill": "$ot-success"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "snpdU",
+                          "name": "Col — Valeria Cruz",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Da9Qv",
+                              "name": "Col Head",
+                              "width": "fill_container",
+                              "gap": 10,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Uj3zB",
+                                  "name": "Avatar",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "generated-5.png",
+                                    "mode": "cover"
+                                  },
+                                  "cornerRadius": 999
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "KkeZA",
+                                  "name": "Col Info",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": 1,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "e2LOHy",
+                                      "name": "Stylist Name",
+                                      "fill": "$ot-ink",
+                                      "content": "Valeria Cruz",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "vpi6H",
+                                      "name": "Stylist Count",
+                                      "fill": "$ot-muted",
+                                      "content": "3 citas",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "k3y86V",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Amarilys G.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "10:00 AM"
+                                },
+                                "cZWgV": {
+                                  "content": "$35"
+                                },
+                                "Mc8rx": {
+                                  "content": "Amarilys G."
+                                },
+                                "bq8Ow": {
+                                  "content": "Gloss matizante"
+                                },
+                                "Nh3Wr": {
+                                  "fill": "#3E8E5A26"
+                                },
+                                "Nh3Wr/Kabdc": {
+                                  "content": "CONFIRMADA",
+                                  "fill": "$ot-success"
+                                }
+                              }
+                            },
+                            {
+                              "id": "jWTh6",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Paola R.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "10:45 AM"
+                                },
+                                "cZWgV": {
+                                  "content": "$165"
+                                },
+                                "Mc8rx": {
+                                  "content": "Paola R."
+                                },
+                                "bq8Ow": {
+                                  "content": "Babylights"
+                                }
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "qQHA1",
+                              "name": "Libre — 1",
+                              "width": "fill_container",
+                              "fill": "#FFFFFF66",
+                              "cornerRadius": 6,
+                              "stroke": "$ot-line",
+                              "strokeWidth": 1,
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "EHpwu",
+                                  "name": "Libre Label",
+                                  "fill": "$ot-muted",
+                                  "content": "1:15 – 3:00 · libre",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "z4neKr",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Ileana B.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "3:00 PM"
+                                },
+                                "cZWgV": {
+                                  "content": "$85"
+                                },
+                                "Mc8rx": {
+                                  "content": "Ileana B."
+                                },
+                                "bq8Ow": {
+                                  "content": "Color de raíz"
+                                },
+                                "Nh3Wr": {
+                                  "fill": "#3E8E5A26"
+                                },
+                                "Nh3Wr/Kabdc": {
+                                  "content": "CONFIRMADA",
+                                  "fill": "$ot-success"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "MsLaB",
+                          "name": "Col — Sofía Méndez",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "A6taAs",
+                              "name": "Col Head",
+                              "width": "fill_container",
+                              "gap": 10,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Vvgtf",
+                                  "name": "Avatar",
+                                  "width": 30,
+                                  "height": 30,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "generated-4.png",
+                                    "mode": "cover"
+                                  },
+                                  "cornerRadius": 999
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "J6r1ud",
+                                  "name": "Col Info",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": 1,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "EIj3X",
+                                      "name": "Stylist Name",
+                                      "fill": "$ot-ink",
+                                      "content": "Sofía Méndez",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "UD4Xn",
+                                      "name": "Stylist Count",
+                                      "fill": "$ot-muted",
+                                      "content": "4 citas",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "id": "OLILK",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Tatiana L.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "9:00 AM"
+                                },
+                                "cZWgV": {
+                                  "content": "$40"
+                                },
+                                "Mc8rx": {
+                                  "content": "Tatiana L."
+                                },
+                                "bq8Ow": {
+                                  "content": "Manicura en gel"
+                                },
+                                "Nh3Wr": {
+                                  "fill": "#3E8E5A26"
+                                },
+                                "Nh3Wr/Kabdc": {
+                                  "content": "CONFIRMADA",
+                                  "fill": "$ot-success"
+                                }
+                              }
+                            },
+                            {
+                              "id": "w4nB64",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Nicky A.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "10:15 AM"
+                                },
+                                "cZWgV": {
+                                  "content": "$45"
+                                },
+                                "Mc8rx": {
+                                  "content": "Nicky A."
+                                },
+                                "bq8Ow": {
+                                  "content": "Pedicura spa"
+                                },
+                                "Nh3Wr": {
+                                  "fill": "#85787026"
+                                },
+                                "Nh3Wr/Kabdc": {
+                                  "content": "COMPLETADA",
+                                  "fill": "$ot-muted"
+                                }
+                              }
+                            },
+                            {
+                              "type": "frame",
+                              "id": "lRMB4",
+                              "name": "Libre — 1",
+                              "width": "fill_container",
+                              "fill": "#FFFFFF66",
+                              "cornerRadius": 6,
+                              "stroke": "$ot-line",
+                              "strokeWidth": 1,
+                              "padding": [
+                                8,
+                                14
+                              ],
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "aUg8T",
+                                  "name": "Libre Label",
+                                  "fill": "$ot-muted",
+                                  "content": "11:15 – 12:30 · libre",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "id": "wsRw3",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Roxana D.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "12:30 PM"
+                                },
+                                "cZWgV": {
+                                  "content": "$55"
+                                },
+                                "Mc8rx": {
+                                  "content": "Roxana D."
+                                },
+                                "bq8Ow": {
+                                  "content": "Laminado de cejas"
+                                }
+                              }
+                            },
+                            {
+                              "id": "KjOOv",
+                              "type": "ref",
+                              "ref": "NNuOA",
+                              "name": "Cita — Leisha P.",
+                              "descendants": {
+                                "ZwdSo": {
+                                  "content": "1:30 PM"
+                                },
+                                "cZWgV": {
+                                  "content": "$65"
+                                },
+                                "Mc8rx": {
+                                  "content": "Leisha P."
+                                },
+                                "bq8Ow": {
+                                  "content": "Uñas esculpidas"
+                                },
+                                "Nh3Wr": {
+                                  "fill": "#3E8E5A26"
+                                },
+                                "Nh3Wr/Kabdc": {
+                                  "content": "CONFIRMADA",
+                                  "fill": "$ot-success"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -7834,6 +9437,22 @@
     "ot-body": {
       "type": "string",
       "value": "Instrument Sans"
+    },
+    "ot-accent-warm": {
+      "type": "color",
+      "value": "#E08A66"
+    },
+    "ot-success": {
+      "type": "color",
+      "value": "#3E8E5A"
+    },
+    "ot-disabled": {
+      "type": "color",
+      "value": "#6E625A"
+    },
+    "ot-busy": {
+      "type": "color",
+      "value": "#5E534C"
     }
   },
   "fileToken": "5c645716-b532-4f04-98d2-7fea569af40e"

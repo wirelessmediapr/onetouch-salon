@@ -19,10 +19,11 @@ Dominio: `onetouch.salon` · Deploy: **Vercel** — auto-deploy con cada push a 
 
 ## Estado actual
 
-- **Diseño:** `onetouch/onetouch.pen` (lienzo pen.dev: landing + frame "Onetouch — Componentes") + imágenes `onetouch/generated*.png` + `design.md`.
+- **Diseño:** `onetouch/onetouch.pen` (lienzo pen.dev: landing + frame "Onetouch — Componentes" + frame "Onetouch — Admin" en borrador) + imágenes `onetouch/generated*.png` + `design.md`.
 - **Código (fase actual):** Next.js 16 App Router + Tailwind v4 + framer-motion en `src/`. Landing completa montada desde la biblioteca del lienzo; build verificada (`npm run build`). Widget de reserva = demo interactivo estático; conectores reales en fase siguiente. Ver `README.md` para estructura y comandos (`npm run dev`, `npm run build`).
 - **Paridad canvas↔code verificada (2026-10-16, commit `2444a1d`):** con el lienzo abierto se cosechó el copy verbatim y se corrigió todo drift: fondo base del sitio = `$ot-bone` (body; Services/Results en paper, Booking/Footer ink), 16 descripciones de servicios reales (ya no TODO), regla ink bajo el header de categoría, widget fiel a lienzo (tarjeta servicio con `Cambiar` + `180 min · $210`, estilistas Andrea/Valeria/Sin preferencia, días 11/13/16/18/24/25/31 = agotados sin punto, celdas 58px, dot 4, "Hoy" stroke dark-muted), cita "Natalia R." + rating verbatim, footer con `Ciudad, PR 00000` + `Cómo llegar ↗` + copyright, CTA nav = pill accent rellena. `design.md` sincronizado a ese estado.
 - **Deploys:** `b4fd499` docs → `df4f72f` diseño+.pen → `fc69384` scaffold → `c219471` container 1280 → `655d72d` auto-deploy doc → `2444a1d` paridad canvas. Producción: `https://onetouch-salon.vercel.app/` (QA previa de producción OK: fuentes self-hosted, imágenes, chips del widget; secciones en blanco en capturas stitched = artefacto del capture, con scroll real se ven).
+- **Fase backend + admin (2026-10-16):** decisiones cerradas y plan en `docs/backend-plan.md` (Supabase · multi-servicio por cita · SMS+email Twilio/Resend · motor sin buffer, 2 h de anticipación, 60 días, cancelación con link). Lienzo: frame "Onetouch — Admin" con shell + pantalla "Admin — Agenda (día)" + componentes nuevos en la row "Admin Row" (Admin Nav Item, Estado Badge, Filter Chip, Appointment Card). Iconos lucide validados: `calendar-check`, `scissors`, `users`, `user`, `trending-up`, `plus`, `log-out`. Pendiente: resto de pantallas (login, servicios, equipo, clientes, métricas) + pasos 1/4 y éxito del booking público.
 
 ## Fuente de verdad del diseño
 
@@ -51,6 +52,11 @@ Dominio: `onetouch.salon` · Deploy: **Vercel** — auto-deploy con cada push a 
 - En el `input` del execute NO usar escapes `\n`/`\u` (SyntaxError): pasar código multilinea como template con saltos reales, y evitar template literals anidados con `\n` dentro.
 - `n.stroke` no existe en todos los nodos — los strokes pueden no exponerse; las reglas/divisores visuales se validan mejor por `get_app_state` + captura o leyendo el JSON completo del nodo.
 - Browser integrado: puede quedar trabado con `A capture is already running` (el attempt de unlock con `load-page` no siempre funciona). Requirió reinicio de la app en pen.dev. Verificación alternativa cuando la captura falla: `fetch` a `localhost:3000` contra el HTML servido + medidas por tokens (los colores son deterministas del CSS).
+- `ctx.problems` puede reportar "clipped" **falsos** dentro del mismo `execute` que creó los nodos (layout aún sin asentar): dio decenas de falsos positivos el 2026-10-16 y cero en el call siguiente. Verificar en un call posterior antes de "arreglar" nada.
+- Variables: `GetVariables()` para inventario; `SetVariables({...})` mergea sin pisar existentes (registrados 2026-10-16: `ot-accent-warm`, `ot-success`, `ot-disabled`, `ot-busy`); tintes con alpha van inline (`#B9502C26`, `#FFFFFF66`).
+- `Get(document, ...)` sin visitor está bloqueado (guard): para leer la raíz, visitor con `ctx.depth === 0` + `ctx.skipChildren()`.
+- Los valores asignados sin `const`/`let` persisten como globales entre llamadas de `execute` ("Global variables carry over") — útil para reusar ids entre calls.
+- `filePath` es requerido en `tools.pencil.execute` aunque la doc del MCP lo llame opcional.
 
 ## Git
 
@@ -68,5 +74,5 @@ Dominio: `onetouch.salon` · Deploy: **Vercel** — auto-deploy con cada push a 
 
 - Dirección, teléfono, horario y correo reales del salón: el lienzo y `src/lib/data.ts` / footer usan placeholders `(000) 000-0000`, `Calle Ejemplo 123`, `Ciudad, PR 00000`. El link `Cómo llegar ↗` del footer apunta a `href="#"` — apuntarlo a Google Maps con la dirección real.
 - ~~Descripciones de servicios~~ ✅ verificar 2026-10-16: todas tomadas verbatim del lienzo (`src/lib/data.ts`), sin `TODO(salón)` pendiente en el copy del menú.
-- Fase siguiente — reservas reales: conectores de disponibilidad (el widget actual es demo estática con estados); link-out (WhatsApp Business / agendado). Requiere decisión del negocio antes de construir.
+- Reservas reales: decisiones cerradas el 2026-10-16 — ver `docs/backend-plan.md` (Supabase · multi-servicio · SMS+email Twilio/Resend · cancelación con link · motor 2 h/60 días sin buffer). Próximo: terminar pantallas del canvas admin → proyecto Supabase + migraciones + seed.
 - QA pendiente en producción de `2444a1d`: confirmar visualmente el fondo bone, reglas de categoría, días agotados y footer (deploy fue por commit; la captura del browser de pen.dev estaba trabada — ver línea sobre reinicio).

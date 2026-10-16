@@ -32,5 +32,6 @@ Fuente de verdad: `onetouch/onetouch.pen` (editar solo vía pen.dev MCP) + `desi
 ## Estado
 
 - Landing completa y en paridad con el lienzo (commit `2444a1d`): copy verbatim del canvas (menú de 16 servicios, widget, equipo, resultados, footer), fondo base `$ot-bone`, `design.md` sincronizado. Producción: `https://onetouch-salon.vercel.app/`.
-- Widget de reserva = demo estática sugerida (con estados seleccionables); conectores de disponibilidad real en fase siguiente.
+- Fase backend + admin en curso (plan y decisiones en `docs/backend-plan.md`): frame "Onetouch — Admin" en el lienzo con shell + pantalla "Agenda (día)" como borrador; componentes nuevos del admin en la biblioteca; backend Supabase por construir.
+- Widget de reserva = demo estática sugerida (con estados seleccionables); conectores reales en la fase backend + admin (ver bullet anterior).
 - Datos de contacto del footer todavía placeholder — confirmar con el salón (el link `Cómo llegar ↗` apunta a `#` hasta tener dirección real).

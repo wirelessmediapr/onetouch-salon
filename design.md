@@ -36,11 +36,11 @@ Las variables con prefijo `ot-*` son el set activo de Onetouch. **Ignorar el set
 | `$ot-dark-line` | `#3B312B` | Bordes sobre oscuro |
 | `$ot-dark-muted` | `#A99B90` | Texto secundario sobre oscuro |
 
-**Hex "inline"** (usados dentro de la sección oscura sin variable; normalizarlas si hay oportunidad):
-- `#E08A66` — acento-cálido sobre oscuro (kickers, checks, puntas de calendario, enlaces en footer)
-- `#3E8E5A` — verde "en vivo / abierto"
-- `#6E625A` — día/hora deshabilitado sobre oscuro
-- `#5E534C` — hora ocupada
+**Hex "inline"** (normalizados como variables el 2026-10-16; registrar siempre variable nueva antes de usar un color que no exista):
+- `$ot-accent-warm` (`#E08A66`) — acento-cálido sobre oscuro (kickers, checks, puntas de calendario, enlaces en footer) — el landing aún conserva algunos inline
+- `$ot-success` (`#3E8E5A`) — verde "en vivo / abierto"
+- `$ot-disabled` (`#6E625A`) — día/hora deshabilitado sobre oscuro
+- `$ot-busy` (`#5E534C`) — hora ocupada
 - `#FFFFFF` — texto sobre acento
 - `#FFFFFF0A` — fondo tenue de días con horarios (filas "hover" del calendario)
 - `#B9502C26` — fila de estilista seleccionada (tinte 15%)
@@ -93,6 +93,10 @@ Nombres de la biblioteca del lienzo (`Onetouch — Componentes`). Todas instanci
 | **QuoteBlock** | ancho 420 vertical gap 16: apertura `“` 120 display `$ot-accent` + cita 40 display `$ot-ink` (fixed-width) + [nombre 15/600 + detalle 14 `$ot-muted`] | — |
 | **Rating** | fila gap 8: 5× `star` 20 `$ot-accent` + texto 14 `$ot-ink-soft` | — |
 | **FooterColumn** | vertical gap 4: heading 11/600 `$ot-dark-muted` mayúsculas + líneas 15 `$ot-bone`; enlace externo → `#E08A66` + `↗` | VISÍTANOS / HORARIO / CONTACTO |
+| **Admin Nav Item** | fila gap 10 align-center, pad `[10,12]`, r6, width fill: icono 18 + label 14 `$ot-dark-muted` (vive en el sidebar ink del admin) | **activo**: fila bg `#B9502C26` + icono/label `$ot-accent-warm` (label 14/600) |
+| **Estado Badge** | pill r999 pad `[4,10]`: label 11/600 mayúsculas | **pendiente** `$ot-accent` sobre `#B9502C26` · **confirmada** `$ot-success` sobre `#3E8E5A26` · **completada** `$ot-muted` sobre `#85787026` · **cancelada** `$ot-disabled` sobre `#6E625A26` |
+| **Filter Chip** | pill r999 pad `[7,14]`, stroke 1 `$ot-line`: label 13 `$ot-ink-soft` | **activo**: fill/stroke `$ot-ink` + label `$ot-bone` 13/600 |
+| **Appointment Card** | card r6 pad `[12,14]` gap 6, fill `$ot-paper` stroke `$ot-line`, width `fill_container(280)`: fila [hora 12/600 `$ot-ink-soft` + precio 14 display `$ot-ink`] (space-between) + clienta 15/600 `$ot-ink` + servicios 12 `$ot-muted` + Estado Badge | clienta/servicios/precio dinámicos; badge por estado |
 
 ### Blocs decorativos confirmados del lienzo (no reutilizables: one-offs con layout propio)
 
@@ -134,3 +138,17 @@ Reglas al generar nuevas con **fal.ai**:
 5. Toda fila del menú compartirá el **bottom stroke** como única línea de división (no cards).
 6. Copy en español neutral-caribeño; evitar spanglish salvo términos del oficio (balayage, keratina).
 7. Al escalar pantallas nuevas: instanciar los componentes de la biblioteca; no duplicar nodos.
+
+---
+
+## 7. Panel de admin (borrador 2026-10-16)
+
+Vive en el frame **"Onetouch — Admin"** del lienzo (hermano de la landing). Pantallas 1440×900 con `clip: true`. Datos de ejemplo en el diseño; el contenido real vendrá de Supabase (ver `docs/backend-plan.md`).
+
+**Shell — "Admin — Agenda (día)":**
+
+- **Sidebar** 240 fill `$ot-ink`, pad `[28,16,20,16]`, space-between: Logo variante vertical (wordmark `$ot-bone` + sub `SALÓN · ADMIN` `$ot-dark-muted`), caption `GESTIÓN` 11/600 `$ot-dark-muted`, 5 Admin Nav Items (Agenda · Servicios · Equipo · Clientes · Métricas), abajo: divider `$ot-dark-line` + usuaria (avatar 34 r999 "OT" + nombre 13/600 `$ot-bone` + email 11 `$ot-dark-muted`) + `Cerrar sesión` 12 con icono `log-out`.
+- **Main** fill `$ot-bone`, pad `[28,40,40,40]` gap 24: fila título (display 40 + sub 14 `$ot-ink-soft`) + Primary Button compacto (`Nueva cita`, pad `[12,22]`, label 14, icono `plus` 16); fila controles (Filter Chips de estilista + nav de día: 2 botones circulares 36 stroke `$ot-line` con `chevron-left/right` + chip `Hoy`); **board** 4 columnas gap 16: header [avatar 30 r999 imagen + nombre 13/600 + `N citas` 11 `$ot-muted`] + Appointment Cards cronológicas intercaladas con chips "libre" (pad `[8,14]`, r6, stroke `$ot-line`, fill `#FFFFFF66`, texto 12 `$ot-muted` centrado).
+- Componentes del admin: row **"Admin Row"** de la biblioteca ("Onetouch — Componentes"). Colores nuevos registrados en §2.1.
+
+**Inventario de pantallas:** ✅ Agenda (día) · ⏳ Login, Servicios, Equipo y horarios, Clientes, Métricas · ⏳ pasos 1 (Servicio), 4 (Confirmar) y éxito del booking público en el frame landing (paso 3 existente se reutiliza con datos reales).
