@@ -31,5 +31,6 @@ Fuente de verdad: `onetouch/onetouch.pen` (editar solo vía pen.dev MCP) + `desi
 
 ## Estado
 
+- Landing completa y en paridad con el lienzo (commit `2444a1d`): copy verbatim del canvas (menú de 16 servicios, widget, equipo, resultados, footer), fondo base `$ot-bone`, `design.md` sincronizado. Producción: `https://onetouch-salon.vercel.app/`.
 - Widget de reserva = demo estática sugerida (con estados seleccionables); conectores de disponibilidad real en fase siguiente.
-- Datos de contacto del footer todavía placeholder — confirmar con el salón.
+- Datos de contacto del footer todavía placeholder — confirmar con el salón (el link `Cómo llegar ↗` apunta a `#` hasta tener dirección real).
