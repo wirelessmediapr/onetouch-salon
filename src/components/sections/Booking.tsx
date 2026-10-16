@@ -11,9 +11,9 @@ import {
 } from "@/components/primitives";
 import { Reveal } from "@/components/Reveal";
 import {
+  bookingStylistOptions,
   bookingSummary,
   calendarDays,
-  teamMembers,
   timeGroups,
 } from "@/lib/data";
 
@@ -26,7 +26,7 @@ const weekdayOf = (day: number) => (3 + day - 1) % 7;
 const meridiemOf = (time: string) => (Number(time.split(":")[0]) < 12 ? "AM" : "PM");
 
 export function Booking() {
-  const [stylist, setStylist] = useState("Andrea Ríos");
+  const [stylist, setStylist] = useState("Andrea");
   const [selectedDay, setSelectedDay] = useState(14);
   const [selectedTime, setSelectedTime] = useState("11:00");
 
@@ -45,10 +45,7 @@ export function Booking() {
     ),
   }));
 
-  const stylistOptions = [
-    ...teamMembers.slice(0, 3).map((m) => ({ name: m.name, role: m.role, image: m.image })),
-    { name: "Sin preferencia", role: "La mejor horaria", image: undefined as string | undefined },
-  ];
+  const stylistOptions = bookingStylistOptions;
 
   const who =
     stylist === "Sin preferencia" ? "nuestro equipo" : stylist.split(" ")[0];
@@ -83,11 +80,13 @@ export function Booking() {
             <div className="flex flex-col gap-3">
               <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-dark-muted">Servicio</p>
               <div className="flex flex-col gap-[6px] rounded-md border border-dark-line p-4">
-                <div className="flex items-start justify-between gap-4">
-                  <p className="text-[14px] font-semibold text-bone">Balayage a mano alzada</p>
-                  <p className="font-display text-[34px] leading-none text-bone">{bookingSummary.price}</p>
+                <div className="flex items-center justify-between gap-4">
+                  <p className="text-[15px] font-semibold text-bone">Balayage a mano alzada</p>
+                  <button type="button" className="text-[13px] text-accent-warm transition-opacity hover:opacity-80">
+                    Cambiar
+                  </button>
                 </div>
-                <p className="text-[13px] text-dark-muted">180 min · incluye matizante</p>
+                <p className="text-[13px] text-dark-muted">180 min · {bookingSummary.price}</p>
               </div>
             </div>
             <div className="flex flex-col gap-2">
@@ -139,7 +138,7 @@ export function Booking() {
             </div>
             <div className="mt-1 flex flex-wrap gap-x-8 gap-y-3">
               <span className="flex items-center gap-2 text-[12px] text-dark-muted">
-                <span aria-hidden className="h-[5px] w-[5px] rounded-full bg-accent-warm" />
+                <span aria-hidden className="h-[4px] w-[4px] rounded-full bg-accent-warm" />
                 Con horarios libres
               </span>
               <span className="flex items-center gap-2 text-[12px] text-dark-muted">
@@ -147,7 +146,7 @@ export function Booking() {
                 Agotado / cerrado
               </span>
               <span className="flex items-center gap-2 text-[12px] text-dark-muted">
-                <span aria-hidden className="h-4 w-4 rounded-[3px] border border-accent" />
+                <span aria-hidden className="h-4 w-4 rounded-[3px] border border-dark-muted" />
                 Hoy
               </span>
             </div>

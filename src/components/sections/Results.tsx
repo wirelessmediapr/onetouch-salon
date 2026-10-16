@@ -17,12 +17,12 @@ export function Results() {
           <div className="lg:mt-2">
             <QuoteBlock
               index="04 — Resultados"
-              quote="Salí de la silla sintiéndome yo misma, pero con esa luz que uno no sabe pedir. Me tiñeron exactamente el tono que soñé."
-              name="Mariela Torres"
-              detail="Balayage & corte · hace dos semanas"
+              quote="Salí con el color que llevaba años buscando. Y la cita la reservé desde el carro, en un minuto."
+              name="Natalia R."
+              detail="Balayage con Andrea · clienta desde 2021"
             />
             <div className="mt-8">
-              <Rating text="4.9 de 5 · 320 reseñas en Google" />
+              <Rating text="4.9 de 5 · 320 reseñas verificadas en Google" />
             </div>
           </div>
         </Reveal>

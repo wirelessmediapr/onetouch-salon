@@ -2562,77 +2562,6 @@
                             },
                             {
                               "type": "frame",
-                              "id": "x3mjhq",
-                              "name": "Camila",
-                              "width": "fill_container",
-                              "cornerRadius": 6,
-                              "gap": 12,
-                              "padding": [
-                                10,
-                                12
-                              ],
-                              "alignItems": "center",
-                              "children": [
-                                {
-                                  "type": "frame",
-                                  "id": "X3JtR4",
-                                  "name": "Avatar",
-                                  "width": 36,
-                                  "height": 36,
-                                  "fill": {
-                                    "type": "image",
-                                    "enabled": true,
-                                    "url": "generated-2.png",
-                                    "mode": "cover"
-                                  },
-                                  "cornerRadius": 999,
-                                  "justifyContent": "center",
-                                  "alignItems": "center"
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "U9LSUU",
-                                  "name": "Text",
-                                  "width": "fill_container",
-                                  "layout": "vertical",
-                                  "gap": 2,
-                                  "children": [
-                                    {
-                                      "type": "text",
-                                      "id": "lsUyq",
-                                      "name": "Name",
-                                      "fill": "$ot-bone",
-                                      "content": "Camila",
-                                      "fontFamily": "$ot-body",
-                                      "fontSize": 14,
-                                      "fontWeight": "600"
-                                    },
-                                    {
-                                      "type": "text",
-                                      "id": "Z8Tgo",
-                                      "name": "Role",
-                                      "fill": "$ot-dark-muted",
-                                      "content": "Estilista & cortes",
-                                      "fontFamily": "$ot-body",
-                                      "fontSize": 12,
-                                      "fontWeight": "normal"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "frame",
-                                  "id": "XFmrC",
-                                  "name": "Radio",
-                                  "width": 18,
-                                  "height": 18,
-                                  "cornerRadius": 999,
-                                  "stroke": "$ot-dark-muted",
-                                  "strokeWidth": 1
-                                }
-                              ]
-                            },
-                            {
-                              "type": "frame",
                               "id": "UwjH6",
                               "name": "Valeria",
                               "width": "fill_container",
@@ -5893,6 +5822,1916 @@
                       "icon": "phone",
                       "library": "lucide",
                       "fill": "$ot-dark-muted"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "f4zgZQ",
+      "x": 2431,
+      "y": 0,
+      "name": "Onetouch — Componentes",
+      "width": 1680,
+      "fill": "$ot-paper",
+      "layout": "vertical",
+      "gap": 56,
+      "padding": 64,
+      "children": [
+        {
+          "type": "frame",
+          "id": "DlauP",
+          "name": "Library Header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "children": [
+            {
+              "type": "text",
+              "id": "tzJAt",
+              "name": "Library Title",
+              "fill": "$ot-ink",
+              "content": "Onetouch — Componentes",
+              "fontFamily": "$ot-display",
+              "fontSize": 40,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "TjfPX",
+              "name": "Library Note",
+              "fill": "$ot-ink-soft",
+              "content": "Biblioteca reutilizable del landing. Los componentes viven aquí; las pantallas los instancian. Editar componente = se actualiza en todas las pantallas.",
+              "fontFamily": "$ot-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WqeHA",
+          "name": "Base Row",
+          "gap": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "pBnni",
+              "name": "Plate · Logo",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XzVc8",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "LOGO",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "X6xI40",
+                  "name": "Logo",
+                  "reusable": true,
+                  "gap": 10,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AFq9Q",
+                      "name": "Wordmark",
+                      "fill": "$ot-ink",
+                      "content": "Onetouch",
+                      "fontFamily": "$ot-display",
+                      "fontSize": 34,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QeKXM",
+                      "name": "Wordmark Sub",
+                      "fill": "$ot-muted",
+                      "content": "SALON",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FTq4A",
+              "name": "Plate · Botón primario",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wPvhJ",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "BOTÓN PRIMARIO",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "otRZb",
+                  "name": "Primary Button",
+                  "reusable": true,
+                  "fill": "$ot-accent",
+                  "cornerRadius": 999,
+                  "gap": 8,
+                  "padding": [
+                    16,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Hm3Nm",
+                      "name": "Label",
+                      "fill": "#FFFFFF",
+                      "content": "Reservar mi cita",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "CDvAL",
+                      "name": "Icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "arrow-right",
+                      "library": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I8KIX",
+              "name": "Plate · Enlace",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Yt3pQ",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "ENLACE CON FLECHA",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "nRgTC",
+                  "name": "Arrow Link",
+                  "reusable": true,
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uQrNS",
+                      "name": "Label",
+                      "fill": "$ot-ink",
+                      "content": "Ver servicios y precios",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "U643j6",
+                      "name": "Arrow",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "arrow-right",
+                      "library": "lucide",
+                      "fill": "$ot-ink"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OEwR7",
+              "name": "Plate · Nav link",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "uOpxN",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "NAV LINK",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Z9a1j",
+                  "name": "Nav Link",
+                  "reusable": true,
+                  "fill": "$ot-ink-soft",
+                  "content": "Servicios",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Ek8va",
+          "name": "Type Row",
+          "gap": 64,
+          "children": [
+            {
+              "type": "frame",
+              "id": "TPf7k",
+              "name": "Plate · Eyebrow",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "T63V5F",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "EYEBROW",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "JdkDP",
+                  "name": "Eyebrow",
+                  "reusable": true,
+                  "gap": 10,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "T5V14Y",
+                      "name": "Rule",
+                      "fill": "$ot-ink",
+                      "width": 32,
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "caCEu",
+                      "name": "Eyebrow Text",
+                      "fill": "$ot-ink",
+                      "content": "SALÓN DE BELLEZA · ESTUDIO DE COLOR",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fT5yb",
+              "name": "Plate · Fact",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "a5CnM",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "FACT",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "sMTS8",
+                  "name": "Fact",
+                  "reusable": true,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "aFdsf",
+                      "name": "Value",
+                      "fill": "$ot-ink",
+                      "content": "4.9",
+                      "fontFamily": "$ot-display",
+                      "fontSize": 36,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vH9Zd",
+                      "name": "Label",
+                      "fill": "$ot-muted",
+                      "content": "320 reseñas en Google",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BlJ2T",
+          "name": "Section Header Row",
+          "gap": 64,
+          "children": [
+            {
+              "type": "frame",
+              "id": "o48mI",
+              "name": "Plate · Section header",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "msfWQ",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "SECTION HEADER",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "QW7uk",
+                  "name": "Section Header",
+                  "reusable": true,
+                  "gap": 64,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gf8ys",
+                      "name": "Title Group",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QOszZ",
+                          "name": "Index",
+                          "fill": "$ot-accent",
+                          "content": "01 — MENÚ DE SERVICIOS",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VfG25",
+                          "name": "Title",
+                          "fill": "$ot-ink",
+                          "content": "Lo que hacemos, y cuánto cuesta.",
+                          "fontFamily": "$ot-display",
+                          "fontSize": 64,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "K5J75",
+                      "name": "Intro",
+                      "fill": "$ot-ink-soft",
+                      "textGrowth": "fixed-width",
+                      "width": 380,
+                      "content": "Precios transparentes, sin sorpresas. Cada servicio incluye consulta previa y productos profesionales libres de sulfatos.",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Whpgp",
+          "name": "Slots Row",
+          "gap": 64,
+          "children": [
+            {
+              "type": "frame",
+              "id": "MJcHd",
+              "name": "Plate · Next slot",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NsEc4",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "NEXT SLOT CARD",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "Czjzl",
+                  "name": "Next Slot Card",
+                  "reusable": true,
+                  "width": 300,
+                  "fill": "$ot-paper",
+                  "cornerRadius": 6,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    18,
+                    22
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nLTMc",
+                      "name": "Header",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "O6KOjN",
+                          "name": "Live Dot",
+                          "fill": "#3E8E5A",
+                          "width": 8,
+                          "height": 8
+                        },
+                        {
+                          "type": "text",
+                          "id": "JGlhn",
+                          "name": "Kicker",
+                          "fill": "$ot-muted",
+                          "content": "PRÓXIMO HORARIO LIBRE",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZDz9H",
+                      "name": "Slot",
+                      "fill": "$ot-ink",
+                      "content": "Hoy · 3:30 PM",
+                      "fontFamily": "$ot-display",
+                      "fontSize": 32,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UOp7C",
+                      "name": "Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "O050SG",
+                          "name": "Who",
+                          "fill": "$ot-ink-soft",
+                          "content": "Blowout con Andrea · 45 min",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "g3lhs",
+                          "name": "Go",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "$ot-accent"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qmNZG",
+                  "name": "Slot Instance Wrap",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "id": "Lopzn",
+                      "type": "ref",
+                      "ref": "Czjzl",
+                      "stroke": "$ot-line",
+                      "strokeWidth": 1,
+                      "name": "Next Slot"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w8hbd1",
+              "name": "Plate · Consult note",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Tfs0Z",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "NOTA DE CONSULTA",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "XOy4r",
+                  "name": "Consult Note",
+                  "reusable": true,
+                  "width": 560,
+                  "fill": "$ot-bone",
+                  "cornerRadius": 6,
+                  "padding": [
+                    24,
+                    28
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "aNQC5",
+                      "name": "Text",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "FFWZe",
+                          "name": "Icon",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "info",
+                          "library": "lucide",
+                          "fill": "$ot-accent"
+                        },
+                        {
+                          "type": "text",
+                          "id": "a4gPk",
+                          "name": "Copy",
+                          "fill": "$ot-ink",
+                          "textGrowth": "fixed-width",
+                          "width": 320,
+                          "content": "¿No sabes qué elegir? Reserva una consulta gratuita de 15 minutos.",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MZpPN",
+                      "name": "Link",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "q9Lvd",
+                          "name": "Label",
+                          "fill": "$ot-accent",
+                          "content": "Reservar consulta",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "hdFkL",
+                          "name": "Arrow",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "$ot-accent"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dBCTb",
+          "name": "Quote Row",
+          "gap": 64,
+          "children": [
+            {
+              "type": "frame",
+              "id": "PMdth",
+              "name": "Plate · Quote",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "m8tNM",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "QUOTE BLOCK",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "p0AQK",
+                  "name": "Quote Block",
+                  "reusable": true,
+                  "width": 420,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kyftH",
+                      "name": "Quote Mark",
+                      "fill": "$ot-accent",
+                      "content": "“",
+                      "fontFamily": "$ot-display",
+                      "fontSize": 120,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Qw2pT",
+                      "name": "Quote",
+                      "fill": "$ot-ink",
+                      "textGrowth": "fixed-width",
+                      "width": 420,
+                      "content": "Salí con el color que llevaba años buscando. Y la cita la reservé desde el carro, en un minuto.",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$ot-display",
+                      "fontSize": 40,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nDU1s",
+                      "name": "Attribution",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HVrDU",
+                          "name": "Name",
+                          "fill": "$ot-ink",
+                          "content": "Natalia R.",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "P62qj",
+                          "name": "Detail",
+                          "fill": "$ot-muted",
+                          "content": "Balayage con Andrea · clienta desde 2021",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QkdsM",
+              "name": "Plate · Rating",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BOWii",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "RATING",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "KHxtR",
+                  "name": "Rating",
+                  "reusable": true,
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gURR3",
+                      "name": "Stars",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "gtiRU",
+                          "name": "Star",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "star",
+                          "library": "lucide",
+                          "fill": "$ot-accent"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "jYpJt",
+                          "name": "Star",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "star",
+                          "library": "lucide",
+                          "fill": "$ot-accent"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "i5z4dW",
+                          "name": "Star",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "star",
+                          "library": "lucide",
+                          "fill": "$ot-accent"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "sTriu",
+                          "name": "Star",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "star",
+                          "library": "lucide",
+                          "fill": "$ot-accent"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "yBBm3",
+                          "name": "Star",
+                          "width": 20,
+                          "height": 20,
+                          "icon": "star",
+                          "library": "lucide",
+                          "fill": "$ot-accent"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "op1Rv",
+                      "name": "Text",
+                      "fill": "$ot-ink-soft",
+                      "content": "4.9 de 5 · 320 reseñas verificadas",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "E8C19",
+          "name": "Menu Row",
+          "gap": 64,
+          "children": [
+            {
+              "type": "frame",
+              "id": "E7EWZI",
+              "name": "Plate · Service row",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zQUuw",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "SERVICE ROW",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "q3Yq2",
+                  "name": "Service Row",
+                  "reusable": true,
+                  "width": 340,
+                  "gap": 24,
+                  "padding": [
+                    18,
+                    0
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HVBPl",
+                      "name": "Info",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BmfRF",
+                          "name": "Name",
+                          "fill": "$ot-ink",
+                          "content": "Corte & estilizado",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VJm1j",
+                          "name": "Desc",
+                          "fill": "$ot-muted",
+                          "content": "Incluye lavado y aroma",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z2Vt90",
+                      "name": "Duration",
+                      "fill": "$ot-muted",
+                      "content": "60 min",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kkUPT",
+                      "name": "Price",
+                      "fill": "$ot-ink",
+                      "content": "$55",
+                      "fontFamily": "$ot-display",
+                      "fontSize": 28,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ARsd4",
+              "name": "Plate · Service category",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EXDZe",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "SERVICE CATEGORY",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "rM2PI",
+                  "name": "Service Category",
+                  "reusable": true,
+                  "width": 340,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "X2e3q",
+                      "name": "Category Header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iCXYR",
+                          "name": "Category",
+                          "fill": "$ot-ink",
+                          "content": "Cabello",
+                          "fontFamily": "$ot-display",
+                          "fontSize": 34,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MPvDF",
+                          "name": "From",
+                          "fill": "$ot-muted",
+                          "content": "desde $40",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zos9S",
+                      "name": "Corte & estilizado",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "padding": [
+                        18,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "OmXv6",
+                          "name": "Info",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "p9EvI",
+                              "name": "Name",
+                              "fill": "$ot-ink",
+                              "content": "Corte & estilizado",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "TgYZx",
+                              "name": "Desc",
+                              "fill": "$ot-muted",
+                              "content": "Incluye lavado y aroma",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "klBE6",
+                          "name": "Duration",
+                          "fill": "$ot-muted",
+                          "content": "60 min",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QNsUi",
+                          "name": "Price",
+                          "fill": "$ot-ink",
+                          "content": "$55",
+                          "fontFamily": "$ot-display",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NdFEI",
+                      "name": "Blowout",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "padding": [
+                        18,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pAgmv",
+                          "name": "Info",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "T0TRX",
+                              "name": "Name",
+                              "fill": "$ot-ink",
+                              "content": "Blowout",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "UbxPD",
+                              "name": "Desc",
+                              "fill": "$ot-muted",
+                              "content": "Fijo y suave",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "c29UE",
+                          "name": "Duration",
+                          "fill": "$ot-muted",
+                          "content": "45 min",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "NWW0H",
+                          "name": "Price",
+                          "fill": "$ot-ink",
+                          "content": "$40",
+                          "fontFamily": "$ot-display",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BCCz6",
+                      "name": "Keratina alisadora",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "padding": [
+                        18,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "d8PIJh",
+                          "name": "Info",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vStqF",
+                              "name": "Name",
+                              "fill": "$ot-ink",
+                              "content": "Keratina alisadora",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ZTqd8",
+                              "name": "Desc",
+                              "fill": "$ot-muted",
+                              "content": "Consulta incluida",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "jQJFR",
+                          "name": "Duration",
+                          "fill": "$ot-muted",
+                          "content": "150 min",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "t0YLi",
+                          "name": "Price",
+                          "fill": "$ot-ink",
+                          "content": "$180",
+                          "fontFamily": "$ot-display",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "URyoh",
+                      "name": "Peinado para eventos",
+                      "width": "fill_container",
+                      "gap": 24,
+                      "padding": [
+                        18,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "mne2G",
+                          "name": "Info",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "damap",
+                              "name": "Name",
+                              "fill": "$ot-ink",
+                              "content": "Peinado para eventos",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "JgYUx",
+                              "name": "Desc",
+                              "fill": "$ot-muted",
+                              "content": "Hasta 3 recogidos",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "trQsW",
+                          "name": "Duration",
+                          "fill": "$ot-muted",
+                          "content": "60 min",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "EdXR5",
+                          "name": "Price",
+                          "fill": "$ot-ink",
+                          "content": "$75",
+                          "fontFamily": "$ot-display",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZjI0V",
+          "name": "Plate · Booking states",
+          "layout": "vertical",
+          "gap": 14,
+          "children": [
+            {
+              "type": "text",
+              "id": "xmyiB",
+              "name": "Caption",
+              "fill": "$ot-muted",
+              "content": "BOOKING · ESTADOS",
+              "fontFamily": "$ot-body",
+              "fontSize": 11,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "JDFC6",
+              "name": "Booking States",
+              "fill": "$ot-ink",
+              "cornerRadius": 6,
+              "layout": "vertical",
+              "gap": 28,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PLzqS",
+                  "name": "Steps",
+                  "gap": 28,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ulet5",
+                      "name": "Paso",
+                      "reusable": true,
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "hbfjP",
+                          "name": "Badge",
+                          "width": 26,
+                          "height": 26,
+                          "cornerRadius": 999,
+                          "stroke": "$ot-dark-line",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YEV45",
+                              "name": "Num",
+                              "fill": "$ot-dark-muted",
+                              "content": "1",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "C000h",
+                          "name": "Label",
+                          "fill": "$ot-bone",
+                          "content": "Servicio",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "ck076",
+                      "type": "ref",
+                      "ref": "Ulet5",
+                      "name": "Paso listo",
+                      "x": 116,
+                      "y": 0,
+                      "descendants": {
+                        "hbfjP": {
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "gNdK5",
+                              "name": "Check",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "check",
+                              "library": "lucide",
+                              "fill": "#E08A66"
+                            }
+                          ]
+                        },
+                        "C000h": {
+                          "content": "Estilista"
+                        }
+                      }
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "JcZrQ",
+                      "name": "Connector",
+                      "fill": "$ot-dark-line",
+                      "width": 48,
+                      "height": 1
+                    },
+                    {
+                      "id": "lO4wY",
+                      "type": "ref",
+                      "ref": "Ulet5",
+                      "name": "Paso actual",
+                      "descendants": {
+                        "hbfjP": {
+                          "fill": "$ot-accent",
+                          "stroke": "$ot-accent"
+                        },
+                        "YEV45": {
+                          "fill": "#FFFFFF",
+                          "fontWeight": "600",
+                          "content": "3"
+                        },
+                        "C000h": {
+                          "content": "Fecha y hora",
+                          "fontWeight": "600"
+                        }
+                      }
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "D1UiZ",
+                      "name": "Connector",
+                      "fill": "$ot-dark-line",
+                      "width": 48,
+                      "height": 1
+                    },
+                    {
+                      "id": "v6Zkg",
+                      "type": "ref",
+                      "ref": "Ulet5",
+                      "name": "Paso pendiente",
+                      "descendants": {
+                        "YEV45": {
+                          "content": "4"
+                        },
+                        "C000h": {
+                          "content": "Confirmar"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eWOpw",
+                  "name": "Stylists",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "N3zf1U",
+                      "name": "Stylist Row",
+                      "reusable": true,
+                      "width": 280,
+                      "cornerRadius": 6,
+                      "gap": 12,
+                      "padding": [
+                        10,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "zgi7T",
+                          "name": "Avatar",
+                          "width": 40,
+                          "height": 40,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-3.png",
+                            "mode": "cover"
+                          },
+                          "cornerRadius": 999
+                        },
+                        {
+                          "type": "frame",
+                          "id": "rTN0J",
+                          "name": "Text",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Fyych",
+                              "name": "Name",
+                              "fill": "$ot-bone",
+                              "content": "Andrea Ríos",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "SYqdF",
+                              "name": "Role",
+                              "fill": "$ot-dark-muted",
+                              "content": "Colorista senior",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "unJCw",
+                          "name": "Radio",
+                          "width": 18,
+                          "height": 18,
+                          "cornerRadius": 999
+                        }
+                      ]
+                    },
+                    {
+                      "id": "Vf7vT",
+                      "type": "ref",
+                      "ref": "N3zf1U",
+                      "name": "Andrea seleccionada",
+                      "fill": "#B9502C26",
+                      "descendants": {
+                        "unJCw": {
+                          "strokeWidth": 5,
+                          "stroke": "#E08A66"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Lpu8p",
+                      "type": "ref",
+                      "ref": "N3zf1U",
+                      "name": "Camila",
+                      "descendants": {
+                        "zgi7T": {
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-2.png",
+                            "mode": "cover"
+                          }
+                        },
+                        "Fyych": {
+                          "content": "Camila Ortiz"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ruGrV",
+                  "name": "Days",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "IlxCC",
+                      "name": "Day Cell",
+                      "reusable": true,
+                      "width": 44,
+                      "height": 52,
+                      "cornerRadius": 6,
+                      "layout": "vertical",
+                      "gap": 3,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "p3nQHv",
+                          "name": "Num",
+                          "fill": "$ot-bone",
+                          "content": "14",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "zxUrs",
+                          "name": "Dot",
+                          "fill": "#E08A66",
+                          "width": 5,
+                          "height": 5
+                        }
+                      ]
+                    },
+                    {
+                      "id": "OxFri",
+                      "type": "ref",
+                      "ref": "IlxCC",
+                      "name": "Día seleccionado",
+                      "descendants": {
+                        "p3nQHv": {
+                          "fill": "#FFFFFF",
+                          "fontWeight": "600"
+                        },
+                        "zxUrs": {
+                          "fill": "#FFFFFF"
+                        }
+                      }
+                    },
+                    {
+                      "id": "h2UQLa",
+                      "type": "ref",
+                      "ref": "IlxCC",
+                      "name": "Día hoy"
+                    },
+                    {
+                      "id": "l7IzEg",
+                      "type": "ref",
+                      "ref": "IlxCC",
+                      "name": "Día cerrado",
+                      "descendants": {
+                        "p3nQHv": {
+                          "fill": "#6E625A"
+                        },
+                        "zxUrs": {
+                          "enabled": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kViMz",
+                  "name": "Times",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BcYOX",
+                      "name": "Label",
+                      "fill": "$ot-dark-muted",
+                      "content": "MAÑANA",
+                      "fontFamily": "$ot-body",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "r2XaPq",
+                      "name": "Row",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "WMj9J",
+                          "name": "Time Chip",
+                          "reusable": true,
+                          "width": 88,
+                          "height": 40,
+                          "cornerRadius": 6,
+                          "stroke": "$ot-dark-line",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xglHO",
+                              "name": "Time",
+                              "fill": "$ot-bone",
+                              "content": "9:30",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "DNUrB",
+                          "type": "ref",
+                          "ref": "WMj9J",
+                          "name": "11:00 seleccionada",
+                          "descendants": {
+                            "xglHO": {
+                              "fill": "#FFFFFF",
+                              "fontWeight": "600",
+                              "content": "11:00"
+                            }
+                          }
+                        },
+                        {
+                          "id": "kPt4i",
+                          "type": "ref",
+                          "ref": "WMj9J",
+                          "name": "10:00 ocupada",
+                          "descendants": {
+                            "xglHO": {
+                              "fill": "#5E534C",
+                              "content": "10:00"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "r6Dst",
+          "name": "Team Footer Row",
+          "gap": 64,
+          "children": [
+            {
+              "type": "frame",
+              "id": "B3pJI",
+              "name": "Plate · Team card",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "C4UFQc",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "TEAM CARD",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "AZFbF",
+                  "name": "Team Card",
+                  "reusable": true,
+                  "width": 300,
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "IxycE",
+                      "name": "Portrait",
+                      "width": "fill_container",
+                      "height": 340,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "generated-2.png",
+                        "mode": "cover"
+                      },
+                      "cornerRadius": 4
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gqfle",
+                      "name": "Info",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "W4nhM",
+                          "name": "Name",
+                          "fill": "$ot-ink",
+                          "content": "Camila Ortiz",
+                          "fontFamily": "$ot-display",
+                          "fontSize": 30,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "HMlLX",
+                          "name": "Role",
+                          "fill": "$ot-accent",
+                          "content": "Estilista & cortes",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VHbSE",
+                          "name": "Specialties",
+                          "fill": "$ot-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Cortes bob · cabello rizado · novias",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T9oVj",
+                      "name": "Book Link",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        0,
+                        4,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "N1u8mL",
+                          "name": "Label",
+                          "fill": "$ot-ink",
+                          "content": "Reservar con Camila",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon",
+                          "id": "ufRFo",
+                          "name": "Arrow",
+                          "width": 16,
+                          "height": 16,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "$ot-ink"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NvaTl",
+              "name": "Plate · Footer columns",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "K5TYxi",
+                  "name": "Caption",
+                  "fill": "$ot-muted",
+                  "content": "FOOTER COLUMNS",
+                  "fontFamily": "$ot-body",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "Dffve",
+                  "name": "Footer Columns Preview",
+                  "fill": "$ot-ink",
+                  "cornerRadius": 6,
+                  "gap": 56,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BNLEM",
+                      "name": "Footer Column",
+                      "reusable": true,
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oKuDe",
+                          "name": "Heading",
+                          "fill": "$ot-dark-muted",
+                          "content": "VISÍTANOS",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "xQYZG",
+                          "name": "Line A",
+                          "fill": "$ot-bone",
+                          "content": "Calle Ejemplo 123",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kOsR1",
+                          "name": "Line B",
+                          "fill": "$ot-bone",
+                          "content": "Ciudad, PR 00000",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MCi7X",
+                          "name": "Line C",
+                          "fill": "#E08A66",
+                          "content": "Cómo llegar ↗",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "i6miXl",
+                      "type": "ref",
+                      "ref": "BNLEM",
+                      "name": "HORARIO",
+                      "descendants": {
+                        "oKuDe": {
+                          "content": "HORARIO"
+                        },
+                        "xQYZG": {
+                          "content": "Lun – Sáb  9:00 AM – 7:00 PM"
+                        },
+                        "kOsR1": {
+                          "content": "Domingo  cerrado"
+                        },
+                        "MCi7X": {
+                          "enabled": false
+                        }
+                      }
+                    },
+                    {
+                      "id": "B9VsLN",
+                      "type": "ref",
+                      "ref": "BNLEM",
+                      "name": "CONTACTO",
+                      "descendants": {
+                        "oKuDe": {
+                          "content": "CONTACTO"
+                        },
+                        "xQYZG": {
+                          "content": "(000) 000-0000"
+                        },
+                        "kOsR1": {
+                          "content": "hola@onetouchsalon.com"
+                        },
+                        "MCi7X": {
+                          "content": "@onetouchsalon"
+                        }
+                      }
                     }
                   ]
                 }

@@ -1,15 +1,22 @@
 import { FooterColumn, PrimaryButton } from "@/components/primitives";
 import { Reveal } from "@/components/Reveal";
 
-// TODO(salón): reemplazar los datos de contacto placeholder por los reales.
-const columns = [
+// Datos placeholder del salón — reemplazar cuando el negocio pase los reales.
+// (`Cómo llegar ↗` = link_outplace del lienzo; lleva a Google Maps cuando exista dirección real.)
+const columns: { heading: string; lines: React.ReactNode[] }[] = [
   {
     heading: "Visítanos",
-    lines: ["Calle Ejemplo 123", "San Juan, Puerto Rico"],
+    lines: [
+      "Calle Ejemplo 123",
+      "Ciudad, PR 00000",
+      <a key="mapa" href="#" className="transition-opacity hover:opacity-80">
+        <span className="text-accent-warm">Cómo llegar ↗</span>
+      </a>,
+    ],
   },
   {
     heading: "Horario",
-    lines: ["Lun a sáb · 9 AM – 7 PM", "Domingo cerrado"],
+    lines: ["Lun – Sáb  9:00 AM – 7:00 PM", "Domingo  cerrado"],
   },
   {
     heading: "Contacto",
@@ -64,7 +71,7 @@ export function Footer() {
       </p>
 
       <div className="mt-10 flex flex-col items-start gap-6 border-t border-dark-line pt-6 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-[13px] text-dark-muted">© 2026 Onetouch Salon · Hecho con cariño en Puerto Rico</p>
+        <p className="text-[13px] text-dark-muted">© 2026 Onetouch Salon. Todos los derechos reservados.</p>
         <div className="flex gap-4">
           {socials.map((social) => (
             <a

@@ -10,7 +10,7 @@ export function Team() {
         <SectionHeader
           index="03 — El equipo"
           title="Manos que conocen tu cabello."
-          intro="Cuatro estilistas certificadas, una bienvenida cálida. Elige tu favorita o deja que la agenda decida por ti."
+          intro="Cuatro especialistas, formación continua y una regla: nadie sale de aquí sin sentirse escuchada."
         />
       </Reveal>
       <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-4">

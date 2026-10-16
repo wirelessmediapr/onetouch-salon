@@ -28,7 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="es"
       className={`h-full scroll-smooth ${instrumentSerif.variable} ${instrumentSans.variable}`}
     >
-      <body className="min-h-full bg-paper font-sans text-ink antialiased">
+      <body className="min-h-full bg-bone font-sans text-ink antialiased">
         {children}
       </body>
     </html>

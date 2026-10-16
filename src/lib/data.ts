@@ -11,37 +11,36 @@ export type ServiceCategory = {
   items: ServiceItem[];
 };
 
-// Copy del lienzo `onetouch/onetouch.pen` — sección 01 — MENÚ DE SERVICIOS.
-// TODO(salón): confirmar las descripciones cortas con el negocio.
+// Copy del lienzo `onetouch/onetouch.pen` — sección 01 — MENÚ DE SERVICIOS (texto verbatim).
 export const serviceCategories: ServiceCategory[] = [
   {
     name: "Cabello",
     from: "desde $40",
     items: [
-      { name: "Corte & estilizado", desc: "Incluye lavado y consulta de look", duration: "60 min", price: "$55" },
-      { name: "Blowout", desc: "Doblado con productos sin sulfatos", duration: "45 min", price: "$40" },
-      { name: "Keratina alisadora", desc: "Alisado progresivo con consulta previa", duration: "150 min", price: "$180" },
-      { name: "Peinado para eventos", desc: "Recogidos y ondas para tu ocasión", duration: "60 min", price: "$75" },
+      { name: "Corte & estilizado", desc: "Lavado, corte a la medida y secado", duration: "60 min", price: "$55" },
+      { name: "Blowout", desc: "Secado con volumen y brillo", duration: "45 min", price: "$40" },
+      { name: "Keratina alisadora", desc: "Elimina el frizz hasta por 4 meses", duration: "150 min", price: "$180" },
+      { name: "Peinado para eventos", desc: "Recogidos, ondas y novias", duration: "60 min", price: "$75" },
     ],
   },
   {
     name: "Color",
     from: "desde $35",
     items: [
-      { name: "Color de raíz", desc: "Retoque de raíz con mezcla profesional", duration: "90 min", price: "$85" },
-      { name: "Balayage a mano alzada", desc: "Iluminación natural pintada a mano", duration: "180 min", price: "$210" },
-      { name: "Babylights", desc: "Mechas finas de efecto luz", duration: "150 min", price: "$165" },
-      { name: "Gloss matizante", desc: "Brillo y tono entre coloraciones", duration: "30 min", price: "$35" },
+      { name: "Color de raíz", desc: "Retoque de un solo tono", duration: "90 min", price: "$85" },
+      { name: "Balayage a mano alzada", desc: "Luz natural, crecimiento suave", duration: "180 min", price: "$210" },
+      { name: "Babylights", desc: "Reflejos finos y luminosos", duration: "150 min", price: "$165" },
+      { name: "Gloss matizante", desc: "Brillo y corrección de tono", duration: "30 min", price: "$35" },
     ],
   },
   {
     name: "Uñas",
     from: "desde $25",
     items: [
-      { name: "Manicura clásica", desc: "Corte, limado y esmalte tradicional", duration: "40 min", price: "$25" },
-      { name: "Manicura en gel", desc: "Esmalte en gel de larga duración", duration: "60 min", price: "$40" },
+      { name: "Manicura clásica", desc: "Limado, cutícula y esmalte", duration: "40 min", price: "$25" },
+      { name: "Manicura en gel", desc: "Acabado brillante hasta 3 semanas", duration: "60 min", price: "$40" },
       { name: "Pedicura spa", desc: "Exfoliación, masaje y esmalte", duration: "60 min", price: "$45" },
-      { name: "Uñas esculpidas", desc: "Extensión y diseño a tu medida", duration: "90 min", price: "$65" },
+      { name: "Uñas esculpidas", desc: "Acrílico o polygel, diseño a elección", duration: "90 min", price: "$65" },
     ],
   },
   {
@@ -49,9 +48,9 @@ export const serviceCategories: ServiceCategory[] = [
     from: "desde $22",
     items: [
       { name: "Facial hidratante", desc: "Limpieza profunda y mascarilla", duration: "60 min", price: "$70" },
-      { name: "Diseño de cejas", desc: "Perfilado con pinza y tintura", duration: "30 min", price: "$22" },
-      { name: "Laminado de cejas", desc: "Fijación y volumen natural", duration: "45 min", price: "$55" },
-      { name: "Lifting de pestañas", desc: "Curvatura duradera sin extensiones", duration: "60 min", price: "$65" },
+      { name: "Diseño de cejas", desc: "Cera o pinza según tu rostro", duration: "30 min", price: "$22" },
+      { name: "Laminado de cejas", desc: "Cejas peinadas y definidas", duration: "45 min", price: "$55" },
+      { name: "Lifting de pestañas", desc: "Curvatura natural por 6 semanas", duration: "60 min", price: "$65" },
     ],
   },
 ];
@@ -70,11 +69,12 @@ export const teamMembers: TeamMember[] = [
   { name: "Sofía Méndez", role: "Uñas & cejas", specialties: "Gel · nail art · laminado de cejas", image: "/images/generated-4.png" },
 ];
 
-export type DayTone = "past" | "default" | "shaded" | "today" | "selected";
+export type DayTone = "past" | "default" | "shaded" | "today" | "selected" | "closed";
 
 export type CalendarDay = { n: number; tone: DayTone };
 
 // Wireframe estático del calendario (octubre 2026), fiel al lienzo.
+// `closed` = agotado/cerrado en el lienzo: gris #6E625A, sin punto visible.
 export const calendarDays: (CalendarDay | null)[] = [
   null, null, null,
   { n: 1, tone: "past" },
@@ -87,27 +87,27 @@ export const calendarDays: (CalendarDay | null)[] = [
   { n: 8, tone: "past" },
   { n: 9, tone: "past" },
   { n: 10, tone: "today" },
-  { n: 11, tone: "default" },
+  { n: 11, tone: "closed" },
   { n: 12, tone: "shaded" },
-  { n: 13, tone: "default" },
+  { n: 13, tone: "closed" },
   { n: 14, tone: "selected" },
   { n: 15, tone: "shaded" },
-  { n: 16, tone: "default" },
+  { n: 16, tone: "closed" },
   { n: 17, tone: "shaded" },
-  { n: 18, tone: "default" },
+  { n: 18, tone: "closed" },
   { n: 19, tone: "shaded" },
   { n: 20, tone: "shaded" },
   { n: 21, tone: "shaded" },
   { n: 22, tone: "shaded" },
   { n: 23, tone: "shaded" },
-  { n: 24, tone: "default" },
-  { n: 25, tone: "default" },
+  { n: 24, tone: "closed" },
+  { n: 25, tone: "closed" },
   { n: 26, tone: "shaded" },
   { n: 27, tone: "shaded" },
   { n: 28, tone: "shaded" },
   { n: 29, tone: "shaded" },
   { n: 30, tone: "shaded" },
-  { n: 31, tone: "default" },
+  { n: 31, tone: "closed" },
 ];
 
 export type TimeSlotState = "free" | "busy" | "selected";
@@ -138,3 +138,10 @@ export const bookingSummary = {
   price: "$210",
   fine: "Sin depósito. Cancela gratis hasta 24 h antes.",
 };
+
+// Opciones de estilista del widget (3 filas en el lienzo; los nombres van solo de pila).
+export const bookingStylistOptions: { name: string; role: string; image?: string }[] = [
+  { name: "Andrea", role: "Colorista senior", image: "/images/generated-3.png" },
+  { name: "Valeria", role: "Colorista", image: "/images/generated-5.png" },
+  { name: "Sin preferencia", role: "Primer horario libre", image: undefined },
+];

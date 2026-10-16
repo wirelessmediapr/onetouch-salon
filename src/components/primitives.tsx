@@ -24,19 +24,17 @@ export function PrimaryButton({
   label,
   href,
   size = "lg",
-  dark = false,
 }: {
   label: string;
   href: string;
   size?: "lg" | "compact";
-  dark?: boolean;
 }) {
   const pad =
     size === "compact"
-      ? `px-[22px] py-3 text-[14px] ${dark ? "border border-dark-line text-bone hover:border-accent-warm" : "border border-line text-ink hover:border-accent"}`
-      : `px-[28px] py-4 text-[16px] bg-accent text-white hover:opacity-90`;
+      ? `px-[22px] py-3 text-[14px]`
+      : `px-[28px] py-4 text-[16px]`;
   return (
-    <Link href={href} className={`inline-flex items-center gap-2 rounded-full font-semibold transition-opacity ${pad}`}>
+    <Link href={href} className={`inline-flex items-center gap-2 rounded-full bg-accent font-semibold text-white transition-opacity hover:opacity-90 ${pad}`}>
       {label}
       <ArrowRight size={size === "compact" ? 16 : 18} strokeWidth={1.8} />
     </Link>
@@ -199,7 +197,7 @@ export function ServiceRow({ name, desc, duration, price }: { name: string; desc
     <div className="flex items-center gap-6 border-b border-line py-[18px]">
       <span className="flex min-w-0 flex-1 flex-col gap-[2px]">
         <span className="text-[16px] text-ink">{name}</span>
-        <span className="text-[13px] text-muted">{desc}</span>
+        <span className="text-[14px] text-muted">{desc}</span>
       </span>
       <span className="shrink-0 text-[13px] text-muted">{duration}</span>
       <span className="w-[64px] shrink-0 text-right font-display text-[28px] leading-none text-ink">{price}</span>
@@ -210,7 +208,7 @@ export function ServiceRow({ name, desc, duration, price }: { name: string; desc
 export function ServiceCategory({ name, from, items }: { name: string; from: string; items: { name: string; desc: string; duration: string; price: string }[] }) {
   return (
     <div>
-      <div className="flex items-end justify-between">
+      <div className="flex items-end justify-between border-b border-ink pb-[12px]">
         <h3 className="font-display text-[34px] leading-tight text-ink">{name}</h3>
         <span className="text-[13px] text-muted">{from}</span>
       </div>
@@ -311,7 +309,7 @@ export function StylistRow({
       </span>
       <span className="flex min-w-0 flex-1 flex-col gap-[2px]">
         <span className="text-[14px] font-semibold text-bone">{name}</span>
-        <span className="text-[13px] text-dark-muted">{role}</span>
+        <span className="text-[12px] text-dark-muted">{role}</span>
       </span>
       <span
         aria-hidden
@@ -326,20 +324,24 @@ export function DayCell({
   selected,
   onSelect,
 }: {
-  day: { n: number; tone: "past" | "default" | "shaded" | "today" | "selected" };
+  day: { n: number; tone: "past" | "default" | "shaded" | "today" | "selected" | "closed" };
   selected: boolean;
   onSelect?: () => void;
 }) {
   const shade = day.tone === "shaded" ? "bg-white/[0.04]" : "";
-  const outline = day.tone === "today" ? "border border-accent" : "";
+  const outline = day.tone === "today" ? "border border-dark-muted" : "";
   const active = selected;
+  const noSlot = day.tone === "past" || day.tone === "closed";
   return (
-    <div className={`relative flex h-[52px] flex-col items-center justify-center gap-[3px] rounded-md ${shade} ${outline} ${active ? "bg-accent" : ""}`}>
-      <span className={`text-[16px] ${active ? "font-semibold text-white" : day.tone === "past" ? "text-day-idle" : "text-bone"}`}>
+    <div className={`relative flex h-[58px] flex-col items-center justify-center gap-[5px] rounded-md ${shade} ${outline} ${active ? "bg-accent" : ""}`}>
+      <span className={`text-[16px] ${active ? "font-semibold text-white" : noSlot ? "text-day-idle" : "text-bone"}`}>
         {day.n}
       </span>
-      <span aria-hidden className={`h-[5px] w-[5px] rounded-full ${active ? "bg-white" : "bg-accent-warm"}`} />
-      <button type="button" onClick={onSelect} disabled={day.tone === "past"} aria-label={`Día ${day.n}`} className="absolute inset-0 rounded-md" />
+      <span
+        aria-hidden
+        className={`h-[4px] w-[4px] rounded-[2px] bg-accent-warm ${noSlot ? "opacity-0" : ""} ${active ? "bg-white" : ""}`}
+      />
+      <button type="button" onClick={onSelect} disabled={noSlot} aria-label={`Día ${day.n}`} className="absolute inset-0 rounded-md" />
     </div>
   );
 }

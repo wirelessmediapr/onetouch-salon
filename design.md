@@ -24,9 +24,9 @@ Las variables con prefijo `ot-*` son el set activo de Onetouch. **Ignorar el set
 
 | Variable | Hex | Uso |
 | --- | --- | --- |
-| `$ot-paper` | `#FBF8F3` | Fondo de página / secciones claras |
-| `$ot-bone` | `#F3EDE4` | Fondo alterno (notas) + texto principal sobre oscuro |
-| `$ot-ink` | `#1A1512` | Texto primario + fondo de secciones oscuras |
+| `$ot-bone` | `#F3EDE4` | **Fondo base del lienzo** (body del sitio) + texto principal sobre oscuro |
+| `$ot-paper` | `#FBF8F3` | Fondo alterno de secciones claras (Services, Results, NextSlotCard) |
+| `$ot-ink` | `#1A1512` | Texto primario + fondo de secciones oscuras (Booking, Footer) |
 | `$ot-ink-soft` | `#4A403A` | Cuerpo de texto (subhead, intro) |
 | `$ot-muted` | `#857870` | Texto secundario en claro |
 | `$ot-line` | `#DDD3C7` | Bordes / reglas en claro |
@@ -45,7 +45,7 @@ Las variables con prefijo `ot-*` son el set activo de Onetouch. **Ignorar el set
 - `#FFFFFF0A` — fondo tenue de días con horarios (filas "hover" del calendario)
 - `#B9502C26` — fila de estilista seleccionada (tinte 15%)
 
-**Convención alternada:** `Services` = `$ot-paper`, `Booking` = `$ot-ink` (oscuro), `Results` = `$ot-paper`. El hero queda sobre el fondo base claro del lienzo.
+**Convención de fondos:** el **fondo base del sitio es `$ot-bone`** (fill del frame landing; Nav y Hero viven sobre él). Secciones con fill propio: `Services` y `Results` = `$ot-paper`, `Booking` y `Footer` = `$ot-ink`. `Team` no tiene fill → hereda bone.
 
 ### 2.2 Tipografía
 
@@ -75,19 +75,19 @@ Nombres de la biblioteca del lienzo (`Onetouch — Componentes`). Todas instanci
 | Componente | Specs clave | Estados / overrides |
 | --- | --- | --- |
 | **Logo** | `Onetouch` (34 display, `$ot-ink`) + `SALON` (11/600, `$ot-muted`), gap 10, align end | — |
-| **Botón primario** | pill r999, fill `$ot-accent`, pad `[16,28]`, gap 8: label 16/600 blanco + icono `arrow-right` 18 blanco | label / icono a gusto; tamaño compacto en nav (pad `[12,22]`, 14px) |
+| **Botón primario** | pill r999, fill `$ot-accent`, pad `[16,28]`, gap 8: label 16/600 blanco + icono `arrow-right` 18 blanco | label / icono a gusto; tamaño compacto en nav (pad `[12,22]`, 14px, mismo fill accent — texto blanco en el lienzo) |
 | **Botón secundario** | fila: label 15/600 `$ot-ink` + icono 16 `$ot-ink` — sin caja | en dark: label/icon `$ot-bone` |
 | **NavLink** | texto 15 `$ot-ink-soft` | hover → `$ot-ink` |
 | **Eyebrow** | regla 32×1 `$ot-ink` + texto 12/600 `$ot-ink`  mayúsculas, gap 10 | en oscuro: ambos `$ot-bone` |
 | **Fact** | value 36 display `$ot-ink` + label 13 `$ot-muted`, gap 2 | valor/label libres |
 | **Section Header** | fila align-end: [kicker 12/600 `$ot-accent` ("01 — SECCIÓN") + título 64 display `$ot-ink`] a la izquierda, intro fixed-width 380–400 16 `$ot-ink-soft` a la derecha | numeración correlativa 01–04; en oscuro intro `$ot-dark-muted` |
 | **NextSlotCard** | card 300 r6 `$ot-paper` pad `[18,22]` gap 10: fila [punto verde 8 `#3E8E5A` + kicker 11/600 `PRÓXIMO HORARIO LIBRE` `$ot-muted`], slot 32 display `$ot-ink`, fila [quién 13 `$ot-ink-soft` + arrow 18 `$ot-accent`] | contenido dinámico de reserva |
-| **Service Row** | pad `[18,0]`, gap 24, align center, **bottom stroke 1** `$ot-line`: [nombre 16 `$ot-ink` + desc 13 `$ot-muted`] (fill) · duración 13 `$ot-muted` · precio 28 display `$ot-ink` | — |
-| **Service Category** | header: categoría 34 display + "desde $X" 13 `$ot-muted` (space-between) + 4×Service Row; ancho ~300 | 4 categorías: Cabello, Color, Uñas, Rostro & cejas |
+| **Service Row** | pad `[18,0]`, gap 24, align center, **bottom stroke 1** `$ot-line`: [nombre 16 `$ot-ink` + desc 14 `$ot-muted`] (fill) · duración 13 `$ot-muted` · precio 28 display `$ot-ink` | — |
+| **Service Category** | header: categoría 34 display `$ot-ink` + "desde $X" 13 `$ot-muted` (space-between, pb 12) + **regla inferior 1 `$ot-ink`** + 4×Service Row; ancho ~300 | 4 categorías: Cabello, Color, Uñas, Rostro & cejas |
 | **ConsultNote** | r6 `$ot-bone` pad `[24,28]` space-between align-center: [icon + texto 16] | enlace: 15/600 + arrow 16, `$ot-accent` |
 | **Paso (booking step)** | fila gap 10 align-center: badge (28, r999, **1-stroke `$ot-dark-line`**, num 12 `$ot-dark-muted`) + label 14 `$ot-bone` | hecho: icon `check` `#E08A66`; **actual**: badge fill `$ot-accent`, num blanco 12/600, label 14/600 |
-| **StylistRow** | r6 pad `[10,12]` gap 12 align-center: avatar 40 r999 (imagen) + [nombre 14/600 + especialidad 13] + radio 18 r999 | **seleccionada**: fila bg `#B9502C26`, radio stroke **5** `$ot-accent`; sin preferencia: avatar fill `$ot-dark-line` |
-| **DayCell** | 44 r6 center gap 2: num 16 + dot 5 `#E08A66` | **seleccionado**: bg `$ot-accent` + num blanco 16/600 + dot blanco; **hoy**: stroke 1 `$ot-accent`; **disponible-fila**: bg `#FFFFFF0A`; **cerrado**: num `#6E625A`, sin dot |
+| **StylistRow** | r6 pad `[10,12]` gap 12 align-center: avatar 40 r999 (imagen) + [nombre 14/600 `$ot-bone` + especialidad 12 `$ot-dark-muted`] + radio 18 r999 | **seleccionada**: fila bg `#B9502C26`, radio stroke **5** `$ot-accent`; sin preferencia: avatar fill `$ot-dark-line` |
+| **DayCell** | 58 r6 center gap 5: num 16 `$ot-bone` + dot 4 `#E08A66` | **seleccionado**: bg `$ot-accent` + num blanco 16/600 + dot blanco; **hoy**: stroke 1 `$ot-dark-muted` (dot visible); **disponible-fila**: bg `#FFFFFF0A` (dot visible); **pasado / agotado-cerrado**: num `#6E625A` + dot `opacity 0` (sin punto) + celda deshabilitada |
 | **TimeChip** | r6 pad `[10,0]` center width propio: hora 14 | **disponible**: stroke 1 `$ot-dark-line`, texto `$ot-bone`; **seleccionada**: bg `$ot-accent`, blanco 14/600; **ocupado**: texto `#5E534C` |
 | **TeamCard** | ancho ~300: retrato fill_container h340 r4 (imagen cover) + [nombre 30 display, rol 13/600 `$ot-accent`, especialidades 14 `$ot-muted`] + BookLink: fila gap 8, **bottom stroke 1**, pad `[0,0,4,0]`: 14/600 `$ot-ink` + arrow 16 `$ot-ink` | persona dinámica |
 | **QuoteBlock** | ancho 420 vertical gap 16: apertura `“` 120 display `$ot-accent` + cita 40 display `$ot-ink` (fixed-width) + [nombre 15/600 + detalle 14 `$ot-muted`] | — |
@@ -96,8 +96,8 @@ Nombres de la biblioteca del lienzo (`Onetouch — Componentes`). Todas instanci
 
 ### Blocs decorativos confirmados del lienzo (no reutilizables: one-offs con layout propio)
 
-- **Widget de reserva** (`$ot-dark-card` r8 stroke `$ot-dark-line`): Steps (badges + connectors 48×1) arriba → Columns [Selection | Calendar | Times] con strokes laterales → Summary (TotalRow + CTA + fine print 12).
-- **Calendario:** header [mes 34 display + 2 botones chevron r999 stroke 1], weekdays 11/600, semanas 4 celdas, legend (dot = libre, muestra = agotado/cerrado, caja = hoy).
+- **Widget de reserva** (`$ot-dark-card` r8 stroke `$ot-dark-line`): Steps (badges + connectors 48×1) arriba → Columns [Selection | Calendar | Times] con strokes laterales → Summary (TotalRow + CTA + fine print 12). Tarjeta de servicio: nombre 15/600 `$ot-bone` + botón `Cambiar` 13 `#E08A66` a la derecha + meta 13 `$ot-dark-muted` (`180 min · $210`).
+- **Calendario:** header [mes 34 display + 2 botones chevron r999 stroke 1], weekdays 11/600, semanas 4 celdas, legend (dot 4 = libre, muestra = agotado/cerrado, caja stroke `$ot-dark-muted` = hoy). Filas de estilista del widget: Andrea (Colorista senior), Valeria (Colorista), Sin preferencia (Primer horario libre).
 - **Collage de resultados:** gran img + stack 340 de dos imgs, gap 16, radios 4.
 - **Footer:** CTA final (72 display + botón) / Info columns / **Giant Wordmark** `Onetouch` 300 display color `$ot-dark-card` / bottom bar (13 `$ot-dark-muted` + 3 iconos sociales 18 `$ot-dark-muted`).
 
@@ -109,7 +109,7 @@ Nombres de la biblioteca del lienzo (`Onetouch — Componentes`). Todas instanci
 - Hero: eyebrow `SALÓN DE BELLEZA · ESTUDIO DE COLOR`; headline `Un solo toque / lo cambia todo.` (2ª línea `$ot-accent`); subhead ya redactado (reserva en 1 minuto, sin llamadas); CTAs `Reservar mi cita` / `Ver servicios y precios`; facts `4.9 · 320 reseñas en Google`, `9 años`, `Hoy · abierto hasta las 7 PM`
 - Secciones: `01 — MENÚ DE SERVICIOS` (72px title + intro de precios transparentes), `02 — RESERVAS EN LÍNEA`, `03 — EL EQUIPO`, `04 — RESULTADOS`
 - Servicios (completo en lienzo): Cabello desde $40; Color desde $35; Uñas desde $25; Rostro & cejas desde $22
-- Footer: `¿Lista para tu próximo cambio?` + `Reservar mi cita`; fantasma de contacto placeholder: `(000) 000-0000`, `hola@onetouchsalon.com`, `@onetouchsalon`; **pendiente reemplazar datos reales del salón**
+- Footer: `¿Lista para tu próximo cambio?` + `Reservar mi cita`; columnas Visítanos (`Calle Ejemplo 123` / `Ciudad, PR 00000` / `Cómo llegar ↗` en `#E08A66`), Horario (`Lun – Sáb  9:00 AM – 7:00 PM` / `Domingo  cerrado`), Contacto (`(000) 000-0000`, `hola@onetouchsalon.com`, `@onetouchsalon`); bottom bar `© 2026 Onetouch Salon. Todos los derechos reservados.`; **pendiente reemplazar datos reales del salón**
 
 ---
 
