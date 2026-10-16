@@ -39,6 +39,7 @@ const socials = [
 export function Footer() {
   return (
     <footer id="contacto" className="bg-ink px-6 pb-10 pt-20 md:px-20 md:pt-[120px]">
+      <div className="ot-container">
       <div className="grid gap-16 lg:grid-cols-[1fr_auto] lg:gap-20">
         <Reveal>
           <h2 className="max-w-[640px] font-display text-[clamp(44px,5.5vw,72px)] leading-[1.02] text-bone">
@@ -57,7 +58,7 @@ export function Footer() {
 
       <p
         aria-hidden
-        className="mt-16 select-none text-center font-display text-[clamp(96px,20vw,300px)] leading-[0.9] text-dark-card"
+        className="mt-16 overflow-x-clip select-none text-center font-display text-[clamp(96px,20vw,300px)] leading-[0.9] text-dark-card"
       >
         Onetouch
       </p>
@@ -78,6 +79,7 @@ export function Footer() {
             </a>
           ))}
         </div>
+      </div>
       </div>
     </footer>
   );

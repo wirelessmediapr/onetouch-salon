@@ -5,7 +5,8 @@ import { serviceCategories } from "@/lib/data";
 
 export function Services() {
   return (
-    <section id="servicios" className="flex flex-col gap-[72px] bg-paper px-6 py-20 md:px-20 md:py-[120px]">
+    <section id="servicios" className="bg-paper px-6 py-20 md:px-20 md:py-[120px]">
+      <div className="ot-container flex flex-col gap-[72px]">
       <Reveal>
         <SectionHeader
           index="01 — Menú de servicios"
@@ -31,6 +32,7 @@ export function Services() {
             <ConsultNote />
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

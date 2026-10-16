@@ -54,7 +54,8 @@ export function Booking() {
     stylist === "Sin preferencia" ? "nuestro equipo" : stylist.split(" ")[0];
 
   return (
-    <section id="reservas" className="flex flex-col gap-14 bg-ink px-6 py-20 md:px-20 md:py-[120px]">
+    <section id="reservas" className="bg-ink px-6 py-20 md:px-20 md:py-[120px]">
+      <div className="ot-container flex flex-col gap-14">
       <Reveal>
         <SectionHeader
           index="02 — Reservas en línea"
@@ -197,6 +198,7 @@ export function Booking() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ export function Results() {
   const [big, ...stack] = collage;
   return (
     <section id="resultados" className="bg-paper px-6 py-20 md:px-20 md:py-[120px]">
-      <div className="grid gap-16 lg:grid-cols-[440px_1fr] lg:gap-20">
+      <div className="ot-container grid gap-16 lg:grid-cols-[440px_1fr] lg:gap-20">
         <Reveal className="lg:flex lg:flex-col lg:justify-between">
           <div className="lg:mt-2">
             <QuoteBlock

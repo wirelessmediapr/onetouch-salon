@@ -10,7 +10,8 @@ const links = [
 
 export function Nav() {
   return (
-    <header className="flex items-center justify-between px-6 py-7 md:px-20">
+    <header className="px-6 py-7 md:px-20">
+      <div className="ot-container flex items-center justify-between">
       <Logo />
       <nav aria-label="Principal" className="hidden items-center gap-10 md:flex">
         {links.map((link) => (
@@ -20,6 +21,7 @@ export function Nav() {
         ))}
       </nav>
       <PrimaryButton label="Reservar cita" href="#reservas" size="compact" />
+      </div>
     </header>
   );
 }

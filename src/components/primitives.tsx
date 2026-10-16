@@ -199,7 +199,7 @@ export function ServiceRow({ name, desc, duration, price }: { name: string; desc
     <div className="flex items-center gap-6 border-b border-line py-[18px]">
       <span className="flex min-w-0 flex-1 flex-col gap-[2px]">
         <span className="text-[16px] text-ink">{name}</span>
-        <span className="truncate text-[13px] text-muted">{desc}</span>
+        <span className="text-[13px] text-muted">{desc}</span>
       </span>
       <span className="shrink-0 text-[13px] text-muted">{duration}</span>
       <span className="w-[64px] shrink-0 text-right font-display text-[28px] leading-none text-ink">{price}</span>

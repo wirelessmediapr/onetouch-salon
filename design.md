@@ -62,6 +62,7 @@ Las variables con prefijo `ot-*` son el set activo de Onetouch. **Ignorar el set
 - **Radios:** imágenes `4` · cards/notas/chips `6` · widget grande `8` · pastillas (buttons/badges/radio) `999` · muestra del legend `3`.
 - **Bordes:** siempre `1`, solo `strokeWidth` por lado (`bottom` para filas de menú y Book Link; `right`/`left` para columnas del widget; `top` para summary). Color = `$ot-line` en claro, `$ot-dark-line` en oscuro.
 - **Padding de secciones:** `[120, 80]` (secciones) · hero `[32, 80, 88, 80]` · nav `[28, 80]` · footer `[120, 80, 40, 80]`.
+- **Contenedor:** el contenido vive en un `ot-container` interno (`max-width: 1280px`, centrado) — equivale a 1440 − 2×80. Los **fondos** (paper/ink) siguen full-bleed a todo el ancho de la ventana. En código: las 7 secciones aplican `ot-container` de `src/app/globals.css`.
 - **Gaps:** `48–80` entre bloques; `24–32` dentro de grupos; `8–10` en texto.
 - **Sombras/gradientes/blur:** prohibidos. El efecto "premium" sale del contraste papel/tinta, el serif gigante y el kicker.
 

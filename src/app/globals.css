@@ -29,3 +29,10 @@
     height: 100%;
   }
 }
+
+/* Content cap 1280 (= 1440 canvas − 2×80 padding); backgrounds stay full-bleed. */
+@utility ot-container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1280px;
+}

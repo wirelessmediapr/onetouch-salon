@@ -10,7 +10,7 @@ const facts = [
 export function Hero() {
   return (
     <section className="px-6 pb-[88px] pt-8 md:px-20">
-      <div className="grid gap-[72px] lg:grid-cols-[1fr_600px]">
+      <div className="ot-container grid gap-[72px] lg:grid-cols-[1fr_600px]">
         <div className="flex flex-col gap-20">
           <div className="flex flex-col">
             <Eyebrow>Salón de belleza · Estudio de color</Eyebrow>
