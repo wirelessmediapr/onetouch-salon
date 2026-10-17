@@ -44,6 +44,8 @@ Las variables con prefijo `ot-*` son el set activo de Onetouch. **Ignorar el set
 - `#FFFFFF` — texto sobre acento
 - `#FFFFFF0A` — fondo tenue de días con horarios (filas "hover" del calendario)
 - `#B9502C26` — fila de estilista seleccionada (tinte 15%)
+- `#B9502C14` — fila seleccionada en listas del admin (tinte 8%: miembros del equipo, clientas)
+- `#FFFFFF66` — chip "libre" del board de agenda (relleno tenue sobre `$ot-bone`)
 
 **Convención de fondos:** el **fondo base del sitio es `$ot-bone`** (fill del frame landing; Nav y Hero viven sobre él). Secciones con fill propio: `Services` y `Results` = `$ot-paper`, `Booking` y `Footer` = `$ot-ink`. `Team` no tiene fill → hereda bone.
 
@@ -97,6 +99,10 @@ Nombres de la biblioteca del lienzo (`Onetouch — Componentes`). Todas instanci
 | **Estado Badge** | pill r999 pad `[4,10]`: label 11/600 mayúsculas | **pendiente** `$ot-accent` sobre `#B9502C26` · **confirmada** `$ot-success` sobre `#3E8E5A26` · **completada** `$ot-muted` sobre `#85787026` · **cancelada** `$ot-disabled` sobre `#6E625A26` |
 | **Filter Chip** | pill r999 pad `[7,14]`, stroke 1 `$ot-line`: label 13 `$ot-ink-soft` | **activo**: fill/stroke `$ot-ink` + label `$ot-bone` 13/600 |
 | **Appointment Card** | card r6 pad `[12,14]` gap 6, fill `$ot-paper` stroke `$ot-line`, width `fill_container(280)`: fila [hora 12/600 `$ot-ink-soft` + precio 14 display `$ot-ink`] (space-between) + clienta 15/600 `$ot-ink` + servicios 12 `$ot-muted` + Estado Badge | clienta/servicios/precio dinámicos; badge por estado |
+| **Toggle** | pill 40×22 r999 pad 2 + knob (ellipse 18 `#FFFFFF`) | **activo (default)**: fill `$ot-accent`, knob al final; **apagado**: fill `$ot-line` + `justifyContent: start` |
+| **Input Field** | vertical gap 8 width fill: label 12/600 `$ot-ink-soft` + box r6 fill `$ot-paper` stroke `$ot-line` pad `[12,14]`: placeholder 14 `$ot-muted` | label/placeholder a gusto (login, confirmar) |
+| **Service Admin Row** | fila gap 16 align-center, pad `[10,0]`, **bottom stroke 1** `$ot-line`: [nombre 15/600 `$ot-ink` + desc 12 `$ot-muted`] (fill) · categoría 13 `$ot-muted` (110) · duración 13 `$ot-muted` (80) · precio 15/600 `$ot-ink` (70) · Toggle 40 · `Editar` 13 `$ot-accent` (50) | contenido por servicio; toggle apagado = inactivo |
+| **Stat Card** | card r6 `$ot-paper` stroke `$ot-line` pad `[18,20]` gap 6, width fill: label 11/600 `$ot-muted` mayúsculas + value 32 display `$ot-ink` + delta 12 (`$ot-success` o `$ot-muted`) | valores del rango de métricas |
 
 ### Blocs decorativos confirmados del lienzo (no reutilizables: one-offs con layout propio)
 
@@ -145,10 +151,20 @@ Reglas al generar nuevas con **fal.ai**:
 
 Vive en el frame **"Onetouch — Admin"** del lienzo (hermano de la landing). Pantallas 1440×900 con `clip: true`. Datos de ejemplo en el diseño; el contenido real vendrá de Supabase (ver `docs/backend-plan.md`).
 
-**Shell — "Admin — Agenda (día)":**
+**Shell compartido** (todas las pantallas del admin excepto Acceso):
 
 - **Sidebar** 240 fill `$ot-ink`, pad `[28,16,20,16]`, space-between: Logo variante vertical (wordmark `$ot-bone` + sub `SALÓN · ADMIN` `$ot-dark-muted`), caption `GESTIÓN` 11/600 `$ot-dark-muted`, 5 Admin Nav Items (Agenda · Servicios · Equipo · Clientes · Métricas), abajo: divider `$ot-dark-line` + usuaria (avatar 34 r999 "OT" + nombre 13/600 `$ot-bone` + email 11 `$ot-dark-muted`) + `Cerrar sesión` 12 con icono `log-out`.
-- **Main** fill `$ot-bone`, pad `[28,40,40,40]` gap 24: fila título (display 40 + sub 14 `$ot-ink-soft`) + Primary Button compacto (`Nueva cita`, pad `[12,22]`, label 14, icono `plus` 16); fila controles (Filter Chips de estilista + nav de día: 2 botones circulares 36 stroke `$ot-line` con `chevron-left/right` + chip `Hoy`); **board** 4 columnas gap 16: header [avatar 30 r999 imagen + nombre 13/600 + `N citas` 11 `$ot-muted`] + Appointment Cards cronológicas intercaladas con chips "libre" (pad `[8,14]`, r6, stroke `$ot-line`, fill `#FFFFFF66`, texto 12 `$ot-muted` centrado).
-- Componentes del admin: row **"Admin Row"** de la biblioteca ("Onetouch — Componentes"). Colores nuevos registrados en §2.1.
+- **Main** fill `$ot-bone`, pad `[28,40,40,40]` gap 24: fila título (display 40 + sub 14 `$ot-ink-soft`) + Primary Button compacto a la derecha según pantalla (pad `[12,22]`, label 14, icono `plus` 16).
 
-**Inventario de pantallas:** ✅ Agenda (día) · ⏳ Login, Servicios, Equipo y horarios, Clientes, Métricas · ⏳ pasos 1 (Servicio), 4 (Confirmar) y éxito del booking público en el frame landing (paso 3 existente se reutiliza con datos reales).
+**Pantallas** (1440×900, `clip: true`; datos de ejemplo — el contenido real viene de Supabase):
+
+- **"Admin — Acceso"** (login, sin sidebar): split 620 ink + form. Izquierda: Logo bone, tagline `Un solo toque / lo cambia todo.` 56 display (2ª línea `$ot-accent-warm`), sub 15 `$ot-dark-muted` fixed-width 420, copyright 12 al pie. Derecha `$ot-bone` centrada: columna 380 gap 24 — eyebrow `ACCESO AL PANEL`, título `Bienvenida de nuevo.` 40 display, sub 14, 2 Input Fields (Correo / Contraseña), Botón primario full-width `Entrar`, enlace 13/600 `$ot-accent` `¿Olvidaste tu contraseña?`.
+- **"Admin — Agenda (día)"**: fila controles (Filter Chips de estilista + nav de día: 2 botones circulares 36 stroke `$ot-line` con `chevron-left/right` + chip `Hoy`); **board** 4 columnas gap 16: header [avatar 30 r999 imagen + nombre 13/600 + `N citas` 11 `$ot-muted`] + Appointment Cards cronológicas intercaladas con chips "libre" (pad `[8,14]`, r6, stroke `$ot-line`, fill `#FFFFFF66`, texto 12 `$ot-muted` centrado).
+- **"Admin — Servicios"**: chips de categoría (Todas activo · Cabello · Color · Uñas · Rostro & cejas); tabla: header 11/600 `$ot-muted` mayúsculas (SERVICIO · CATEGORÍA · DURACIÓN · PRECIO · ACTIVO · editar) + 10 Service Admin Rows (Gloss matizante apagado, para mostrar el estado inactivo) + nota `Mostrando 10 de 16 servicios` + `Ver todos` 12/600 `$ot-accent`.
+- **"Admin — Equipo"**: 2 columnas — lista de 4 miembros (card r6 pad `[12,14]` stroke `$ot-line`: avatar 42 + nombre 15/600 + rol 12 `$ot-muted` + `5 días` 12; **seleccionada**: fill `#B9502C14` + stroke `$ot-accent`) + editor card paper r6 height fill: `Horario de <nombre>` 22 display + sub 13 + 7 filas de día (label 13/600 w90 + chip turno r6 stroke `9:00 AM – 7:00 PM` 13, domingo `Cerrado` `$ot-disabled`, icono `pencil` 15 `$ot-muted`), divider lógico + `Bloqueos y vacaciones` (fecha 13/600 w110 + desc 13 `$ot-muted`) + `+ Añadir bloqueo` 13/600 `$ot-accent`.
+- **"Admin — Clientes"**: search box (icono `search` 16 + placeholder 14 `$ot-muted`, r6 paper stroke `$ot-line`); 2 columnas — tabla CLIENTA · ÚLTIMA VISITA · CITAS (nombre 15/600 + teléfono 12 `$ot-muted`; **fila seleccionada** fill `#B9502C14`) + panel detalle 360 (card paper r6): nombre 22 display + contacto 13 + divider + 3 facts (valor 22 display + label 11/600: VISITAS · TOTAL · NO-SHOW) + `Notas` 15/600 (fórmula de color 14 `$ot-ink-soft` fixed-width) + `Últimas visitas` (fecha 13/600 w80 · servicio 13 · precio 13/600).
+- **"Admin — Métricas"**: 4 Stat Cards (Citas completadas 128 · Ingresos $9,840 · Cancelaciones 5% · Clientas nuevas 34); fila: card `Citas por día` (14 barras gap 10 `$ot-accent-soft` h 88–156, hoy `$ot-accent` sólido, labels 10 `$ot-muted` alternados) + card 380 `Servicios más pedidos` (5 filas: nombre 13 `$ot-ink-soft` + count 13/600 + barra 6 r999 `$ot-accent-soft`); card `Ocupación por estilista` (avatar 26 + nombre 13/600 w110 + barra 6 r999 `$ot-ink` + % 13/600 right).
+
+**Componentes del admin:** rows **"Admin Row"** (Admin Nav Item, Estado Badge, Filter Chip, Appointment Card) y **"Admin Row 2"** (Toggle, Input Field, Service Admin Row, Stat Card) de la biblioteca. Colores nuevos registrados en §2.1.
+
+**Inventario de pantallas:** ✅ Acceso · Agenda (día) · Servicios · Equipo · Clientes · Métricas · ⏳ pasos 1 (Servicio), 4 (Confirmar) y éxito del booking público en el frame landing (paso 3 existente se reutiliza con datos reales).
