@@ -1,6 +1,8 @@
 # Backend & Admin — Plan de fase
 
-> Decisiones cerradas el 2026-10-16. Este documento define los **datos y reglas** de la fase de reservas reales + panel de admin. El **diseño de UI** vive primero en `onetouch/onetouch.pen` (frame "Onetouch — Admin") y se refleja en `src/`.
+> Decisiones cerradas el 2026-10-16. Este documento define los **datos y reglas** de la fase de reservas reales + panel de admin. El **diseño de UI** vive primero en `onetouch/onetouch.pen` (frames "Onetouch — Admin" y "Onetouch — Reservas (flujo)") y se refleja en `src/`.
+>
+> **Estado al cierre del 2026-10-16:** diseño completo en el lienzo y en `design.md` (landing `2444a1d`, admin `5ef7c85`, flujo de reserva `4520edc`). Retomar en el **milestone 3**: el usuario crea el proyecto Supabase en el dashboard y pasa el **project ref**; luego el agente escribe migraciones + seed.
 
 ## Decisiones
 
@@ -50,8 +52,8 @@
 ## Milestones
 
 1. ✅ Decisiones + schema (este doc).
-2. ⏳ Canvas: frame "Onetouch — Admin" (shell, login, agenda, servicios, equipo, clientes, métricas) + pasos faltantes del booking público (1 Servicio con canasta, 4 Confirmar, éxito).
-3. ⏳ Proyecto Supabase + migraciones + seed (servicios/equipo desde `src/lib/data.ts`).
+2. ✅ Canvas: frame "Onetouch — Admin" completo (shell, login, agenda, servicios, equipo, clientes, métricas — commit `5ef7c85`) + flujo de reserva público (paso 1 multi-servicio, paso 4 confirmar, éxito — commit `4520edc`, `design.md` §8).
+3. ⏳ **Siguiente** — Proyecto Supabase: el **usuario** lo crea en el dashboard y pasa el project ref; el agente escribe migraciones (`supabase/migrations/`) + seed (servicios/equipo desde `src/lib/data.ts`).
 4. ⏳ Motor de disponibilidad + server actions (crear/cancelar/reagendar).
 5. ⏳ Widget público real (4 pasos).
 6. ⏳ Admin UI completa (auth + 5 módulos).
@@ -60,7 +62,7 @@
 
 ## Cuentas por crear (cuando toque)
 
-- **Supabase**: proyecto nuevo (2 min). Guardar URL + anon key en `.env.local` / Vercel env; service role key solo servidor.
+- **Supabase**: proyecto nuevo (2 min) — al crearlo, el usuario pasa el **project ref** (código de la URL del dashboard) y la región; las **keys** (anon / service role) se pegan directo en `.env.local` / Vercel env **sin mostrarlas en el chat** (ver guard de secretos en `AGENTS.md`). Service role key solo en servidor.
 - **Resend**: verificar dominio `onetouch.salon` (DNS).
 - **Twilio**: número PR + registro A2P 10DLC.
 
