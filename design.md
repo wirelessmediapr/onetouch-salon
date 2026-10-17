@@ -167,4 +167,16 @@ Vive en el frame **"Onetouch — Admin"** del lienzo (hermano de la landing). Pa
 
 **Componentes del admin:** rows **"Admin Row"** (Admin Nav Item, Estado Badge, Filter Chip, Appointment Card) y **"Admin Row 2"** (Toggle, Input Field, Service Admin Row, Stat Card) de la biblioteca. Colores nuevos registrados en §2.1.
 
-**Inventario de pantallas:** ✅ Acceso · Agenda (día) · Servicios · Equipo · Clientes · Métricas · ⏳ pasos 1 (Servicio), 4 (Confirmar) y éxito del booking público en el frame landing (paso 3 existente se reutiliza con datos reales).
+**Inventario de pantallas:** ✅ Acceso · Agenda (día) · Servicios · Equipo · Clientes · Métricas · ✅ pasos 1 (Servicio), 4 (Confirmar) y éxito del booking público (ver §8).
+
+---
+
+## 8. Flujo de reserva público (borrador 2026-10-16)
+
+Vive en el frame **"Onetouch — Reservas (flujo)"** (hermano del admin): fila de 3 pantallas 1440×900 sobre ink con el widget centrado (1280 ancho). Cada pantalla es una copia del widget del paso 3 de la landing (card `$ot-dark-card` r8) con contenido propio; el **Summary (Total Row + CTA + Fine Print) vive dentro de la columna Times** y se reutiliza en todas las variantes.
+
+- **"Reserva — Paso 1 (Servicio)"** — multi-servicio: steps [1 actual `$ot-accent`, 2–4 pendientes]; izquierda `TU SELECCIÓN` (items de canasta: nombre 15/600 `$ot-bone` + `x` + meta 12 `$ot-dark-muted`, bottom stroke) + hint; centro `Añadir servicios` por categorías (`CABELLO`/`COLOR`/`UÑAS` 11/600 ls 1.8 + filas: nombre 14 + meta 12 + precio 14/600 + chip 24 r999 `+` `#E08A66`); derecha `RESUMEN` (filas label 13 `$ot-dark-muted`/valor 13/600) + total `$245` 34 display + CTA `Elegir estilista` + fine print.
+- **"Reserva — Paso 4 (Confirmar)"** — steps [1–3 hechos con check `#E08A66`, 4 actual]; izquierda `TU CITA` (fecha 15/600 + hora 13 + estilista con avatar 34 + servicios con precio); centro `Tus datos`: 4 campos (label 11/600 ls 1.2 + box r6 fill `#FFFFFF0A` stroke `$ot-dark-line` pad `[10,14]` valor 13); derecha día 28 display + sub 13 ("1:30 – 5:00 PM · 3 h 30 min con Andrea") + resumen + CTA `Confirmar cita`.
+- **"Reserva — Éxito"** — card sin steps ni columnas: círculo 64 r999 `#B9502C26` + check 26 `#E08A66`, título 40 display `¡Listo! Tu cita está reservada.`, sub 14 `$ot-dark-muted`, tarjeta de detalle 420 (servicios 13 + divider + `Total` con precio 24 display), nota de SMS/email 13 y link de cancelación 13/600 `#E08A66`. Alto del card 651 (padding vertical 140) — centrado exacto en la pantalla.
+
+**Notas técnicas (lienzo):** los steps se reconstruyen por copia desde los originales del widget de la landing (hecho = `dEroY`, actual = `c1dIw`, pendiente = `XX3VD`); ojo: el layout del canvas no siempre invalida el cache de tamaño del padre al encoger un hijo copiado — verificar centrado con bounds.

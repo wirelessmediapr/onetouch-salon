@@ -14647,6 +14647,2460 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "PPFfL",
+      "x": 2431,
+      "y": 4875,
+      "name": "Onetouch — Reservas (flujo)",
+      "clip": true,
+      "width": 4576,
+      "fill": "$ot-bone",
+      "layout": "vertical",
+      "gap": 64,
+      "padding": 64,
+      "children": [
+        {
+          "type": "frame",
+          "id": "B0bhP",
+          "name": "Booking Row",
+          "width": "fill_container",
+          "gap": 64,
+          "children": [
+            {
+              "type": "frame",
+              "id": "HbNgE",
+              "name": "Reserva — Paso 1 (Servicio)",
+              "clip": true,
+              "width": 1440,
+              "height": 900,
+              "fill": "$ot-ink",
+              "layout": "vertical",
+              "padding": [
+                0,
+                80
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mhGn8",
+                  "name": "Widget — Paso 1",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$ot-dark-card",
+                  "cornerRadius": 8,
+                  "stroke": "$ot-dark-line",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "s5ugQ",
+                      "name": "Steps",
+                      "width": "fill_container",
+                      "stroke": "$ot-dark-line",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "gap": 40,
+                      "padding": [
+                        22,
+                        32
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "zUkWA",
+                          "name": "Step 1",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "d06Gp1",
+                              "name": "Badge",
+                              "width": 26,
+                              "height": 26,
+                              "fill": "$ot-accent",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "lmKWB",
+                                  "name": "Num",
+                                  "fill": "#FFFFFF",
+                                  "content": "3",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "D4sV8a",
+                              "name": "Label",
+                              "fill": "$ot-bone",
+                              "content": "Fecha y hora",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "Z8EjG",
+                          "name": "Connector",
+                          "fill": "$ot-dark-line",
+                          "width": 48,
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "HZGVi",
+                          "name": "Step 2",
+                          "opacity": 0.45,
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "QyO3C",
+                              "name": "Badge",
+                              "width": 26,
+                              "height": 26,
+                              "cornerRadius": 999,
+                              "stroke": "$ot-dark-muted",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "O2NmOE",
+                                  "name": "Num",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "4",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "Jwbj5",
+                              "name": "Label",
+                              "fill": "$ot-bone",
+                              "content": "Confirmar",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "w1ftR",
+                          "name": "Connector",
+                          "fill": "$ot-dark-line",
+                          "width": 48,
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "etYrK",
+                          "name": "Step 3",
+                          "opacity": 0.45,
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Uq8xp",
+                              "name": "Badge",
+                              "width": 26,
+                              "height": 26,
+                              "cornerRadius": 999,
+                              "stroke": "$ot-dark-muted",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "zlVBr",
+                                  "name": "Num",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "4",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "HTcHe",
+                              "name": "Label",
+                              "fill": "$ot-bone",
+                              "content": "Confirmar",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "dJyfB",
+                          "name": "Connector",
+                          "fill": "$ot-dark-line",
+                          "width": 48,
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "i2g8lp",
+                          "name": "Step 4",
+                          "opacity": 0.45,
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "DC3eM",
+                              "name": "Badge",
+                              "width": 26,
+                              "height": 26,
+                              "cornerRadius": 999,
+                              "stroke": "$ot-dark-muted",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "IUDca",
+                                  "name": "Num",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "4",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "gqOVF",
+                              "name": "Label",
+                              "fill": "$ot-bone",
+                              "content": "Confirmar",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "u5Y49b",
+                      "name": "Columns",
+                      "width": "fill_container",
+                      "height": 580,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "f2JkYr",
+                          "name": "Selection",
+                          "width": 320,
+                          "height": "fill_container",
+                          "stroke": "$ot-dark-line",
+                          "strokeWidth": {
+                            "right": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 28,
+                          "padding": 32,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "WBIdz",
+                              "name": "Block Label",
+                              "fill": "$ot-dark-muted",
+                              "content": "TU SELECCIÓN",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 11,
+                              "fontWeight": "600",
+                              "letterSpacing": 1.8
+                            },
+                            {
+                              "type": "frame",
+                              "id": "rVPuy",
+                              "name": "Basket",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 14,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Gnhk2",
+                                  "name": "Item — Balayage a mano alzada",
+                                  "width": "fill_container",
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "layout": "vertical",
+                                  "gap": 4,
+                                  "padding": [
+                                    8,
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "WPvl2",
+                                      "name": "Item Top",
+                                      "width": "fill_container",
+                                      "justifyContent": "space_between",
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "JoVhj",
+                                          "name": "Item Name",
+                                          "fill": "$ot-bone",
+                                          "content": "Balayage a mano alzada",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 15,
+                                          "fontWeight": "600"
+                                        },
+                                        {
+                                          "type": "icon",
+                                          "id": "slQjG",
+                                          "name": "Remove",
+                                          "width": 14,
+                                          "height": 14,
+                                          "icon": "x",
+                                          "library": "lucide",
+                                          "fill": "$ot-dark-muted"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "j517n",
+                                      "name": "Item Meta",
+                                      "fill": "$ot-dark-muted",
+                                      "content": "180 min · $210",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 12,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "vFGjr",
+                                  "name": "Item — Gloss matizante",
+                                  "width": "fill_container",
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "layout": "vertical",
+                                  "gap": 4,
+                                  "padding": [
+                                    8,
+                                    0
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "c9j3G",
+                                      "name": "Item Top",
+                                      "width": "fill_container",
+                                      "justifyContent": "space_between",
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "WvXfP",
+                                          "name": "Item Name",
+                                          "fill": "$ot-bone",
+                                          "content": "Gloss matizante",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 15,
+                                          "fontWeight": "600"
+                                        },
+                                        {
+                                          "type": "icon",
+                                          "id": "K732l",
+                                          "name": "Remove",
+                                          "width": 14,
+                                          "height": 14,
+                                          "icon": "x",
+                                          "library": "lucide",
+                                          "fill": "$ot-dark-muted"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "G41o77",
+                                      "name": "Item Meta",
+                                      "fill": "$ot-dark-muted",
+                                      "content": "30 min · $35",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 12,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "kms8C",
+                              "name": "Basket Hint",
+                              "fill": "$ot-dark-muted",
+                              "content": "Añade más servicios del menú",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "IsNFy",
+                          "name": "Calendar",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 20,
+                          "padding": [
+                            32,
+                            40
+                          ],
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "ZSnYT",
+                              "name": "Menu Head",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "MRbsJ",
+                                  "name": "Menu Title",
+                                  "fill": "$ot-bone",
+                                  "content": "Añadir servicios",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 16,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "G17LzT",
+                                  "name": "Menu Sub",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "Toca + para sumarlos a tu cita",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "tOqWn",
+                              "name": "Group — CABELLO",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "jqNNz",
+                                  "name": "Group Label",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "CABELLO",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1.8
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "NEvXv",
+                                  "name": "Item — Corte & estilizado",
+                                  "width": "fill_container",
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "gap": 12,
+                                  "padding": [
+                                    8,
+                                    0
+                                  ],
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "G6LmTD",
+                                      "name": "Item Info",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": 2,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "ZIkTg",
+                                          "name": "Item Name",
+                                          "fill": "$ot-bone",
+                                          "content": "Corte & estilizado",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 14,
+                                          "fontWeight": "normal"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "Cxq5G",
+                                          "name": "Item Meta",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "60 min",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 12,
+                                          "fontWeight": "normal"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "X7kMQ",
+                                      "name": "Item Price",
+                                      "fill": "$ot-bone",
+                                      "content": "$55",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "bgluF",
+                                      "name": "Add",
+                                      "width": 24,
+                                      "height": 24,
+                                      "cornerRadius": 999,
+                                      "stroke": "$ot-dark-line",
+                                      "strokeWidth": 1,
+                                      "justifyContent": "center",
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "CETT9",
+                                          "name": "Plus",
+                                          "width": 12,
+                                          "height": 12,
+                                          "icon": "plus",
+                                          "library": "lucide",
+                                          "fill": "#E08A66"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "d5mI7",
+                                  "name": "Item — Blowout",
+                                  "width": "fill_container",
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "gap": 12,
+                                  "padding": [
+                                    8,
+                                    0
+                                  ],
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "rSkwP",
+                                      "name": "Item Info",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": 2,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "Qh377",
+                                          "name": "Item Name",
+                                          "fill": "$ot-bone",
+                                          "content": "Blowout",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 14,
+                                          "fontWeight": "normal"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "k4MYSb",
+                                          "name": "Item Meta",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "45 min",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 12,
+                                          "fontWeight": "normal"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "wyy8W",
+                                      "name": "Item Price",
+                                      "fill": "$ot-bone",
+                                      "content": "$40",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "EKra9",
+                                      "name": "Add",
+                                      "width": 24,
+                                      "height": 24,
+                                      "cornerRadius": 999,
+                                      "stroke": "$ot-dark-line",
+                                      "strokeWidth": 1,
+                                      "justifyContent": "center",
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "Edut0",
+                                          "name": "Plus",
+                                          "width": 12,
+                                          "height": 12,
+                                          "icon": "plus",
+                                          "library": "lucide",
+                                          "fill": "#E08A66"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "OCQvs",
+                                  "name": "Item — Keratina alisadora",
+                                  "width": "fill_container",
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "gap": 12,
+                                  "padding": [
+                                    8,
+                                    0
+                                  ],
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "Z5lhtH",
+                                      "name": "Item Info",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": 2,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "ZjR6m",
+                                          "name": "Item Name",
+                                          "fill": "$ot-bone",
+                                          "content": "Keratina alisadora",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 14,
+                                          "fontWeight": "normal"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "Refng",
+                                          "name": "Item Meta",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "150 min",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 12,
+                                          "fontWeight": "normal"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "ISCdP",
+                                      "name": "Item Price",
+                                      "fill": "$ot-bone",
+                                      "content": "$180",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "FHxU5",
+                                      "name": "Add",
+                                      "width": 24,
+                                      "height": 24,
+                                      "cornerRadius": 999,
+                                      "stroke": "$ot-dark-line",
+                                      "strokeWidth": 1,
+                                      "justifyContent": "center",
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "BOU0x",
+                                          "name": "Plus",
+                                          "width": 12,
+                                          "height": 12,
+                                          "icon": "plus",
+                                          "library": "lucide",
+                                          "fill": "#E08A66"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Dsd6P",
+                              "name": "Group — COLOR",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "SJZAA",
+                                  "name": "Group Label",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "COLOR",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1.8
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "f2oix",
+                                  "name": "Item — Color de raíz",
+                                  "width": "fill_container",
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "gap": 12,
+                                  "padding": [
+                                    8,
+                                    0
+                                  ],
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "zZLGL",
+                                      "name": "Item Info",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": 2,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "OYoxK",
+                                          "name": "Item Name",
+                                          "fill": "$ot-bone",
+                                          "content": "Color de raíz",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 14,
+                                          "fontWeight": "normal"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "tbd9q",
+                                          "name": "Item Meta",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "90 min",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 12,
+                                          "fontWeight": "normal"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "L7X9M",
+                                      "name": "Item Price",
+                                      "fill": "$ot-bone",
+                                      "content": "$85",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "Ht4K2",
+                                      "name": "Add",
+                                      "width": 24,
+                                      "height": 24,
+                                      "cornerRadius": 999,
+                                      "stroke": "$ot-dark-line",
+                                      "strokeWidth": 1,
+                                      "justifyContent": "center",
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "imcDk",
+                                          "name": "Plus",
+                                          "width": 12,
+                                          "height": 12,
+                                          "icon": "plus",
+                                          "library": "lucide",
+                                          "fill": "#E08A66"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "y72zu",
+                                  "name": "Item — Babylights",
+                                  "width": "fill_container",
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "gap": 12,
+                                  "padding": [
+                                    8,
+                                    0
+                                  ],
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "N8np6h",
+                                      "name": "Item Info",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": 2,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "B37M4",
+                                          "name": "Item Name",
+                                          "fill": "$ot-bone",
+                                          "content": "Babylights",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 14,
+                                          "fontWeight": "normal"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "hx2ss",
+                                          "name": "Item Meta",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "150 min",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 12,
+                                          "fontWeight": "normal"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "D3zmZP",
+                                      "name": "Item Price",
+                                      "fill": "$ot-bone",
+                                      "content": "$165",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "qFfoK",
+                                      "name": "Add",
+                                      "width": 24,
+                                      "height": 24,
+                                      "cornerRadius": 999,
+                                      "stroke": "$ot-dark-line",
+                                      "strokeWidth": 1,
+                                      "justifyContent": "center",
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "R4ozGw",
+                                          "name": "Plus",
+                                          "width": 12,
+                                          "height": 12,
+                                          "icon": "plus",
+                                          "library": "lucide",
+                                          "fill": "#E08A66"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "VGoPc",
+                                  "name": "Item — Gloss matizante",
+                                  "width": "fill_container",
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "gap": 12,
+                                  "padding": [
+                                    8,
+                                    0
+                                  ],
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "EgHcl",
+                                      "name": "Item Info",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": 2,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "XBg4H",
+                                          "name": "Item Name",
+                                          "fill": "$ot-bone",
+                                          "content": "Gloss matizante",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 14,
+                                          "fontWeight": "normal"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "ge3ro",
+                                          "name": "Item Meta",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "30 min",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 12,
+                                          "fontWeight": "normal"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "J9fE8",
+                                      "name": "Item Price",
+                                      "fill": "$ot-bone",
+                                      "content": "$35",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "a0Hhk",
+                                      "name": "Add",
+                                      "width": 24,
+                                      "height": 24,
+                                      "cornerRadius": 999,
+                                      "stroke": "$ot-dark-line",
+                                      "strokeWidth": 1,
+                                      "justifyContent": "center",
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "EXCRc",
+                                          "name": "Plus",
+                                          "width": 12,
+                                          "height": 12,
+                                          "icon": "plus",
+                                          "library": "lucide",
+                                          "fill": "#E08A66"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "PxtrC",
+                              "name": "Group — UÑAS",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "nEhkw",
+                                  "name": "Group Label",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "UÑAS",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1.8
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "dwqB8",
+                                  "name": "Item — Manicura en gel",
+                                  "width": "fill_container",
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": {
+                                    "bottom": 1
+                                  },
+                                  "gap": 12,
+                                  "padding": [
+                                    8,
+                                    0
+                                  ],
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "zbz5O",
+                                      "name": "Item Info",
+                                      "width": "fill_container",
+                                      "layout": "vertical",
+                                      "gap": 2,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "pf1XC",
+                                          "name": "Item Name",
+                                          "fill": "$ot-bone",
+                                          "content": "Manicura en gel",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 14,
+                                          "fontWeight": "normal"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "uMCbb",
+                                          "name": "Item Meta",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "60 min",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 12,
+                                          "fontWeight": "normal"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "Obgvr",
+                                      "name": "Item Price",
+                                      "fill": "$ot-bone",
+                                      "content": "$40",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 14,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "aQ8Ki",
+                                      "name": "Add",
+                                      "width": 24,
+                                      "height": 24,
+                                      "cornerRadius": 999,
+                                      "stroke": "$ot-dark-line",
+                                      "strokeWidth": 1,
+                                      "justifyContent": "center",
+                                      "alignItems": "center",
+                                      "children": [
+                                        {
+                                          "type": "icon",
+                                          "id": "tg8Qo",
+                                          "name": "Plus",
+                                          "width": 12,
+                                          "height": 12,
+                                          "icon": "plus",
+                                          "library": "lucide",
+                                          "fill": "#E08A66"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "iOCvh",
+                          "name": "Times",
+                          "width": 340,
+                          "height": "fill_container",
+                          "stroke": "$ot-dark-line",
+                          "strokeWidth": {
+                            "left": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 24,
+                          "padding": 32,
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Oejxo",
+                              "name": "Slots",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 20,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Ba3bC",
+                                  "name": "Summary Label",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "RESUMEN",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1.8
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "qJwlb",
+                                  "name": "Summary Rows",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": 12,
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "tWCLh",
+                                      "name": "Row — Servicios",
+                                      "width": "fill_container",
+                                      "justifyContent": "space_between",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "yBFGl",
+                                          "name": "Key",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "Servicios",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 13,
+                                          "fontWeight": "normal"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "s8afVH",
+                                          "name": "Value",
+                                          "fill": "$ot-bone",
+                                          "content": "2",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 13,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "s6ycl",
+                                      "name": "Row — Duración",
+                                      "width": "fill_container",
+                                      "justifyContent": "space_between",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "q4fg6",
+                                          "name": "Key",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "Duración",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 13,
+                                          "fontWeight": "normal"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "la5lE",
+                                          "name": "Value",
+                                          "fill": "$ot-bone",
+                                          "content": "3 h 30 min",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 13,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "frame",
+                                      "id": "xmmw5",
+                                      "name": "Row — Estilista",
+                                      "width": "fill_container",
+                                      "justifyContent": "space_between",
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "s5MaiP",
+                                          "name": "Key",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "Estilista",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 13,
+                                          "fontWeight": "normal"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "WhmTg",
+                                          "name": "Value",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "Por elegir",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 13,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "LGxG6",
+                              "name": "Summary",
+                              "width": "fill_container",
+                              "stroke": "$ot-dark-line",
+                              "strokeWidth": {
+                                "top": 1
+                              },
+                              "layout": "vertical",
+                              "gap": 16,
+                              "padding": [
+                                20,
+                                0,
+                                0,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "lMDK0",
+                                  "name": "Total Row",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "end",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "sYblz",
+                                      "name": "Info",
+                                      "layout": "vertical",
+                                      "gap": 4,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "GXAyd",
+                                          "name": "What",
+                                          "fill": "$ot-bone",
+                                          "content": "2 servicios",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 14,
+                                          "fontWeight": "600"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "Eb6oE",
+                                          "name": "When",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "3 h 30 min en total",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 13,
+                                          "fontWeight": "normal"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "Jaogu",
+                                      "name": "Price",
+                                      "fill": "$ot-bone",
+                                      "content": "$245",
+                                      "lineHeight": 1,
+                                      "fontFamily": "$ot-display",
+                                      "fontSize": 34,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "P3CyVZ",
+                                  "name": "Confirm CTA",
+                                  "width": "fill_container",
+                                  "fill": "$ot-accent",
+                                  "cornerRadius": 999,
+                                  "gap": 10,
+                                  "padding": [
+                                    16,
+                                    0
+                                  ],
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "y2tOX2",
+                                      "name": "Label",
+                                      "fill": "#FFFFFF",
+                                      "content": "Elegir estilista",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 16,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "icon",
+                                      "id": "jKDME",
+                                      "name": "arrow-right",
+                                      "width": 18,
+                                      "height": 18,
+                                      "icon": "arrow-right",
+                                      "library": "lucide",
+                                      "fill": "#FFFFFF"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "qSPP4",
+                                  "name": "Fine Print",
+                                  "fill": "$ot-dark-muted",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Sin depósito. Cancela gratis hasta 24 h antes.",
+                                  "textAlign": "center",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w7Mmc",
+              "name": "Reserva — Paso 4 (Confirmar)",
+              "clip": true,
+              "width": 1440,
+              "height": 900,
+              "fill": "$ot-ink",
+              "layout": "vertical",
+              "padding": [
+                0,
+                80
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XFKov",
+                  "name": "Widget — Paso 4",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$ot-dark-card",
+                  "cornerRadius": 8,
+                  "stroke": "$ot-dark-line",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "L688Ox",
+                      "name": "Steps",
+                      "width": "fill_container",
+                      "stroke": "$ot-dark-line",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "gap": 40,
+                      "padding": [
+                        22,
+                        32
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Oqf4T",
+                          "name": "Step 1",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "UntYH",
+                              "name": "Badge",
+                              "width": 26,
+                              "height": 26,
+                              "cornerRadius": 999,
+                              "stroke": "#E08A66",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "iGJ5q",
+                                  "name": "check",
+                                  "width": 14,
+                                  "height": 14,
+                                  "icon": "check",
+                                  "library": "lucide",
+                                  "fill": "#E08A66"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "IA6Gk",
+                              "name": "Label",
+                              "fill": "$ot-bone",
+                              "content": "Servicio",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "TdC2N",
+                          "name": "Connector",
+                          "fill": "$ot-dark-line",
+                          "width": 48,
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "cDwES",
+                          "name": "Step 2",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "KTfSV",
+                              "name": "Badge",
+                              "width": 26,
+                              "height": 26,
+                              "cornerRadius": 999,
+                              "stroke": "#E08A66",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "W3vQUb",
+                                  "name": "check",
+                                  "width": 14,
+                                  "height": 14,
+                                  "icon": "check",
+                                  "library": "lucide",
+                                  "fill": "#E08A66"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "Ih2h0",
+                              "name": "Label",
+                              "fill": "$ot-bone",
+                              "content": "Servicio",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "KjII6",
+                          "name": "Connector",
+                          "fill": "$ot-dark-line",
+                          "width": 48,
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZC170",
+                          "name": "Step 3",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "qS18i",
+                              "name": "Badge",
+                              "width": 26,
+                              "height": 26,
+                              "cornerRadius": 999,
+                              "stroke": "#E08A66",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "X4L8fB",
+                                  "name": "check",
+                                  "width": 14,
+                                  "height": 14,
+                                  "icon": "check",
+                                  "library": "lucide",
+                                  "fill": "#E08A66"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "pUUjW",
+                              "name": "Label",
+                              "fill": "$ot-bone",
+                              "content": "Servicio",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "B3QCXl",
+                          "name": "Connector",
+                          "fill": "$ot-dark-line",
+                          "width": 48,
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fgOnB",
+                          "name": "Step 4",
+                          "gap": 10,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "xQblQ",
+                              "name": "Badge",
+                              "width": 26,
+                              "height": 26,
+                              "fill": "$ot-accent",
+                              "cornerRadius": 999,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "TwNCY",
+                                  "name": "Num",
+                                  "fill": "#FFFFFF",
+                                  "content": "3",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "text",
+                              "id": "Bzlyj",
+                              "name": "Label",
+                              "fill": "$ot-bone",
+                              "content": "Fecha y hora",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "d1PbH",
+                      "name": "Columns",
+                      "width": "fill_container",
+                      "height": 580,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "MtA59",
+                          "name": "Selection",
+                          "width": 320,
+                          "height": "fill_container",
+                          "stroke": "$ot-dark-line",
+                          "strokeWidth": {
+                            "right": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 28,
+                          "padding": 32,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Z1Sc8",
+                              "name": "Block Label",
+                              "fill": "$ot-dark-muted",
+                              "content": "TU CITA",
+                              "fontFamily": "$ot-body",
+                              "fontSize": 11,
+                              "fontWeight": "600",
+                              "letterSpacing": 1.8
+                            },
+                            {
+                              "type": "frame",
+                              "id": "XHGrD",
+                              "name": "When Block",
+                              "width": "fill_container",
+                              "stroke": "$ot-dark-line",
+                              "strokeWidth": {
+                                "bottom": 1
+                              },
+                              "layout": "vertical",
+                              "gap": 4,
+                              "padding": [
+                                8,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "FwjRh",
+                                  "name": "Date",
+                                  "fill": "$ot-bone",
+                                  "content": "Sábado 18 de octubre",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 15,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Moojj",
+                                  "name": "Time",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "1:30 – 5:00 PM",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "nz64E",
+                              "name": "Stylist",
+                              "width": "fill_container",
+                              "gap": 10,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "v7WRH",
+                                  "name": "Avatar",
+                                  "width": 34,
+                                  "height": 34,
+                                  "fill": {
+                                    "type": "image",
+                                    "enabled": true,
+                                    "url": "generated-3.png",
+                                    "mode": "cover"
+                                  },
+                                  "cornerRadius": 999
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "bhYMP",
+                                  "name": "Stylist Info",
+                                  "width": "fill_container",
+                                  "layout": "vertical",
+                                  "gap": 2,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "CYO9q",
+                                      "name": "Stylist Name",
+                                      "fill": "$ot-bone",
+                                      "content": "Andrea Ríos",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "JPbH6",
+                                      "name": "Stylist Role",
+                                      "fill": "$ot-dark-muted",
+                                      "content": "Colorista senior",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 11,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "w68hy",
+                              "name": "Services",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 10,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "ngrvn",
+                                  "name": "Row — Balayage a mano alzada",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "ws6x5",
+                                      "name": "Name",
+                                      "fill": "$ot-bone",
+                                      "content": "Balayage a mano alzada",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "qQqE6",
+                                      "name": "Price",
+                                      "fill": "$ot-dark-muted",
+                                      "content": "$210",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "jhwdo",
+                                  "name": "Row — Gloss matizante",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "nZxox",
+                                      "name": "Name",
+                                      "fill": "$ot-bone",
+                                      "content": "Gloss matizante",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "G4qEK",
+                                      "name": "Price",
+                                      "fill": "$ot-dark-muted",
+                                      "content": "$35",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "nkvGK",
+                          "name": "Calendar",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 20,
+                          "padding": [
+                            32,
+                            40
+                          ],
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "U9ItOy",
+                              "name": "Form Head",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 4,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "c3lMq",
+                                  "name": "Form Title",
+                                  "fill": "$ot-bone",
+                                  "content": "Tus datos",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 16,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "bC1I2",
+                                  "name": "Form Sub",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "Te enviamos la confirmación por SMS y email.",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "jD3Bg",
+                              "name": "Field — NOMBRE Y APELLIDO",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "jCekV",
+                                  "name": "Field Label",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "NOMBRE Y APELLIDO",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1.2
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "g0JTR5",
+                                  "name": "Box",
+                                  "width": "fill_container",
+                                  "fill": "#FFFFFF0A",
+                                  "cornerRadius": 6,
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": 1,
+                                  "padding": [
+                                    10,
+                                    14
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "Yol9r",
+                                      "name": "Value",
+                                      "fill": "$ot-bone",
+                                      "content": "Natalia Rivera",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "yqIRc",
+                              "name": "Field — TELÉFONO",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "DBOh3",
+                                  "name": "Field Label",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "TELÉFONO",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1.2
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "mYNQV",
+                                  "name": "Box",
+                                  "width": "fill_container",
+                                  "fill": "#FFFFFF0A",
+                                  "cornerRadius": 6,
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": 1,
+                                  "padding": [
+                                    10,
+                                    14
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "ENfig",
+                                      "name": "Value",
+                                      "fill": "$ot-bone",
+                                      "content": "(787) 555-0142",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "b56suK",
+                              "name": "Field — EMAIL",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "FKU19",
+                                  "name": "Field Label",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "EMAIL",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1.2
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "vtp5O",
+                                  "name": "Box",
+                                  "width": "fill_container",
+                                  "fill": "#FFFFFF0A",
+                                  "cornerRadius": 6,
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": 1,
+                                  "padding": [
+                                    10,
+                                    14
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "JwDLV",
+                                      "name": "Value",
+                                      "fill": "$ot-bone",
+                                      "content": "natalia.r@correo.com",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Y81mpX",
+                              "name": "Field — NOTAS (OPCIONAL)",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "QV46p",
+                                  "name": "Field Label",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "NOTAS (OPCIONAL)",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 11,
+                                  "fontWeight": "600",
+                                  "letterSpacing": 1.2
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "kG0uS",
+                                  "name": "Box",
+                                  "width": "fill_container",
+                                  "fill": "#FFFFFF0A",
+                                  "cornerRadius": 6,
+                                  "stroke": "$ot-dark-line",
+                                  "strokeWidth": 1,
+                                  "padding": [
+                                    10,
+                                    14
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "NfwQ5",
+                                      "name": "Value",
+                                      "fill": "$ot-dark-muted",
+                                      "content": "Alergia a sulfatos — usar línea libre",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Xnyox",
+                          "name": "Times",
+                          "width": 340,
+                          "height": "fill_container",
+                          "stroke": "$ot-dark-line",
+                          "strokeWidth": {
+                            "left": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 24,
+                          "padding": 32,
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "wMou0",
+                              "name": "Slots",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 20,
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "Itb2U",
+                                  "name": "Day Header",
+                                  "layout": "vertical",
+                                  "gap": 4,
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "U17FGO",
+                                      "name": "Day",
+                                      "fill": "$ot-bone",
+                                      "content": "Miércoles 14 de octubre",
+                                      "lineHeight": 1.1,
+                                      "fontFamily": "$ot-display",
+                                      "fontSize": 28,
+                                      "fontWeight": "normal"
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "o13ch9",
+                                      "name": "Sub",
+                                      "fill": "$ot-dark-muted",
+                                      "content": "6 horarios con Andrea",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 13,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "XNq6y",
+                              "name": "Summary",
+                              "width": "fill_container",
+                              "stroke": "$ot-dark-line",
+                              "strokeWidth": {
+                                "top": 1
+                              },
+                              "layout": "vertical",
+                              "gap": 16,
+                              "padding": [
+                                20,
+                                0,
+                                0,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "ZLqNk",
+                                  "name": "Total Row",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "end",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "G1Qbz",
+                                      "name": "Info",
+                                      "layout": "vertical",
+                                      "gap": 4,
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "W751Sy",
+                                          "name": "What",
+                                          "fill": "$ot-bone",
+                                          "content": "Balayage + Gloss",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 14,
+                                          "fontWeight": "600"
+                                        },
+                                        {
+                                          "type": "text",
+                                          "id": "YrFM5",
+                                          "name": "When",
+                                          "fill": "$ot-dark-muted",
+                                          "content": "Sáb 18 oct · 1:30 PM",
+                                          "fontFamily": "$ot-body",
+                                          "fontSize": 13,
+                                          "fontWeight": "normal"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "iUXWW",
+                                      "name": "Price",
+                                      "fill": "$ot-bone",
+                                      "content": "$245",
+                                      "lineHeight": 1,
+                                      "fontFamily": "$ot-display",
+                                      "fontSize": 34,
+                                      "fontWeight": "normal"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "IoNlP",
+                                  "name": "Confirm CTA",
+                                  "width": "fill_container",
+                                  "fill": "$ot-accent",
+                                  "cornerRadius": 999,
+                                  "gap": 10,
+                                  "padding": [
+                                    16,
+                                    0
+                                  ],
+                                  "justifyContent": "center",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "hiScr",
+                                      "name": "Label",
+                                      "fill": "#FFFFFF",
+                                      "content": "Confirmar cita",
+                                      "fontFamily": "$ot-body",
+                                      "fontSize": 16,
+                                      "fontWeight": "600"
+                                    },
+                                    {
+                                      "type": "icon",
+                                      "id": "f6nYt",
+                                      "name": "arrow-right",
+                                      "width": 18,
+                                      "height": 18,
+                                      "icon": "arrow-right",
+                                      "library": "lucide",
+                                      "fill": "#FFFFFF"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "jheEk",
+                                  "name": "Fine Print",
+                                  "fill": "$ot-dark-muted",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Sin depósito. Cancela gratis hasta 24 h antes.",
+                                  "textAlign": "center",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "E3jqX",
+              "name": "Reserva — Éxito",
+              "clip": true,
+              "width": 1440,
+              "height": 900,
+              "fill": "$ot-ink",
+              "layout": "vertical",
+              "padding": [
+                0,
+                80
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rHZv9",
+                  "name": "Widget — Éxito",
+                  "clip": true,
+                  "width": "fill_container",
+                  "fill": "$ot-dark-card",
+                  "cornerRadius": 8,
+                  "stroke": "$ot-dark-line",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lrYqH",
+                      "name": "Success",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": [
+                        140,
+                        56
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "aGXnT",
+                          "name": "Check Circle",
+                          "width": 64,
+                          "height": 64,
+                          "fill": "#B9502C26",
+                          "cornerRadius": 999,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "u5guSo",
+                              "name": "Check",
+                              "width": 26,
+                              "height": 26,
+                              "icon": "check",
+                              "library": "lucide",
+                              "fill": "#E08A66"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ho8UM",
+                          "name": "Title",
+                          "fill": "$ot-bone",
+                          "content": "¡Listo! Tu cita está reservada.",
+                          "textAlign": "center",
+                          "fontFamily": "$ot-display",
+                          "fontSize": 40,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VQ8iv",
+                          "name": "Sub",
+                          "fill": "$ot-dark-muted",
+                          "content": "Sábado 18 de octubre · 1:30 – 5:00 PM con Andrea Ríos",
+                          "textAlign": "center",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "moWKj",
+                          "name": "Details",
+                          "width": 420,
+                          "fill": "#FFFFFF0A",
+                          "cornerRadius": 6,
+                          "stroke": "$ot-dark-line",
+                          "strokeWidth": 1,
+                          "layout": "vertical",
+                          "gap": 10,
+                          "padding": [
+                            16,
+                            20
+                          ],
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "xkeRu",
+                              "name": "Row — Balayage a mano alzada",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "K0TlfR",
+                                  "name": "Name",
+                                  "fill": "$ot-bone",
+                                  "content": "Balayage a mano alzada",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "HqyIv",
+                                  "name": "Price",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "$210",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "syLBw",
+                              "name": "Row — Gloss matizante",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "v1z7sM",
+                                  "name": "Name",
+                                  "fill": "$ot-bone",
+                                  "content": "Gloss matizante",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "HJL3D",
+                                  "name": "Price",
+                                  "fill": "$ot-dark-muted",
+                                  "content": "$35",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "rectangle",
+                              "id": "m52wA",
+                              "name": "Divider",
+                              "fill": "$ot-dark-line",
+                              "width": "fill_container",
+                              "height": 1
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Dkjlk",
+                              "name": "Row — Total",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "oWVPn",
+                                  "name": "Name",
+                                  "fill": "$ot-bone",
+                                  "content": "Total",
+                                  "fontFamily": "$ot-body",
+                                  "fontSize": 14,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "RCKi6",
+                                  "name": "Price",
+                                  "fill": "$ot-bone",
+                                  "content": "$245",
+                                  "fontFamily": "$ot-display",
+                                  "fontSize": 24,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "jiOv7",
+                          "name": "Note",
+                          "fill": "$ot-dark-muted",
+                          "content": "Te enviamos la confirmación por SMS y email.",
+                          "textAlign": "center",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "R8DTQS",
+                          "name": "Cancel Link",
+                          "fill": "#E08A66",
+                          "content": "¿Necesitas cancelar? Hazlo gratis hasta 24 h antes.",
+                          "textAlign": "center",
+                          "fontFamily": "$ot-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
