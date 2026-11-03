@@ -13,22 +13,39 @@ type Tone = "dark" | "light";
 export function Logo({ tone = "dark", compact = false, size = "md" }: { tone?: Tone; compact?: boolean; size?: "md" | "xl" }) {
   const main = tone === "dark" ? "text-gold" : "text-ink";
   const sub = tone === "dark" ? "text-gold-light" : "text-gold-deep";
-  if (size === "xl") {
-    return (
-      <span className="flex flex-col items-center gap-2">
-        <span className={`whitespace-nowrap font-caps text-[clamp(36px,6vw,64px)] leading-none tracking-[0.1em] ${main}`}>ONE TOUCH</span>
-        <span className="flex items-center gap-4">
-          <span aria-hidden className="h-px w-12 bg-gold-deep md:w-20" />
-          <span className={`font-caps text-[13px] tracking-[0.6em] md:text-[16px] ${sub}`}>SALON</span>
-          <span aria-hidden className="h-px w-12 bg-gold-deep md:w-20" />
-        </span>
+  const by = tone === "dark" ? "text-gold" : "text-gold-deep";
+  const grace = tone === "dark" ? "text-ivory" : "text-ink";
+  /* Lockup “firma editorial”: wordmark · línea vertical · “by” caps + “Grace” Playfair itálica. */
+  const s =
+    size === "xl"
+      ? {
+          gap: "gap-5 md:gap-[34px]",
+          main: "text-[clamp(28px,5.6vw,54px)] tracking-[0.1em]",
+          sub: "text-[11px] md:text-[16px] tracking-[0.55em]",
+          rule: "h-14 md:h-[76px]",
+          by: "text-[10px] md:text-[17px]",
+          grace: "text-[clamp(32px,5.4vw,57px)]",
+        }
+      : compact
+        ? { gap: "gap-3", main: "text-[18px] tracking-[0.1em]", sub: "text-[8px] tracking-[0.5em]", rule: "h-7", by: "text-[7px]", grace: "text-[20px]" }
+        : { gap: "gap-[18px]", main: "text-[26px] tracking-[0.1em]", sub: "text-[10px] tracking-[0.55em]", rule: "h-10", by: "text-[9px]", grace: "text-[30px]" };
+  const content = (
+    <>
+      <span className="flex flex-col items-center gap-[2px] md:gap-1">
+        <span className={`whitespace-nowrap font-caps leading-none ${s.main} ${main}`}>ONE TOUCH</span>
+        <span className={`font-caps leading-none ${s.sub} ${sub}`}>SALON</span>
       </span>
-    );
-  }
+      <span aria-hidden className={`w-px bg-gold-deep ${s.rule}`} />
+      <span className="flex flex-col text-left leading-none">
+        <span className={`font-caps tracking-[0.25em] ${s.by} ${by}`}>by</span>
+        <span className={`font-display italic leading-none ${s.grace} ${grace}`}>Grace</span>
+      </span>
+    </>
+  );
+  if (size === "xl") return <span className={`inline-flex items-center ${s.gap}`}>{content}</span>;
   return (
-    <Link href="/" aria-label="OneTouch Salon — inicio" className="inline-flex flex-col items-center gap-[2px]">
-      <span className={`whitespace-nowrap font-caps leading-none tracking-[0.1em] ${compact ? "text-[20px]" : "text-[26px]"} ${main}`}>ONE TOUCH</span>
-      <span className={`font-caps leading-none tracking-[0.55em] ${compact ? "text-[9px]" : "text-[10px]"} ${sub}`}>SALON</span>
+    <Link href="/" aria-label="OneTouch Salon by Grace — inicio" className={`inline-flex items-center ${s.gap}`}>
+      {content}
     </Link>
   );
 }

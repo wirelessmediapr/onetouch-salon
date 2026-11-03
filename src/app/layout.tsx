@@ -29,7 +29,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "OneTouch Salon — Tu belleza, nuestra pasión",
+  title: "OneTouch Salon by Grace — Tu belleza, nuestra pasión",
   description:
     "Cabello, uñas, piel y maquillaje en un solo lugar en Puerto Rico. Productos premium, manos expertas y reserva en línea en un minuto.",
 };

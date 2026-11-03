@@ -1,4 +1,4 @@
-import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/SocialIcons";
+import { FacebookIcon, InstagramIcon } from "@/components/SocialIcons";
 import { FooterColumn, Logo, PrimaryButton } from "@/components/primitives";
 import { contact } from "@/lib/data";
 
@@ -37,20 +37,17 @@ export function Footer() {
           <FooterColumn
             heading="Síguenos"
             lines={[
-              <a key="i" href="https://instagram.com/onetouchsalon" className="inline-flex items-center gap-2 hover:text-on-dark">
+              <a key="i" href={contact.instagramHref} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-on-dark">
                 <InstagramIcon size={16} /> Instagram
               </a>,
-              <a key="f" href="#" className="inline-flex items-center gap-2 hover:text-on-dark">
+              <a key="f" href={contact.facebookHref} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-on-dark">
                 <FacebookIcon size={16} /> Facebook
-              </a>,
-              <a key="t" href="#" className="inline-flex items-center gap-2 hover:text-on-dark">
-                <TikTokIcon size={16} /> TikTok
               </a>,
             ]}
           />
         </div>
         <div className="flex w-full flex-col gap-2 text-[13px] text-on-dark-muted sm:flex-row sm:justify-between">
-          <p>© 2026 OneTouch Salon · Puerto Rico</p>
+          <p>© 2026 OneTouch Salon by Grace · Puerto Rico</p>
           <p>Privacidad · Términos</p>
         </div>
       </div>

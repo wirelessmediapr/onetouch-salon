@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { BookingFlow } from "@/components/booking/BookingFlow";
 
 export const metadata: Metadata = {
-  title: "Reservar cita — OneTouch Salon",
+  title: "Reservar cita — OneTouch Salon by Grace",
   description: "Escoge tus servicios, tu estilista y tu hora. Sin llamadas, sin depósito.",
 };
 

@@ -110,7 +110,9 @@ export const contact = {
   phone: "(000) 000-0000",
   phoneHref: "tel:+10000000000",
   email: "hola@onetouchsalon.com",
-  instagram: "@onetouchsalon",
+  instagram: "@one_touch_salon_by_grace",
+  instagramHref: "https://www.instagram.com/one_touch_salon_by_grace/",
+  facebookHref: "https://www.facebook.com/profile.php?id=100071769011368",
   mapsHref: "#",
 };
 

@@ -28324,33 +28324,82 @@
             },
             {
               "type": "frame",
-              "id": "pcSXR",
-              "name": "Wordmark",
-              "layout": "vertical",
-              "gap": 2,
+              "id": "aBruC",
+              "name": "Brand Lockup",
+              "gap": 18,
               "alignItems": "center",
               "children": [
                 {
-                  "type": "text",
-                  "id": "rVRva",
-                  "name": "Wordmark Main",
-                  "fill": "$nr-gold",
-                  "content": "ONE TOUCH",
-                  "fontFamily": "$nr-caps",
-                  "fontSize": 28,
-                  "fontWeight": "normal",
-                  "letterSpacing": 3
+                  "type": "frame",
+                  "id": "pcSXR",
+                  "name": "Wordmark",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rVRva",
+                      "name": "Wordmark Main",
+                      "fill": "$nr-gold",
+                      "content": "ONE TOUCH",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 28,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "B2Xl6T",
+                      "name": "Wordmark Sub",
+                      "fill": "$nr-gold-light",
+                      "content": "S A L O N",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 6
+                    }
+                  ]
                 },
                 {
-                  "type": "text",
-                  "id": "Kx8lk",
-                  "name": "Wordmark Sub",
-                  "fill": "$nr-gold-light",
-                  "content": "S A L O N",
-                  "fontFamily": "$nr-caps",
-                  "fontSize": 11,
-                  "fontWeight": "normal",
-                  "letterSpacing": 6
+                  "type": "rectangle",
+                  "id": "uZ1PX",
+                  "name": "Divider",
+                  "fill": "$nr-gold-deep",
+                  "width": 1,
+                  "height": 40
+                },
+                {
+                  "type": "frame",
+                  "id": "a12sc",
+                  "name": "Signature",
+                  "context": "Firma 'by Grace': caps + Playfair itálica marfil, a la derecha del wordmark tras una línea vertical. Nunca encima de ONE TOUCH.",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "GEWDw",
+                      "name": "By",
+                      "fill": "$nr-gold",
+                      "content": "by",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "BjP0b",
+                      "name": "Grace",
+                      "fill": "$nr-ivory",
+                      "content": "Grace",
+                      "lineHeight": 1,
+                      "fontFamily": "$nr-display",
+                      "fontSize": 30,
+                      "fontWeight": "normal",
+                      "fontStyle": "italic"
+                    }
+                  ]
                 }
               ]
             },
@@ -32025,46 +32074,38 @@
               "id": "ocKcH",
               "name": "Final CTA",
               "layout": "vertical",
-              "gap": 24,
+              "gap": 32,
               "alignItems": "center",
               "children": [
                 {
                   "type": "frame",
-                  "id": "V2lliG",
-                  "name": "Wordmark",
-                  "layout": "vertical",
-                  "gap": 4,
+                  "id": "WQn6X",
+                  "name": "Brand Lockup",
+                  "gap": 34,
                   "alignItems": "center",
                   "children": [
                     {
-                      "type": "text",
-                      "id": "ws5sZ",
-                      "name": "Wordmark Main",
-                      "fill": "$nr-gold",
-                      "content": "ONE TOUCH",
-                      "fontFamily": "$nr-caps",
-                      "fontSize": 64,
-                      "fontWeight": "normal",
-                      "letterSpacing": 6
-                    },
-                    {
                       "type": "frame",
-                      "id": "e8yCD",
-                      "name": "Wordmark Sub Row",
-                      "gap": 16,
+                      "id": "V2lliG",
+                      "name": "Wordmark",
+                      "layout": "vertical",
+                      "gap": 4,
                       "alignItems": "center",
                       "children": [
                         {
-                          "type": "rectangle",
-                          "id": "QxQ7J",
-                          "name": "Rule",
-                          "fill": "$nr-gold-deep",
-                          "width": 80,
-                          "height": 1
+                          "type": "text",
+                          "id": "ws5sZ",
+                          "name": "Wordmark Main",
+                          "fill": "$nr-gold",
+                          "content": "ONE TOUCH",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 64,
+                          "fontWeight": "normal",
+                          "letterSpacing": 6
                         },
                         {
                           "type": "text",
-                          "id": "WasQ9",
+                          "id": "L1eiYW",
                           "name": "Wordmark Sub",
                           "fill": "$nr-gold-light",
                           "content": "S A L O N",
@@ -32072,14 +32113,46 @@
                           "fontSize": 16,
                           "fontWeight": "normal",
                           "letterSpacing": 8
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "sZgqf",
+                      "name": "Divider",
+                      "fill": "$nr-gold-deep",
+                      "width": 1,
+                      "height": 76
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YnQPl",
+                      "name": "Signature",
+                      "context": "Firma 'by Grace': caps + Playfair itálica marfil, a la derecha del wordmark tras una línea vertical. Nunca encima de ONE TOUCH.",
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "w6V11I",
+                          "name": "By",
+                          "fill": "$nr-gold",
+                          "content": "by",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 17,
+                          "fontWeight": "normal",
+                          "letterSpacing": 3
                         },
                         {
-                          "type": "rectangle",
-                          "id": "dhV9x",
-                          "name": "Rule",
-                          "fill": "$nr-gold-deep",
-                          "width": 80,
-                          "height": 1
+                          "type": "text",
+                          "id": "jptk9",
+                          "name": "Grace",
+                          "fill": "$nr-ivory",
+                          "content": "Grace",
+                          "lineHeight": 1,
+                          "fontFamily": "$nr-display",
+                          "fontSize": 57,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
                         }
                       ]
                     }
@@ -32286,6 +32359,7 @@
                   "type": "frame",
                   "id": "NWcar",
                   "name": "Col SÍGUENOS",
+                  "context": "Instagram → instagram.com/one_touch_salon_by_grace · Facebook → facebook.com/profile.php?id=100071769011368 (abren en pestaña nueva)",
                   "width": "fill_container",
                   "layout": "vertical",
                   "gap": 12,
@@ -32320,16 +32394,6 @@
                       "fontFamily": "$nr-body",
                       "fontSize": 15,
                       "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
-                      "id": "S2Ofm",
-                      "name": "Line",
-                      "fill": "$nr-on-dark-muted",
-                      "content": "TikTok",
-                      "fontFamily": "$nr-body",
-                      "fontSize": 15,
-                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -32347,7 +32411,7 @@
                   "id": "w0Jyl",
                   "name": "Copyright",
                   "fill": "$nr-on-dark-muted",
-                  "content": "© 2026 OneTouch Salon · Puerto Rico",
+                  "content": "© 2026 OneTouch Salon by Grace · Puerto Rico",
                   "fontFamily": "$nr-body",
                   "fontSize": 13,
                   "fontWeight": "normal"
@@ -32633,6 +32697,18 @@
     "nr-body": {
       "type": "string",
       "value": "Manrope"
+    },
+    "nr-silver": {
+      "type": "color",
+      "value": "#DCDCD8"
+    },
+    "nr-silver-light": {
+      "type": "color",
+      "value": "#F7F7F4"
+    },
+    "nr-silver-deep": {
+      "type": "color",
+      "value": "#9C9C98"
     }
   },
   "fileToken": "5c645716-b532-4f04-98d2-7fea569af40e"

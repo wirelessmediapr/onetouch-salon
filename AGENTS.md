@@ -14,7 +14,7 @@ Instrucciones para agentes (OpenCode / Claude / Cursor) trabajando en `wirelessm
 
 ## Proyecto
 
-Landing + reserva en línea (booking) para **OneTouch Salon**, salón de belleza en Puerto Rico.
+Landing + reserva en línea (booking) para **OneTouch Salon by Grace**, salón de belleza en Puerto Rico.
 Dominio: `onetouch.salon` · Deploy: **Vercel** — auto-deploy con cada push a `main` (agente no despliega manualmente; los commits se tratan como deploys: nunca pushear algo roto o experimental).
 
 ## Estado actual
