@@ -1,36 +1,30 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Instrument_Sans } from "next/font/google";
+import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 
-const instrumentSerif = Instrument_Serif({
-  weight: "400",
+const fraunces = Fraunces({
   style: ["normal", "italic"],
-  variable: "--font-instrument-serif",
+  variable: "--font-fraunces",
   subsets: ["latin"],
   display: "swap",
 });
 
-const instrumentSans = Instrument_Sans({
-  variable: "--font-instrument-sans",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Onetouch Salon — Un solo toque lo cambia todo",
+  title: "Onetouch Salon — Tu mejor versión, a un toque",
   description:
-    "Corte, color, uñas y cuidado de la piel bajo un mismo techo. Elige tu servicio, tu estilista y tu hora — reserva en menos de un minuto, sin llamadas.",
+    "Corte, color, uñas y cejas en un mismo lugar. Escoge tus servicios, tu estilista y tu hora en menos de un minuto — sin llamadas, sin depósito.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="es"
-      className={`h-full scroll-smooth ${instrumentSerif.variable} ${instrumentSans.variable}`}
-    >
-      <body className="min-h-full bg-bone font-sans text-ink antialiased">
-        {children}
-      </body>
+    <html lang="es" className={`h-full scroll-smooth ${fraunces.variable} ${manrope.variable}`}>
+      <body className="min-h-full bg-cream font-sans text-ink antialiased">{children}</body>
     </html>
   );
 }

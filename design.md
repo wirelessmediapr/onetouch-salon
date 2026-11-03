@@ -180,3 +180,20 @@ Vive en el frame **"Onetouch — Reservas (flujo)"** (hermano del admin): fila d
 - **"Reserva — Éxito"** — card sin steps ni columnas: círculo 64 r999 `#B9502C26` + check 26 `#E08A66`, título 40 display `¡Listo! Tu cita está reservada.`, sub 14 `$ot-dark-muted`, tarjeta de detalle 420 (servicios 13 + divider + `Total` con precio 24 display), nota de SMS/email 13 y link de cancelación 13/600 `#E08A66`. Alto del card 651 (padding vertical 140) — centrado exacto en la pantalla.
 
 **Notas técnicas (lienzo):** los steps se reconstruyen por copia desde los originales del widget de la landing (hecho = `dEroY`, actual = `c1dIw`, pendiente = `XX3VD`); ojo: el layout del canvas no siempre invalida el cache de tamaño del padre al encoger un hijo copiado — verificar centrado con bounds.
+
+---
+
+## 9. Sistema v2 “Flamboyán” (2026-11-03 · aprobado e implementado — **sistema activo**)
+
+> Desde el 2026-11-03 este es el sistema vigente en `src/` (tokens `fb-*` → `src/app/globals.css` sin prefijo: `bg-cream`, `text-flame`, `bg-palm`…). Las secciones §1–§8 describen el sistema anterior `ot-*` (warm editorial) y quedan como referencia histórica; las pantallas de admin del lienzo aún usan `ot-*` y se migrarán al construir el admin.
+
+Rediseño completo en el mismo lienzo, en frames nuevos:
+`Onetouch v2 — Componentes` · `Onetouch v2 — Landing` (1440) · `Onetouch v2 — Landing móvil` (390) · `Onetouch v2 — Reservar · 1 Servicios / 2 Estilista y hora / 3 Tus datos / Confirmada`.
+
+- **Concepto:** isla moderna. Verde palma + crema + rojo flamboyán; los **arcos** del Viejo San Juan son la forma de marca (retratos, galería, tarjetas con esquina inferior-izquierda recta `[r,r,r,4]`). Sin sombras, gradientes ni glass (se mantiene §6, salvo que ahora los radios grandes **sí** son parte de la identidad: solo en arcos y pills).
+- **Tokens `fb-*`:** `fb-cream #FAF5EE` (base) · `fb-sand #F1E7DA` · `fb-blush #F4D9CF` · `fb-palm #123A2E` (secciones oscuras) · `fb-palm-2 #1C4A3C` · `fb-palm-line #2E5C4D` · `fb-palm-muted #A9C2B6` · `fb-ink #16201C` · `fb-ink-soft #45514C` · `fb-muted #7A847F` · `fb-line #E2D8CA` · `fb-disabled #BDB3A6` · `fb-flame #E2452B` (CTA) · `fb-flame-deep #B8331C` · `fb-flame-soft #FBE1D9` · `fb-gold #E9B949` (acento sobre palma) · `fb-leaf #2F9E62` (disponible / abierto) · `fb-white`.
+- **Tipografía:** `fb-display` = **Fraunces** (300–400, itálica para la 2ª línea de cada titular, tracking negativo) · `fb-body` = **Manrope** (400/600/700). Escala: 112/92 hero · 72 sección · 56 paso de reserva · 40/32/28/24 · body 19/16/15/14/13 · kicker 12/700 +1.5.
+- **Componentes (`reusable`):** FB Logo · FB Button Primary / Outline / Light · FB Arrow Link · FB Nav Link · FB Kicker (punto + label) · FB Chip · FB Live Badge · FB Tag · FB Service Item (con botón `+` → `✓`) · FB Stat · FB Stylist Card (retrato en arco) · FB Testimonial · FB Step · FB Day · FB Time Slot · FB Stylist Option · FB Input · FB FAQ Item · FB Footer Column · FB Process Step.
+- **Landing:** Nav → Hero (titular con arco de imagen en línea, sello “9 años”, tarjeta de próximo horario) → franja marquee flamboyán → 01 Menú (sand) → 02 Reserva (palma + widget con semana) → 03 Equipo (tarjetas escalonadas) → 04 Resultados (blush, galería de arcos + testimonios) → 05 Visítanos + 06 FAQ (sand) → CTA final + footer (palma, wordmark gigante).
+- **Código:** `src/components/primitives.tsx` (equivalente de la biblioteca v2) · secciones en `src/components/sections/` (Nav, Hero, Marquee, Services, Booking, Team, Results, VisitFaq, Footer) · flujo `/reservar` en `src/components/booking/BookingFlow.tsx`. `BOOKING_LIVE = false` hasta conectar Supabase: el paso 3 no confirma nada y remite al teléfono; la pantalla de confirmación se previsualiza con `/reservar?demo=1`.
+- **Placeholders a confirmar con el salón:** dirección, teléfono, horario, email; stat “87 % clientas que regresan”; testimonios de Gabriela M. y Yarelis T.; “Aceptan ATH Móvil?”; consulta gratis de 15 min; estacionamiento.

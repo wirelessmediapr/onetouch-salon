@@ -1,42 +1,51 @@
 import Image from "next/image";
-import { QuoteBlock, Rating } from "@/components/primitives";
+import { InstagramIcon } from "@/components/SocialIcons";
+import { ArrowLink, Kicker, SectionTitle, Stat, Testimonial } from "@/components/primitives";
 import { Reveal } from "@/components/Reveal";
-
-const collage = [
-  { src: "/images/generated-6.png", alt: "Manicura en gel en tono terracota", big: true },
-  { src: "/images/generated-7.png", alt: "Resultado de balayage con ondas suaves" },
-  { src: "/images/generated-8.png", alt: "Interior del estudio de Onetouch Salon" },
-];
+import { stats, testimonials } from "@/lib/data";
 
 export function Results() {
-  const [big, ...stack] = collage;
   return (
-    <section id="resultados" className="bg-paper px-6 py-20 md:px-20 md:py-[120px]">
-      <div className="ot-container grid gap-16 lg:grid-cols-[440px_1fr] lg:gap-20">
-        <Reveal className="lg:flex lg:flex-col lg:justify-between">
-          <div className="lg:mt-2">
-            <QuoteBlock
-              index="04 — Resultados"
-              quote="Salí con el color que llevaba años buscando. Y la cita la reservé desde el carro, en un minuto."
-              name="Natalia R."
-              detail="Balayage con Andrea · clienta desde 2021"
-            />
-            <div className="mt-8">
-              <Rating text="4.9 de 5 · 320 reseñas verificadas en Google" />
-            </div>
+    <section id="resultados" className="scroll-mt-4 bg-blush px-5 py-16 md:px-20 md:py-[120px]">
+      <div className="ot-container flex flex-col gap-10 md:gap-16">
+        <Reveal className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+          <div className="flex flex-col gap-5">
+            <Kicker tone="deep">04 · Resultados</Kicker>
+            <SectionTitle line1="Ellas lo dicen" line2="mejor que nosotras." accent="deep" />
           </div>
-        </Reveal>
-        <div className="flex flex-col gap-4 lg:h-[680px] lg:flex-row">
-          <div className="relative min-h-[280px] flex-1 overflow-hidden rounded-[4px] lg:min-h-0">
-            <Image src={big.src} alt={big.alt} fill sizes="(max-width: 1024px) 100vw, 55vw" className="object-cover" />
-          </div>
-          <div className="flex w-full flex-col gap-4 lg:w-[340px]">
-            {stack.map((img) => (
-              <div key={img.src} className="relative min-h-[200px] flex-1 overflow-hidden rounded-[4px] lg:min-h-0">
-                <Image src={img.src} alt={img.alt} fill sizes="(max-width: 1024px) 100vw, 340px" className="object-cover" />
-              </div>
+          <div className="flex justify-between gap-6 md:gap-14">
+            {stats.map((s) => (
+              <Stat key={s.label} {...s} />
             ))}
           </div>
+        </Reveal>
+
+        <div className="grid grid-cols-2 gap-3 md:h-[560px] md:grid-cols-3 md:gap-5">
+          <div className="arch relative aspect-[3/4] overflow-hidden md:aspect-auto">
+            <Image src="/images/generated-6.png" alt="Manicura en tonos neutros" fill sizes="(min-width: 768px) 420px, 50vw" className="object-cover" />
+          </div>
+          <div className="flex flex-col gap-5 max-md:hidden">
+            <div className="relative flex-1 overflow-hidden rounded-lg">
+              <Image src="/images/generated-7.png" alt="Balayage con ondas suaves" fill sizes="420px" className="object-cover" />
+            </div>
+            <div className="flex flex-col gap-[10px] rounded-lg bg-palm p-7">
+              <p className="font-display text-[26px] tracking-[-0.01em] text-cream">Antes y después, sin filtros.</p>
+              <div>
+                <ArrowLink label="Más en @onetouchsalon" href="https://instagram.com/onetouchsalon" tone="gold" icon={InstagramIcon} external />
+              </div>
+            </div>
+          </div>
+          <div className="arch-down relative aspect-[3/4] overflow-hidden md:aspect-auto">
+            <Image src="/images/generated-8.png" alt="Interior de Onetouch Salon" fill sizes="(min-width: 768px) 420px, 50vw" className="object-cover" />
+          </div>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-3 md:gap-6">
+          {testimonials.map((t, i) => (
+            <Reveal key={t.name} delay={i * 0.08} className={i > 0 ? "max-md:hidden" : ""}>
+              <Testimonial {...t} />
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

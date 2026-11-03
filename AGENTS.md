@@ -19,6 +19,7 @@ Dominio: `onetouch.salon` · Deploy: **Vercel** — auto-deploy con cada push a 
 
 ## Estado actual
 
+- **Rediseño v2 “Flamboyán” (2026-11-03, aprobado e implementado):** lienzo con frames `Onetouch v2 — Componentes` / `— Landing` / `— Landing móvil` / `— Reservar · 1/2/3/Confirmada`; tokens `fb-*`, Fraunces + Manrope, arcos como forma de marca. Código en `src/` (landing + `/reservar`). Specs en `design.md` §9 — **es el sistema activo**; §1–§8 (`ot-*`) son legacy. `/reservar` es demo de UI con `BOOKING_LIVE=false` (no confirma citas; remite al teléfono) hasta el backend. Placeholders del salón listados en §9.
 - **Diseño:** `onetouch/onetouch.pen` (lienzo pen.dev: landing + frame "Onetouch — Componentes" + frame "Onetouch — Admin" con 6 pantallas completas + frame "Onetouch — Reservas (flujo)" con 3 estados del booking público) + imágenes `onetouch/generated*.png` + `design.md`.
 - **Código (fase actual):** Next.js 16 App Router + Tailwind v4 + framer-motion en `src/`. Landing completa montada desde la biblioteca del lienzo; build verificada (`npm run build`). Widget de reserva = demo interactivo estático; conectores reales en fase siguiente. Ver `README.md` para estructura y comandos (`npm run dev`, `npm run build`).
 - **Paridad canvas↔code verificada (2026-10-16, commit `2444a1d`):** con el lienzo abierto se cosechó el copy verbatim y se corrigió todo drift: fondo base del sitio = `$ot-bone` (body; Services/Results en paper, Booking/Footer ink), 16 descripciones de servicios reales (ya no TODO), regla ink bajo el header de categoría, widget fiel a lienzo (tarjeta servicio con `Cambiar` + `180 min · $210`, estilistas Andrea/Valeria/Sin preferencia, días 11/13/16/18/24/25/31 = agotados sin punto, celdas 58px, dot 4, "Hoy" stroke dark-muted), cita "Natalia R." + rating verbatim, footer con `Ciudad, PR 00000` + `Cómo llegar ↗` + copyright, CTA nav = pill accent rellena. `design.md` sincronizado a ese estado.
@@ -33,8 +34,8 @@ Dominio: `onetouch.salon` · Deploy: **Vercel** — auto-deploy con cada push a 
 
 ## Reglas de diseño (obligatorias)
 
-- Seguir `design.md` §6 (anti-slop): sin gradientes, sombras ni glassmorphism; colores solo de tokens `ot-*` (en `src/app/globals.css`); copy de UI en español.
-- Dirección visual aprobada: *warm editorial* con Instrument Serif (display) + Instrument Sans (body), acento terracota `#B9502C`. El brainstorm interrogó Dark Luxury (negro/dorado) pero la decisión final fue el warm editorial actual en el lienzo.
+- Seguir `design.md` §6 (anti-slop): sin gradientes, sombras ni glassmorphism (en v2 los radios grandes solo en arcos y pills); colores solo de tokens; copy de UI en español.
+- Dirección visual vigente (2026-11-03): **v2 “Flamboyán”** — verde palma + crema + rojo flamboyán `#E2452B`, Fraunces (display) + Manrope (body), arcos del Viejo San Juan (design.md §9). Colores solo de tokens `fb-*` (en código, sin prefijo en `globals.css`). Antes: warm editorial `ot-*` (legacy).
 - Voz del copy: español PR, tratamiento femenino directo, precios claros; código en inglés.
 
 ## Flujo de trabajo con pen.dev
@@ -67,6 +68,7 @@ Dominio: `onetouch.salon` · Deploy: **Vercel** — auto-deploy con cada push a 
 
 ## Git
 
+- `node_modules` puede venir instalado desde Windows (disco compartido): si `npm run build` falla por `lightningcss.linux-x64-gnu.node`, instalar `lightningcss-linux-x64-gnu` y `@tailwindcss/oxide-linux-x64-gnu` con `npm i --no-save` (misma versión) — no tocar el lockfile.
 - Rama: `main`. Commits convencionales (Conventional Commits), asunto conciso en inglés, cuerpo si hace falta; nunca incluir secretos.
 - Commit en el mismo cambio: diseño (.pen) + `design.md` + `src/` sincronizados.
 - El bloque `nextjs-agent-rules` al inicio de este archivo lo re-crea `next dev`; commitearlo tal cual.

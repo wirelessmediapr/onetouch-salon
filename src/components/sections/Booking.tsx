@@ -1,203 +1,122 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
-import {
-  DayCell,
-  SectionHeader,
-  StepBadge,
-  StylistRow,
-  TimeChip,
-} from "@/components/primitives";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { DayCell, Kicker, PrimaryButton, SectionTitle, Step, TimeSlot } from "@/components/primitives";
 import { Reveal } from "@/components/Reveal";
-import {
-  bookingStylistOptions,
-  bookingSummary,
-  calendarDays,
-  timeGroups,
-} from "@/lib/data";
+import { bookingSteps } from "@/lib/data";
 
-// Octubre 2026: el día 1 cae jueves (índice 3 en semana LU-first).
-const weekdayLabels = ["LU", "MA", "MI", "JU", "VI", "SÁ", "DO"];
-const dayNames = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
-const dayAbbr = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"];
-
-const weekdayOf = (day: number) => (3 + day - 1) % 7;
-const meridiemOf = (time: string) => (Number(time.split(":")[0]) < 12 ? "AM" : "PM");
+// Vista previa del widget: semana demo (2–8 nov 2026). El flujo real vive en /reservar.
+const week = [
+  { wd: "LUN", n: 2, state: "soldout" as const },
+  { wd: "MAR", n: 3, state: "today" as const },
+  { wd: "MIÉ", n: 4, state: "free" as const },
+  { wd: "JUE", n: 5, state: "free" as const },
+  { wd: "VIE", n: 6, state: "soldout" as const },
+  { wd: "SÁB", n: 7, state: "free" as const },
+  { wd: "DOM", n: 8, state: "closed" as const },
+];
+const dayNames: Record<number, string> = { 3: "Martes", 4: "Miércoles", 5: "Jueves", 7: "Sábado" };
+const dayAbbr: Record<number, string> = { 3: "Mar", 4: "Mié", 5: "Jue", 7: "Sáb" };
+const slots = [
+  { time: "9:00 AM" },
+  { time: "10:30 AM", busy: true },
+  { time: "11:00 AM" },
+  { time: "12:30 PM" },
+  { time: "2:00 PM" },
+  { time: "3:00 PM" },
+  { time: "4:30 PM", busy: true },
+  { time: "5:00 PM" },
+];
 
 export function Booking() {
-  const [stylist, setStylist] = useState("Andrea");
-  const [selectedDay, setSelectedDay] = useState(14);
-  const [selectedTime, setSelectedTime] = useState("11:00");
-
-  const groups = timeGroups.map((group) => ({
-    ...group,
-    rows: group.rows.map((row) =>
-      row.map((slot) => ({
-        ...slot,
-        state:
-          slot.state === "busy"
-            ? ("busy" as const)
-            : slot.time === selectedTime
-              ? ("selected" as const)
-              : ("free" as const),
-      })),
-    ),
-  }));
-
-  const stylistOptions = bookingStylistOptions;
-
-  const who =
-    stylist === "Sin preferencia" ? "nuestro equipo" : stylist.split(" ")[0];
+  const [day, setDay] = useState(5);
+  const [time, setTime] = useState("11:00 AM");
 
   return (
-    <section id="reservas" className="bg-ink px-6 py-20 md:px-20 md:py-[120px]">
-      <div className="ot-container flex flex-col gap-14">
-      <Reveal>
-        <SectionHeader
-          index="02 — Reservas en línea"
-          title="Tu cita, en cuatro toques."
-          intro="Disponibilidad real de cada estilista, actualizada al minuto. Recibirás confirmación por SMS y un recordatorio el día antes."
-          dark
-        />
-      </Reveal>
-
-      <div className="overflow-hidden rounded-lg border border-dark-line bg-dark-card">
-        {/* Pasos */}
-        <div className="flex flex-wrap items-center gap-4 border-b border-dark-line px-6 py-6 md:px-10">
-          <StepBadge num={1} label="Servicio" state="done" />
-          <span aria-hidden className="h-px w-12 bg-dark-line" />
-          <StepBadge num={2} label="Estilista" state="done" />
-          <span aria-hidden className="h-px w-12 bg-dark-line" />
-          <StepBadge num={3} label="Fecha y hora" state="current" />
-          <span aria-hidden className="h-px w-12 bg-dark-line" />
-          <StepBadge num={4} label="Confirmar" state="pending" />
+    <section id="reservas" className="scroll-mt-4 bg-palm px-5 py-16 md:px-20 md:py-[120px]">
+      <div className="ot-container flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-20">
+        <div className="flex min-w-0 flex-1 flex-col gap-8 md:gap-12">
+          <Reveal className="flex flex-col gap-5">
+            <Kicker tone="gold">02 · Reserva en línea</Kicker>
+            <SectionTitle line1="Tres pasos." line2="Menos de un minuto." dark accent="gold" />
+          </Reveal>
+          <ol className="flex flex-col">
+            {bookingSteps.map((s) => (
+              <li key={s.index} className="flex gap-4 border-t border-palm-line py-5 md:gap-7 md:py-6">
+                <span className="font-display text-[28px] font-light italic leading-none text-gold md:text-[40px]">{s.index}</span>
+                <div className="flex flex-col gap-1 md:gap-2">
+                  <h3 className="font-display text-[21px] tracking-[-0.01em] text-cream md:text-[26px]">{s.title}</h3>
+                  <p className="text-[14px] leading-[1.55] text-palm-muted md:text-[15px]">{s.body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <div className="lg:hidden">
+            <PrimaryButton label="Empezar mi reserva" href="/reservar" size="lg" full />
+          </div>
         </div>
 
-        <div className="grid lg:grid-cols-[320px_1fr] xl:grid-cols-[320px_1fr_340px]">
-          {/* Selección */}
-          <div className="flex flex-col gap-7 border-dark-line px-6 py-8 md:px-10 lg:border-r">
-            <div className="flex flex-col gap-3">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-dark-muted">Servicio</p>
-              <div className="flex flex-col gap-[6px] rounded-md border border-dark-line p-4">
-                <div className="flex items-center justify-between gap-4">
-                  <p className="text-[15px] font-semibold text-bone">Balayage a mano alzada</p>
-                  <button type="button" className="text-[13px] text-accent-warm transition-opacity hover:opacity-80">
-                    Cambiar
-                  </button>
+        <Reveal delay={0.1} className="w-full max-lg:hidden lg:w-[560px] lg:shrink-0">
+          <div className="overflow-hidden rounded-[28px_28px_28px_6px] bg-cream">
+            <div className="flex items-center gap-5 border-b border-line px-7 py-5">
+              <Step num={1} label="Servicios" state="done" />
+              <span aria-hidden className="h-px w-6 bg-line" />
+              <Step num={2} label="Fecha y hora" state="current" />
+              <span aria-hidden className="h-px w-6 bg-line" />
+              <Step num={3} label="Confirmar" state="pending" />
+            </div>
+            <div className="flex flex-col gap-6 p-7">
+              <div className="flex items-center gap-[14px] rounded-full border-[1.5px] border-flame bg-flame-soft py-3 pl-3 pr-4">
+                <Image src="/images/generated-3.png" alt="" width={44} height={44} className="h-11 w-11 rounded-full object-cover" />
+                <span className="flex flex-1 flex-col gap-[2px]">
+                  <span className="text-[15px] font-bold">Andrea Ríos</span>
+                  <span className="text-[12px] text-muted">Balayage a mano alzada · 180 min</span>
+                </span>
+                <span aria-hidden className="h-5 w-5 rounded-full border-[6px] border-flame bg-white" />
+              </div>
+              <div className="flex items-center justify-between">
+                <p className="font-display text-[28px] italic tracking-[-0.02em]">Noviembre</p>
+                <div className="flex gap-2" aria-hidden>
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full border border-line">
+                    <ChevronLeft size={16} />
+                  </span>
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full border border-line">
+                    <ChevronRight size={16} />
+                  </span>
                 </div>
-                <p className="text-[13px] text-dark-muted">180 min · {bookingSummary.price}</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <p className="mb-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-dark-muted">Estilista</p>
-              {stylistOptions.map((option) => (
-                <StylistRow
-                  key={option.name}
-                  name={option.name}
-                  role={option.role}
-                  image={option.image}
-                  selected={stylist === option.name}
-                  onSelect={() => setStylist(option.name)}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Calendario */}
-          <div className="flex flex-col gap-6 px-6 py-8 md:px-10">
-            <div className="flex items-center justify-between">
-              <h3 className="font-display text-[clamp(24px,2.4vw,34px)] text-bone">Octubre 2026</h3>
-              <div className="flex gap-2">
-                <span aria-hidden className="flex h-9 w-9 items-center justify-center rounded-full border border-dark-line text-dark-muted">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
-                </span>
-                <span aria-hidden className="flex h-9 w-9 items-center justify-center rounded-full border border-dark-line text-dark-muted">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
-                </span>
-              </div>
-            </div>
-            <div className="grid grid-cols-[repeat(7,44px)] justify-center gap-[6px] max-lg:mx-auto">
-              {weekdayLabels.map((label) => (
-                <span key={label} className="pb-1 text-center text-[11px] font-semibold tracking-[0.08em] text-dark-muted">
-                  {label}
-                </span>
-              ))}
-              {calendarDays.map((day, i) =>
-                day === null ? (
-                  <span key={`empty-${i}`} />
-                ) : (
-                  <DayCell
-                    key={day.n}
-                    day={{ ...day, tone: day.tone === "selected" ? "default" : day.tone }}
-                    selected={day.tone !== "past" && selectedDay === day.n}
-                    onSelect={() => setSelectedDay(day.n)}
-                  />
-                ),
-              )}
-            </div>
-            <div className="mt-1 flex flex-wrap gap-x-8 gap-y-3">
-              <span className="flex items-center gap-2 text-[12px] text-dark-muted">
-                <span aria-hidden className="h-[4px] w-[4px] rounded-full bg-accent-warm" />
-                Con horarios libres
-              </span>
-              <span className="flex items-center gap-2 text-[12px] text-dark-muted">
-                <span aria-hidden className="text-[13px] text-day-idle">12</span>
-                Agotado / cerrado
-              </span>
-              <span className="flex items-center gap-2 text-[12px] text-dark-muted">
-                <span aria-hidden className="h-4 w-4 rounded-[3px] border border-dark-muted" />
-                Hoy
-              </span>
-            </div>
-          </div>
-
-          {/* Horarios */}
-          <div className="flex flex-col gap-6 border-dark-line px-6 py-8 md:px-10 lg:border-t xl:border-l xl:border-t-0">
-            <div>
-              <h3 className="font-display text-[clamp(22px,2vw,28px)] text-bone">
-                {dayNames[weekdayOf(selectedDay)]} {selectedDay} de octubre
-              </h3>
-              <p className="text-[13px] text-dark-muted">6 horarios con {who}</p>
-            </div>
-            {groups.map((group, gi) => (
-              <div key={`${group.label}-${gi}`} className="flex flex-col gap-3">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-dark-muted">{group.label}</p>
-                {group.rows.map((row, ri) => (
-                  <div key={ri} className="grid grid-cols-3 gap-2">
-                    {row.map((slot) => (
-                      <TimeChip
-                        key={`${gi}-${ri}-${slot.time}`}
-                        slot={slot}
-                        onSelect={slot.state === "busy" ? undefined : () => setSelectedTime(slot.time)}
-                      />
-                    ))}
+              <div className="flex justify-between">
+                {week.map((d) => (
+                  <div key={d.n} className="flex flex-col items-center gap-2">
+                    <span className="text-[11px] font-bold tracking-[0.08em] text-muted">{d.wd}</span>
+                    <DayCell n={d.n} state={day === d.n ? "selected" : d.state} onSelect={() => setDay(d.n)} />
                   </div>
                 ))}
               </div>
-            ))}
-            <div className="mt-auto flex flex-col gap-4 border-t border-dark-line pt-6">
-              <div className="flex items-end justify-between gap-4">
-                <div className="flex flex-col gap-1">
-                  <p className="text-[14px] font-semibold text-bone">Balayage · {stylist}</p>
-                  <p className="text-[13px] text-dark-muted">
-                    {dayAbbr[weekdayOf(selectedDay)]} {selectedDay} oct · {selectedTime} {meridiemOf(selectedTime)}
-                  </p>
+              <div className="flex flex-col gap-[10px]">
+                <p className="text-[11px] font-bold uppercase tracking-[0.1em] text-muted">
+                  {dayNames[day]} {day} · {slots.filter((s) => !s.busy).length} horarios libres
+                </p>
+                <div className="grid grid-cols-4 gap-[10px]">
+                  {slots.map((s) => (
+                    <TimeSlot key={s.time} {...s} selected={time === s.time} onSelect={() => setTime(s.time)} />
+                  ))}
                 </div>
-                <p className="font-display text-[34px] leading-none text-bone">{bookingSummary.price}</p>
               </div>
-              <button
-                type="button"
-                className="flex w-full items-center justify-center gap-2 rounded-full bg-accent py-4 text-[16px] font-semibold text-white transition-opacity hover:opacity-90"
-              >
-                Confirmar cita
-                <ArrowRight size={18} strokeWidth={1.8} />
-              </button>
-              <p className="text-[12px] text-dark-muted">{bookingSummary.fine}</p>
+            </div>
+            <div className="flex items-center justify-between bg-sand px-7 py-5">
+              <div className="flex flex-col gap-[2px]">
+                <span className="text-[13px] font-semibold text-ink-soft">
+                  {dayAbbr[day]} {day} nov · {time}
+                </span>
+                <span className="font-display text-[32px] leading-none">$210</span>
+              </div>
+              <PrimaryButton label="Continuar" href="/reservar" icon={ArrowRight} />
             </div>
           </div>
-        </div>
-      </div>
+        </Reveal>
       </div>
     </section>
   );
