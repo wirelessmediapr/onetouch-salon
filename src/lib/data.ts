@@ -12,7 +12,7 @@ export type ServiceCategory = {
   items: ServiceItem[];
 };
 
-// Copy del lienzo `onetouch/onetouch.pen` (v2 “Flamboyán”) — 01 · MENÚ DE SERVICIOS.
+// Menú completo (usado en /reservar y en los bloques destacados de la landing v3).
 export const serviceCategories: ServiceCategory[] = [
   {
     name: "Cabello",
@@ -76,19 +76,11 @@ export const priceOf = (price: string) => Number(price.replace(/\D/g, ""));
 
 export const allServices = serviceCategories.flatMap((c) => c.items.map((i) => ({ ...i, category: c.name })));
 
-export const marqueeWords = ["Balayage", "Keratina", "Manicura en gel", "Babylights", "Laminado de cejas", "Peinados de novia", "Pedicura spa"];
-
-// TODO(salón): testimonios 2 y 3 y el stat de retorno son placeholders del lienzo v2 — confirmar.
+// TODO(salón): testimonios 2 y 3 son placeholders del lienzo — confirmar.
 export const testimonials = [
   { quote: "“Salí con el rubio que llevaba años buscando. Reservé a las 11 de la noche desde el celular.”", name: "Natalia R.", detail: "Balayage con Andrea", image: "/images/generated-6.png" },
   { quote: "“Camila entendió mis rizos a la primera. Por fin un corte que no tengo que planchar.”", name: "Gabriela M.", detail: "Corte con Camila", image: "/images/generated-2.png" },
   { quote: "“Puntuales, precios claros y el gel me duró tres semanas completas.”", name: "Yarelis T.", detail: "Manicura en gel con Sofía", image: "/images/generated-4.png" },
-];
-
-export const stats = [
-  { value: "4.9", label: "320 reseñas en Google" },
-  { value: "9", label: "años en Ciudad, PR" },
-  { value: "87%", label: "clientas que regresan" },
 ];
 
 export const bookingSteps = [
@@ -142,3 +134,46 @@ export const slotGroups: { label: string; slots: Slot[] }[] = [
 
 // Días sin horarios (demo): agotados en el mes visible.
 export const soldOutDays = [6, 11, 20];
+
+// ===== Landing v3 “Noir & Oro” (lienzo: Onetouch v3 — Landing) =====
+
+export type Highlight = { name: string; icon: "scissors" | "palette" | "sparkles" | "hand" | "eye" | "flower"; from: string; image: string };
+
+export const highlights: Highlight[] = [
+  { name: "Cortes & peinados", icon: "scissors", from: "Desde $55", image: "/images/v3/svc-cortes.jpg" },
+  { name: "Color & balayage", icon: "palette", from: "Desde $85", image: "/images/v3/svc-color.jpg" },
+  { name: "Keratina", icon: "sparkles", from: "Desde $180", image: "/images/v3/svc-keratina.jpg" },
+  { name: "Uñas", icon: "hand", from: "Desde $25", image: "/images/v3/svc-unas.jpg" },
+  { name: "Cejas & pestañas", icon: "eye", from: "Desde $22", image: "/images/v3/svc-cejas.jpg" },
+  { name: "Faciales", icon: "flower", from: "Desde $70", image: "/images/v3/svc-faciales.jpg" },
+];
+
+export const commitments = ["Manos expertas", "Productos premium", "Atención personal", "Higiene estricta", "Resultados constantes"];
+
+const pick = (names: string[]) => names.map((n) => allServices.find((s) => s.name === n)!);
+
+export const features = [
+  {
+    id: "cabello",
+    kicker: "01 · Cabello",
+    line1: "Cabello sano",
+    line2: "empieza con manos expertas.",
+    body: "Brillo, suavidad y confianza con tratamientos a la medida de tu cabello.",
+    image: "/images/v3/cabello.jpg",
+    alt: "Estilista lavando el cabello de una clienta en el salón",
+    items: pick(["Corte & estilizado", "Keratina alisadora", "Balayage a mano alzada", "Peinado para eventos"]),
+  },
+  {
+    id: "unas",
+    kicker: "02 · Uñas",
+    line1: "Uñas bonitas,",
+    line2: "tú feliz.",
+    body: "Manicura y pedicura con acabado impecable que dura semanas.",
+    image: "/images/v3/unas.jpg",
+    alt: "Manicurista aplicando esmalte en gel color nude",
+    items: pick(["Manicura en gel", "Pedicura spa", "Uñas esculpidas", "Manicura clásica"]),
+  },
+];
+
+// TODO(salón): año de apertura (placeholder derivado de los “9 años” de v2).
+export const since = "2017";

@@ -1,37 +1,45 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Check, Plus, Star } from "lucide-react";
+import { ArrowRight, Check, Diamond, Plus } from "lucide-react";
 import type { ComponentType, ReactNode } from "react";
 
-/* Equivalente en código del frame "Onetouch v2 — Componentes" del lienzo (design.md §9). */
+/* Equivalente en código de la propuesta v3 “Noir & Oro” del lienzo (design.md §10). */
 
 type IconType = ComponentType<{ size?: number; strokeWidth?: number; className?: string }>;
+type Tone = "dark" | "light";
 
-/* ============ FB Logo ============ */
+/* ============ Wordmark ============ */
 
-export function Logo({ dark = false, compact = false }: { dark?: boolean; compact?: boolean }) {
-  return (
-    <Link href="/" aria-label="Onetouch Salon — inicio" className="inline-flex items-center gap-2">
-      <span aria-hidden className={`${compact ? "h-[10px] w-[10px]" : "h-[14px] w-[14px]"} rounded-full bg-flame`} />
-      <span
-        className={`font-display font-medium italic leading-none tracking-[-0.03em] ${compact ? "text-[24px]" : "text-[30px]"} ${dark ? "text-cream" : "text-ink"}`}
-      >
-        onetouch
+export function Logo({ tone = "dark", compact = false, size = "md" }: { tone?: Tone; compact?: boolean; size?: "md" | "xl" }) {
+  const main = tone === "dark" ? "text-gold" : "text-ink";
+  const sub = tone === "dark" ? "text-gold-light" : "text-gold-deep";
+  if (size === "xl") {
+    return (
+      <span className="flex flex-col items-center gap-2">
+        <span className={`whitespace-nowrap font-caps text-[clamp(36px,6vw,64px)] leading-none tracking-[0.1em] ${main}`}>ONE TOUCH</span>
+        <span className="flex items-center gap-4">
+          <span aria-hidden className="h-px w-12 bg-gold-deep md:w-20" />
+          <span className={`font-caps text-[13px] tracking-[0.6em] md:text-[16px] ${sub}`}>SALON</span>
+          <span aria-hidden className="h-px w-12 bg-gold-deep md:w-20" />
+        </span>
       </span>
-      {!compact && (
-        <span className={`text-[11px] font-bold tracking-[0.18em] ${dark ? "text-palm-muted" : "text-muted"}`}>salón</span>
-      )}
+    );
+  }
+  return (
+    <Link href="/" aria-label="OneTouch Salon — inicio" className="inline-flex flex-col items-center gap-[2px]">
+      <span className={`whitespace-nowrap font-caps leading-none tracking-[0.1em] ${compact ? "text-[20px]" : "text-[26px]"} ${main}`}>ONE TOUCH</span>
+      <span className={`font-caps leading-none tracking-[0.55em] ${compact ? "text-[9px]" : "text-[10px]"} ${sub}`}>SALON</span>
     </Link>
   );
 }
 
-/* ============ Botones ============ */
+/* ============ Botones (radio 2, mayúsculas Cinzel) ============ */
 
 type ButtonProps = {
   label: string;
   href?: string;
   onClick?: () => void;
-  icon?: IconType;
+  icon?: IconType | null;
   size?: "sm" | "md" | "lg";
   full?: boolean;
   type?: "button" | "submit";
@@ -40,9 +48,9 @@ type ButtonProps = {
 };
 
 const sizes = {
-  sm: "px-5 py-3 text-[14px]",
-  md: "px-[26px] py-4 text-[15px]",
-  lg: "px-8 py-5 text-[16px]",
+  sm: "px-5 py-3 text-[12px]",
+  md: "px-[26px] py-4 text-[13px]",
+  lg: "px-8 py-[18px] text-[14px]",
 };
 
 function ButtonBase({
@@ -57,15 +65,20 @@ function ButtonBase({
   form,
   className,
 }: ButtonProps & { className: string }) {
-  const cls = `inline-flex items-center justify-center gap-[10px] rounded-full font-bold transition-[opacity,background-color,color] ${sizes[size]} ${full ? "w-full" : ""} ${className}`;
+  const cls = `inline-flex items-center justify-center gap-3 rounded-[2px] font-caps font-bold tracking-[0.12em] uppercase transition-colors ${sizes[size]} ${full ? "w-full" : ""} ${className}`;
   const content = (
     <>
       {label}
-      {Icon && <Icon size={18} strokeWidth={2} />}
+      {Icon && <Icon size={16} strokeWidth={2} />}
     </>
   );
   if (href) {
-    return (
+    const external = href.startsWith("tel:") || href.startsWith("mailto:");
+    return external ? (
+      <a href={href} className={cls}>
+        {content}
+      </a>
+    ) : (
       <Link href={href} className={cls}>
         {content}
       </Link>
@@ -78,97 +91,112 @@ function ButtonBase({
   );
 }
 
-export function PrimaryButton({ icon = ArrowUpRight, ...props }: ButtonProps) {
-  return <ButtonBase {...props} icon={icon} className="bg-flame text-white hover:bg-flame-deep" />;
+export function PrimaryButton({ icon = ArrowRight, ...props }: ButtonProps) {
+  return <ButtonBase {...props} icon={icon} className="bg-gold text-noir hover:bg-gold-light" />;
 }
 
-export function OutlineButton({ dark = false, ...props }: ButtonProps & { dark?: boolean }) {
+export function OutlineButton({ tone = "dark", icon = null, ...props }: ButtonProps & { tone?: Tone }) {
   return (
     <ButtonBase
       {...props}
-      className={`border ${dark ? "border-palm-muted text-cream hover:bg-palm-2" : "border-ink text-ink hover:bg-ink hover:text-cream"}`}
+      icon={icon}
+      className={`border ${tone === "dark" ? "border-gold text-gold hover:bg-gold hover:text-noir" : "border-ink text-ink hover:bg-ink hover:text-ivory"}`}
     />
   );
 }
 
-export function LightButton(props: ButtonProps) {
-  return <ButtonBase {...props} className="bg-cream text-palm hover:bg-sand" />;
+export function LightButton({ icon = null, ...props }: ButtonProps) {
+  return <ButtonBase {...props} icon={icon} className="bg-ivory text-ink hover:bg-cream" />;
 }
 
-/* ============ FB Arrow Link ============ */
+/* ============ Kicker: regla + mayúsculas ============ */
 
-export function ArrowLink({
-  label,
-  href,
-  tone = "flame",
-  icon: Icon = ArrowRight,
-  external = false,
-}: {
-  label: string;
-  href: string;
-  tone?: "flame" | "gold";
-  icon?: IconType;
-  external?: boolean;
-}) {
-  const color = tone === "gold" ? "border-gold text-gold" : "border-flame text-flame";
+export function Kicker({ children, tone = "dark", center = false }: { children: ReactNode; tone?: Tone; center?: boolean }) {
+  const color = tone === "dark" ? "text-gold" : "text-gold-deep";
+  const rule = tone === "dark" ? "bg-gold" : "bg-gold-deep";
   return (
-    <Link
-      href={href}
-      {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
-      className={`group inline-flex items-center gap-2 border-b-[1.5px] pb-1 text-[14px] font-bold ${color}`}
-    >
-      {label}
-      <Icon size={16} strokeWidth={2} className="transition-transform group-hover:translate-x-0.5" />
-    </Link>
-  );
-}
-
-/* ============ FB Kicker ============ */
-
-export function Kicker({ children, tone = "flame" }: { children: ReactNode; tone?: "flame" | "gold" | "deep" }) {
-  const color = { flame: "text-flame bg-flame", gold: "text-gold bg-gold", deep: "text-flame-deep bg-flame-deep" }[tone];
-  const [text, dot] = color.split(" ");
-  return (
-    <span className={`inline-flex items-center gap-[10px] text-[11px] font-bold uppercase tracking-[0.12em] md:text-[12px] ${text}`}>
-      <span aria-hidden className={`h-[6px] w-[6px] rounded-full ${dot}`} />
+    <span className={`inline-flex items-center gap-3 font-caps text-[11px] tracking-[0.25em] md:text-[12px] ${color}`}>
+      <span aria-hidden className={`h-px w-8 md:w-10 ${rule}`} />
       {children}
+      {center && <span aria-hidden className={`h-px w-8 md:w-10 ${rule}`} />}
     </span>
   );
 }
 
-/* ============ Section title (2 líneas, 2ª en itálica) ============ */
+/* ============ Ornament title: regla · rombo · texto · rombo · regla ============ */
+
+export function OrnamentTitle({ children, sub }: { children: ReactNode; sub?: string }) {
+  return (
+    <div className="flex flex-col items-center gap-3 text-center">
+      <div className="flex items-center gap-3 md:gap-[14px]">
+        <span aria-hidden className="h-px w-8 bg-gold-deep md:w-[120px]" />
+        <Diamond aria-hidden size={10} className="shrink-0 text-gold" />
+        <h2 className="font-caps text-[13px] tracking-[0.2em] text-gold md:text-[15px]">{children}</h2>
+        <Diamond aria-hidden size={10} className="shrink-0 text-gold" />
+        <span aria-hidden className="h-px w-8 bg-gold-deep md:w-[120px]" />
+      </div>
+      {sub && <p className="font-caps text-[10px] tracking-[0.15em] text-on-dark-muted md:text-[12px]">{sub}</p>}
+    </div>
+  );
+}
+
+/* ============ Section title: Playfair, 2ª línea itálica ============ */
 
 export function SectionTitle({
   line1,
   line2,
-  dark = false,
-  accent = "flame",
+  tone = "dark",
   as: Tag = "h2",
-  size = "section",
+  center = false,
 }: {
   line1: string;
-  line2: string;
-  dark?: boolean;
-  accent?: "flame" | "gold" | "deep";
+  line2?: string;
+  tone?: Tone;
   as?: "h1" | "h2";
-  size?: "section" | "step" | "cta";
+  center?: boolean;
 }) {
-  const accentCls = { flame: "text-flame", gold: "text-gold", deep: "text-flame-deep" }[accent];
-  const sizeCls = {
-    section: "text-[clamp(38px,5.6vw,72px)] tracking-[-0.035em]",
-    step: "text-[clamp(36px,4vw,56px)] tracking-[-0.035em]",
-    cta: "text-[clamp(44px,6.4vw,88px)] font-light tracking-[-0.035em]",
-  }[size];
   return (
-    <Tag className={`font-display leading-[1.02] ${sizeCls} ${dark ? "text-cream" : "text-ink"}`}>
+    <Tag
+      className={`font-display text-[clamp(38px,4.6vw,64px)] leading-[1.05] tracking-[-0.01em] ${tone === "dark" ? "text-on-dark" : "text-ink"} ${center ? "text-center" : ""}`}
+    >
       {line1}
-      <br />
-      <em className={`italic ${accentCls}`}>{line2}</em>
+      {line2 && (
+        <>
+          <br />
+          <em className={`italic ${tone === "dark" ? "text-gold" : "text-gold-deep"}`}>{line2}</em>
+        </>
+      )}
     </Tag>
   );
 }
 
-/* ============ FB Chip ============ */
+/* ============ Arch photo con contorno dorado ============ */
+
+export function ArchPhoto({
+  src,
+  alt,
+  sizes,
+  priority,
+  inset = 24,
+  className = "",
+}: {
+  src: string;
+  alt: string;
+  sizes: string;
+  priority?: boolean;
+  inset?: number;
+  className?: string;
+}) {
+  return (
+    <div className={`arch relative border border-gold-deep ${className}`} style={{ padding: inset, paddingBottom: 0 }}>
+      <div className="arch relative h-full w-full overflow-hidden bg-noir-card">
+        <Image src={src} alt={alt} fill priority={priority} sizes={sizes} className="object-cover" />
+      </div>
+    </div>
+  );
+}
+
+/* ============ Chip (filtro de categoría) ============ */
 
 export function Chip({
   label,
@@ -186,37 +214,21 @@ export function Chip({
       type="button"
       onClick={onClick}
       aria-pressed={active}
-      className={`inline-flex shrink-0 items-center gap-2 rounded-full border px-[18px] py-[10px] text-[14px] font-semibold transition-colors ${
-        active ? "border-palm bg-palm text-cream" : "border-line bg-cream text-ink-soft hover:border-ink"
+      className={`inline-flex shrink-0 items-center gap-2 rounded-[2px] border px-[18px] py-[10px] font-caps text-[12px] tracking-[0.12em] uppercase transition-colors ${
+        active ? "border-noir bg-noir text-gold" : "border-taupe bg-ivory text-ink-soft hover:border-ink"
       }`}
     >
       {label}
-      {count !== undefined && <span className={`text-[12px] font-bold ${active ? "text-palm-muted" : "text-muted"}`}>{count}</span>}
+      {count !== undefined && <span className={`font-sans text-[12px] font-bold ${active ? "text-gold-light" : "text-muted"}`}>{count}</span>}
     </button>
   );
 }
 
-/* ============ FB Live Badge / Tag ============ */
-
-export function LiveBadge({ label }: { label: string }) {
-  return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-[14px] py-[7px] text-[12px] font-semibold md:text-[13px]">
-      <span aria-hidden className="relative flex h-2 w-2">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-leaf opacity-60" />
-        <span className="relative inline-flex h-2 w-2 rounded-full bg-leaf" />
-      </span>
-      {label}
-    </span>
-  );
-}
-
 export function Tag({ label }: { label: string }) {
-  return (
-    <span className="rounded-full bg-flame-soft px-[10px] py-[5px] text-[11px] font-bold tracking-[0.03em] text-flame-deep">{label}</span>
-  );
+  return <span className="rounded-[2px] bg-noir px-[10px] py-[5px] font-caps text-[10px] tracking-[0.12em] text-gold uppercase">{label}</span>;
 }
 
-/* ============ FB Service Item ============ */
+/* ============ Service Item (fila de menú, fondo claro) ============ */
 
 export function ServiceItem({
   name,
@@ -226,7 +238,6 @@ export function ServiceItem({
   tag,
   selected = false,
   onToggle,
-  compact = false,
 }: {
   name: string;
   desc: string;
@@ -235,118 +246,61 @@ export function ServiceItem({
   tag?: string;
   selected?: boolean;
   onToggle?: () => void;
-  compact?: boolean;
 }) {
-  const label = selected ? `Quitar ${name}` : `Agregar ${name}`;
   return (
-    <div className={`flex items-center gap-4 border-b border-line md:gap-5 ${compact ? "py-[18px]" : "py-[22px]"}`}>
+    <div className="flex items-center gap-4 border-b border-taupe py-5 md:gap-5">
       <div className="flex min-w-0 flex-1 flex-col gap-[6px]">
         <div className="flex flex-wrap items-center gap-x-[10px] gap-y-1">
-          <p className={`font-display tracking-[-0.02em] ${compact ? "text-[20px]" : "text-[20px] md:text-[24px]"}`}>{name}</p>
+          <p className="font-display text-[20px] md:text-[24px]">{name}</p>
           {tag && <Tag label={tag} />}
         </div>
         <p className="text-[13px] text-muted md:text-[14px]">
           {desc} · {duration}
         </p>
       </div>
-      <p className="font-display text-[24px] md:text-[28px]">{price}</p>
-      {onToggle ? (
-        <button
-          type="button"
-          onClick={onToggle}
-          aria-label={label}
-          aria-pressed={selected}
-          className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border transition-colors ${
-            selected ? "border-flame bg-flame text-white" : "border-ink text-ink hover:bg-ink hover:text-cream"
-          }`}
-        >
-          {selected ? <Check size={18} strokeWidth={2} /> : <Plus size={18} strokeWidth={2} />}
-        </button>
-      ) : (
-        <Link
-          href="/reservar"
-          aria-label={`Reservar ${name}`}
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink transition-colors hover:bg-ink hover:text-cream"
-        >
-          <Plus size={18} strokeWidth={2} />
-        </Link>
-      )}
+      <p className="font-display text-[24px] text-gold-deep md:text-[28px]">{price}</p>
+      <button
+        type="button"
+        onClick={onToggle}
+        aria-label={selected ? `Quitar ${name}` : `Agregar ${name}`}
+        aria-pressed={selected}
+        className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition-colors ${
+          selected ? "border-noir bg-noir text-gold" : "border-gold-deep text-gold-deep hover:bg-noir hover:text-gold"
+        }`}
+      >
+        {selected ? <Check size={18} strokeWidth={2} /> : <Plus size={18} strokeWidth={2} />}
+      </button>
     </div>
   );
 }
 
-/* ============ FB Stat ============ */
+/* ============ Fila de servicio destacada (fondo oscuro) ============ */
 
-export function Stat({ value, label }: { value: string; label: string }) {
+export function FeatureRow({ name, duration, price }: { name: string; duration: string; price: string }) {
   return (
-    <div className="flex flex-col gap-1">
-      <span className="font-display text-[40px] leading-none tracking-[-0.03em] md:text-[64px]">{value}</span>
-      <span className="text-[13px] text-ink-soft md:text-[14px]">{label}</span>
-    </div>
+    <Link href="/reservar" className="group flex items-center gap-4 border-b border-noir-line py-4">
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-gold-deep text-gold transition-colors group-hover:bg-gold group-hover:text-noir">
+        <Plus size={14} strokeWidth={2} />
+      </span>
+      <span className="min-w-0 flex-1 font-caps text-[13px] tracking-[0.1em] text-on-dark uppercase md:text-[14px]">{name}</span>
+      <span className="text-[13px] text-on-dark-muted max-sm:hidden">{duration}</span>
+      <span className="font-display text-[22px] text-gold">{price}</span>
+    </Link>
   );
 }
 
-/* ============ FB Stylist Card ============ */
-
-export function StylistCard({
-  member,
-  showSpecialties = true,
-}: {
-  member: { name: string; role: string; specialties: string; image: string };
-  showSpecialties?: boolean;
-}) {
-  const first = member.name.split(" ")[0];
-  return (
-    <article className="flex flex-col gap-[18px]">
-      <div className="arch relative aspect-[300/390] w-full overflow-hidden bg-sand">
-        <Image src={member.image} alt={`${member.name}, ${member.role}`} fill sizes="(min-width: 1024px) 300px, 240px" className="object-cover" />
-      </div>
-      <div className="flex flex-col gap-[6px]">
-        <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-flame">{member.role}</p>
-        <h3 className="font-display text-[26px] tracking-[-0.02em] md:text-[32px]">{member.name}</h3>
-        {showSpecialties && <p className="text-[14px] text-muted">{member.specialties}</p>}
-      </div>
-      <div>
-        <ArrowLink label={`Reservar con ${first}`} href="/reservar" />
-      </div>
-    </article>
-  );
-}
-
-/* ============ FB Testimonial ============ */
-
-export function Testimonial({ quote, name, detail, image }: { quote: string; name: string; detail: string; image: string }) {
-  return (
-    <figure className="card-tail flex flex-col gap-6 bg-cream p-6 md:p-9">
-      <div className="flex gap-1 text-flame" aria-label="5 de 5 estrellas">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <Star key={i} size={18} strokeWidth={1.8} fill="currentColor" />
-        ))}
-      </div>
-      <blockquote className="font-display text-[21px] leading-[1.25] tracking-[-0.01em] md:text-[22px]">{quote}</blockquote>
-      <figcaption className="flex items-center gap-3">
-        <Image src={image} alt="" width={40} height={40} className="h-10 w-10 rounded-full object-cover" />
-        <span className="flex flex-col gap-[2px]">
-          <span className="text-[14px] font-bold">{name}</span>
-          <span className="text-[13px] text-ink-soft">{detail}</span>
-        </span>
-      </figcaption>
-    </figure>
-  );
-}
-
-/* ============ FB Step ============ */
+/* ============ Step (indicador del flujo de reserva) ============ */
 
 export function Step({ num, label, state }: { num: number; label: string; state: "done" | "current" | "pending" }) {
   const badge = {
-    done: "border-flame-soft bg-flame-soft text-flame-deep",
-    current: "border-palm bg-palm text-cream",
-    pending: "border-line text-muted",
+    done: "border-gold-deep bg-cream text-gold-deep",
+    current: "border-noir bg-noir text-gold",
+    pending: "border-taupe text-muted",
   }[state];
   const text = { done: "text-ink-soft", current: "text-ink", pending: "text-muted" }[state];
   return (
     <span className="inline-flex items-center gap-[10px]" aria-current={state === "current" ? "step" : undefined}>
-      <span className={`flex h-[30px] w-[30px] items-center justify-center rounded-full border text-[13px] font-bold ${badge}`}>
+      <span className={`flex h-[30px] w-[30px] items-center justify-center rounded-full border font-caps text-[13px] ${badge}`}>
         {state === "done" ? <Check size={14} strokeWidth={2.4} /> : num}
       </span>
       <span className={`text-[14px] font-semibold ${text} max-sm:sr-only`}>{label}</span>
@@ -354,7 +308,7 @@ export function Step({ num, label, state }: { num: number; label: string; state:
   );
 }
 
-/* ============ FB Day ============ */
+/* ============ Day ============ */
 
 export function DayCell({
   n,
@@ -369,9 +323,9 @@ export function DayCell({
 }) {
   const disabled = state === "soldout" || state === "closed";
   const cls = {
-    free: "text-ink hover:bg-sand",
-    today: "border border-ink text-ink hover:bg-sand",
-    selected: "bg-flame text-white font-bold",
+    free: "text-ink hover:bg-cream",
+    today: "border border-ink text-ink hover:bg-cream",
+    selected: "bg-noir text-gold font-bold",
     soldout: "text-disabled line-through",
     closed: "text-disabled",
   }[state];
@@ -386,33 +340,33 @@ export function DayCell({
       className={`flex flex-col items-center justify-center gap-[3px] rounded-full text-[14px] font-semibold transition-colors md:text-[15px] ${cls} disabled:cursor-not-allowed`}
     >
       {n}
-      <span aria-hidden className={`h-1 w-1 rounded-full ${disabled ? "opacity-0" : state === "selected" ? "bg-white" : "bg-leaf"}`} />
+      <span aria-hidden className={`h-1 w-1 rounded-full ${disabled ? "opacity-0" : state === "selected" ? "bg-gold" : "bg-gold-deep"}`} />
     </button>
   );
 }
 
-/* ============ FB Time Slot ============ */
+/* ============ Time Slot ============ */
 
 export function TimeSlot({ time, busy, selected, onSelect }: { time: string; busy?: boolean; selected?: boolean; onSelect?: () => void }) {
   const cls = busy
-    ? "border-sand bg-sand text-muted line-through"
+    ? "border-cream bg-cream text-muted line-through"
     : selected
-      ? "border-palm bg-palm text-cream"
-      : "border-line bg-white text-ink hover:border-ink";
+      ? "border-noir bg-noir text-gold"
+      : "border-taupe bg-ivory text-ink hover:border-ink";
   return (
     <button
       type="button"
       disabled={busy}
       onClick={onSelect}
       aria-pressed={selected}
-      className={`w-full rounded-xl border py-3 text-[14px] font-semibold transition-colors disabled:cursor-not-allowed ${cls}`}
+      className={`w-full rounded-[2px] border py-3 text-[14px] font-semibold transition-colors disabled:cursor-not-allowed ${cls}`}
     >
       {time}
     </button>
   );
 }
 
-/* ============ FB Stylist Option ============ */
+/* ============ Stylist Option ============ */
 
 export function StylistOption({
   name,
@@ -433,25 +387,25 @@ export function StylistOption({
       role="radio"
       aria-checked={selected}
       onClick={onSelect}
-      className={`flex w-full items-center gap-[14px] rounded-full py-3 pl-3 pr-4 text-left transition-colors ${
-        selected ? "border-[1.5px] border-flame bg-flame-soft" : "border border-line bg-white hover:border-ink"
+      className={`flex w-full items-center gap-[14px] rounded-[2px] py-3 pl-3 pr-4 text-left transition-colors ${
+        selected ? "border-[1.5px] border-gold-deep bg-cream" : "border border-taupe bg-ivory hover:border-ink"
       }`}
     >
       {image ? (
         <Image src={image} alt="" width={44} height={44} className="h-11 w-11 shrink-0 rounded-full object-cover" />
       ) : (
-        <span aria-hidden className="h-11 w-11 shrink-0 rounded-full bg-sand" />
+        <span aria-hidden className="h-11 w-11 shrink-0 rounded-full bg-taupe" />
       )}
       <span className="flex min-w-0 flex-1 flex-col gap-[2px]">
         <span className="text-[15px] font-bold">{name}</span>
         <span className="truncate text-[12px] text-muted">{sub}</span>
       </span>
-      <span aria-hidden className={`h-5 w-5 shrink-0 rounded-full ${selected ? "border-[6px] border-flame bg-white" : "border-[1.5px] border-line"}`} />
+      <span aria-hidden className={`h-5 w-5 shrink-0 rounded-full ${selected ? "border-[6px] border-noir bg-gold" : "border-[1.5px] border-taupe"}`} />
     </button>
   );
 }
 
-/* ============ FB Input ============ */
+/* ============ Input ============ */
 
 export function Field({
   label,
@@ -475,10 +429,10 @@ export function Field({
   onChange: (v: string) => void;
 }) {
   const cls =
-    "w-full rounded-[14px] border border-line bg-white px-[18px] py-[15px] text-[15px] text-ink placeholder:text-muted outline-none transition-colors focus:border-ink focus:ring-1 focus:ring-ink";
+    "w-full rounded-[2px] border border-taupe bg-ivory px-[18px] py-[15px] text-[16px] text-ink placeholder:text-muted outline-none transition-colors focus:border-ink focus:ring-1 focus:ring-ink";
   return (
     <label className="flex w-full flex-col gap-2">
-      <span className="text-[13px] font-bold text-ink-soft">{label}</span>
+      <span className="font-caps text-[11px] tracking-[0.15em] text-ink-soft uppercase">{label}</span>
       {multiline ? (
         <textarea name={name} rows={3} placeholder={placeholder} value={value} onChange={(e) => onChange(e.target.value)} className={`${cls} resize-none`} />
       ) : (
@@ -497,14 +451,14 @@ export function Field({
   );
 }
 
-/* ============ FB Footer Column ============ */
+/* ============ Footer Column ============ */
 
 export function FooterColumn({ heading, lines }: { heading: string; lines: ReactNode[] }) {
   return (
-    <div className="flex flex-col gap-[10px]">
-      <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-gold">{heading}</p>
+    <div className="flex flex-col gap-3">
+      <p className="font-caps text-[12px] tracking-[0.25em] text-gold uppercase">{heading}</p>
       {lines.map((line, i) => (
-        <div key={i} className="text-[15px] text-cream">
+        <div key={i} className="text-[15px] text-on-dark-muted">
           {line}
         </div>
       ))}

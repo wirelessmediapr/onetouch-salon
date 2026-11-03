@@ -1,87 +1,48 @@
-import Image from "next/image";
-import { ArrowUpRight, Star } from "lucide-react";
-import { LiveBadge, OutlineButton, PrimaryButton } from "@/components/primitives";
+import { ArchPhoto, Kicker, OutlineButton, PrimaryButton } from "@/components/primitives";
 import { Reveal } from "@/components/Reveal";
+import { since } from "@/lib/data";
 
 export function Hero() {
   return (
-    <section className="px-5 pb-10 pt-3 md:px-20 md:pb-24 md:pt-10">
-      <div className="ot-container flex flex-col gap-10 lg:flex-row lg:items-end lg:gap-16">
-        <Reveal className="flex min-w-0 flex-1 flex-col gap-6 md:gap-9">
+    <section className="px-5 pb-14 pt-10 md:px-20 md:pb-20 md:pt-16">
+      <div className="ot-container flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
+        <Reveal className="flex min-w-0 flex-1 flex-col gap-6 md:gap-8">
           <div>
-            <LiveBadge label="Abierto hoy hasta las 7 PM" />
+            <Kicker center>Salón de belleza · Puerto Rico</Kicker>
           </div>
-          <h1 className="font-display text-[clamp(44px,6.4vw,92px)] font-light leading-[1.02] tracking-[-0.04em]">
-            Tu mejor versión,
+          <h1 className="font-caps text-[clamp(44px,6.2vw,84px)] leading-[1.05] tracking-[0.01em] text-on-dark">
+            Tu belleza,
             <br />
-            <span className="inline-flex items-center gap-[0.2em]">
-              a un
-              <span aria-hidden className="arch relative inline-block h-[0.86em] w-[1.4em] overflow-hidden">
-                <Image src="/images/generated-7.png" alt="" fill sizes="130px" className="object-cover" />
-              </span>
-              <em className="italic text-flame">toque.</em>
+            <span className="text-gold">
+              nuestra
+              <br />
+              pasión.
             </span>
           </h1>
-          <p className="max-w-[560px] text-[16px] leading-[1.55] text-ink-soft md:text-[19px]">
-            Corte, color, uñas y cejas en un mismo lugar. Escoge tus servicios, tu estilista y tu hora en menos de un minuto — sin
-            llamadas, sin depósito.
+          <p className="font-script text-[clamp(28px,2.8vw,38px)] leading-[1.15] text-gold-light">Un toque de cuidado, toda una vida de belleza</p>
+          <p className="max-w-[520px] text-[16px] leading-[1.6] text-on-dark-muted md:text-[18px]">
+            Cabello, uñas, piel y maquillaje en un solo lugar. Productos premium, manos expertas y una cita que es solo para ti.
           </p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
-            <PrimaryButton label="Reservar mi cita" href="/reservar" size="lg" />
-            <OutlineButton label="Ver servicios y precios" href="#servicios" size="lg" />
-          </div>
-          <div className="flex items-center gap-4 pt-2 md:gap-7 md:pt-4">
-            <div className="flex -space-x-3">
-              {[2, 3, 4, 5].map((i) => (
-                <Image
-                  key={i}
-                  src={`/images/generated-${i}.png`}
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="h-10 w-10 rounded-full border-2 border-cream object-cover"
-                />
-              ))}
-            </div>
-            <div className="flex flex-col gap-[2px]">
-              <span className="flex items-center gap-[6px] text-[14px] font-bold">
-                <Star size={16} className="text-flame" fill="currentColor" strokeWidth={1.8} />
-                4.9 en Google
-              </span>
-              <span className="text-[13px] text-muted">320 reseñas · 9 años en Ciudad, PR</span>
-            </div>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-7">
+            <PrimaryButton label="Reserva tu cita" href="/reservar" size="lg" />
+            <OutlineButton label="Ver servicios" href="#servicios" size="lg" />
           </div>
         </Reveal>
 
-        <Reveal delay={0.15} className="relative mx-auto w-full max-w-[500px] shrink-0 lg:w-[440px] xl:w-[500px]">
-          <div className="arch relative aspect-[500/660] w-full overflow-hidden bg-sand">
-            <Image
-              src="/images/generated.png"
-              alt="Clienta con balayage recién hecho en Onetouch Salon"
-              fill
-              priority
-              sizes="(min-width: 1024px) 500px, 100vw"
-              className="object-cover"
-            />
+        <Reveal delay={0.15} className="relative mx-auto w-full max-w-[520px] shrink-0 lg:w-[480px] xl:w-[520px]">
+          <ArchPhoto
+            src="/images/v3/hero.jpg"
+            alt="Clienta con peinado recogido y maquillaje de noche en OneTouch Salon"
+            sizes="(min-width: 1024px) 520px, 100vw"
+            priority
+            inset={30}
+            className="aspect-[520/720] w-full"
+          />
+          <div className="absolute -left-2 bottom-10 flex h-24 w-24 flex-col items-center justify-center gap-[2px] rounded-full border border-gold bg-noir md:-left-8 md:h-32 md:w-32">
+            <span className="font-caps text-[9px] tracking-[0.3em] text-gold-light md:text-[10px]">DESDE</span>
+            <span className="font-display text-[26px] leading-none text-gold md:text-[34px]">{since}</span>
+            <span className="font-caps text-[8px] tracking-[0.2em] text-gold-light md:text-[9px]">PUERTO RICO</span>
           </div>
-          <div className="absolute -right-2 top-6 flex h-24 w-24 rotate-[-10deg] flex-col items-center justify-center rounded-full bg-gold text-palm md:-right-5 md:h-[116px] md:w-[116px]">
-            <span className="font-display text-[34px] italic leading-none md:text-[40px]">9</span>
-            <span className="text-[9px] font-extrabold tracking-[0.15em] md:text-[10px]">AÑOS EN PR</span>
-          </div>
-          <a
-            href="/reservar"
-            className="card-tail absolute bottom-6 left-4 flex w-[240px] flex-col gap-[6px] bg-palm px-[18px] py-4 transition-colors hover:bg-palm-2 md:bottom-16 md:-left-[72px] md:w-[280px] md:gap-[10px] md:px-[22px] md:py-5"
-          >
-            <span className="flex items-center gap-2 text-[10px] font-bold tracking-[0.12em] text-palm-muted md:text-[11px]">
-              <span aria-hidden className="h-[7px] w-[7px] rounded-full bg-leaf" />
-              PRÓXIMO HORARIO LIBRE
-            </span>
-            <span className="font-display text-[24px] text-cream md:text-[32px]">Hoy, 3:00 PM</span>
-            <span className="flex items-center justify-between text-[13px] text-palm-muted">
-              con Valeria · Color
-              <ArrowUpRight size={18} className="text-gold" />
-            </span>
-          </a>
         </Reveal>
       </div>
     </section>

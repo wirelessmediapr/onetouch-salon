@@ -1,28 +1,29 @@
 @import "tailwindcss";
 
-/* Sistema v2 “Flamboyán” — tokens `fb-*` del lienzo (design.md §9). */
+/* Sistema v3 “Noir & Oro” — tokens `nr-*` del lienzo (design.md §10), sin prefijo. */
 @theme {
-  --color-cream: #faf5ee;
-  --color-sand: #f1e7da;
-  --color-blush: #f4d9cf;
-  --color-palm: #123a2e;
-  --color-palm-2: #1c4a3c;
-  --color-palm-line: #2e5c4d;
-  --color-palm-muted: #a9c2b6;
-  --color-ink: #16201c;
-  --color-ink-soft: #45514c;
-  --color-muted: #7a847f;
-  --color-line: #e2d8ca;
+  --color-noir: #0e0d0b;
+  --color-noir-2: #16140f;
+  --color-noir-card: #1d1a15;
+  --color-noir-line: #4a3d2a;
+  --color-gold: #c9a063;
+  --color-gold-light: #e4c892;
+  --color-gold-deep: #8e6b3a;
+  --color-on-dark: #efe7da;
+  --color-on-dark-muted: #a89e8d;
+  --color-cream: #f5efe4;
+  --color-ivory: #fbf8f2;
+  --color-taupe: #e6dac6;
+  --color-ink: #1a1714;
+  --color-ink-soft: #4d463d;
+  --color-muted: #7e7466;
   --color-disabled: #bdb3a6;
-  --color-flame: #e2452b;
-  --color-flame-deep: #b8331c;
-  --color-flame-soft: #fbe1d9;
-  --color-gold: #e9b949;
-  --color-leaf: #2f9e62;
 }
 
 @theme inline {
-  --font-display: var(--font-fraunces);
+  --font-caps: var(--font-cinzel);
+  --font-display: var(--font-playfair);
+  --font-script: var(--font-pinyon);
   --font-sans: var(--font-manrope);
 }
 
@@ -30,6 +31,10 @@
   html,
   body {
     height: 100%;
+  }
+  /* Playfair usa numerales old-style por defecto: precios con cifras alineadas. */
+  .font-display {
+    font-variant-numeric: lining-nums;
   }
 }
 
@@ -40,35 +45,12 @@
   max-width: 1280px;
 }
 
-/* Arcos del Viejo San Juan: tope semicircular, base recta con radio 6–8. */
+/* Arco: tope semicircular, base recta. Forma de marca en retratos y tarjetas. */
 @utility arch {
-  border-radius: 9999px 9999px 8px 8px / 9999px 9999px 8px 8px;
+  border-radius: 9999px 9999px 0 0 / 9999px 9999px 0 0;
 }
 
-@utility arch-down {
-  border-radius: 8px 8px 9999px 9999px / 8px 8px 9999px 9999px;
-}
-
-/* Tarjetas con la esquina inferior izquierda recta. */
-@utility card-tail {
-  border-radius: 24px 24px 24px 4px;
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@utility animate-marquee {
-  animation: marquee 40s linear infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animate-marquee {
-    animation: none;
-  }
+/* Tarjeta de servicio: arco suave arriba, esquinas casi rectas abajo. */
+@utility arch-card {
+  border-radius: 100px 100px 2px 2px;
 }

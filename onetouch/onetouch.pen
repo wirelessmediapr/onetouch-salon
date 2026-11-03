@@ -17141,6 +17141,7 @@
               "content": "Biblioteca de componentes",
               "fontFamily": "$fb-display",
               "fontSize": 72,
+              "fontWeight": "normal",
               "letterSpacing": -2
             },
             {
@@ -17776,6 +17777,7 @@
                       "content": "Menú de servicios",
                       "fontFamily": "$fb-display",
                       "fontSize": 72,
+                      "fontWeight": "normal",
                       "letterSpacing": -2
                     }
                   ]
@@ -17808,6 +17810,7 @@
                       "content": "Andrea Ríos, colorista senior",
                       "fontFamily": "$fb-display",
                       "fontSize": 40,
+                      "fontWeight": "normal",
                       "letterSpacing": -1
                     }
                   ]
@@ -17839,7 +17842,8 @@
                       "fill": "$fb-ink",
                       "content": "$210",
                       "fontFamily": "$fb-display",
-                      "fontSize": 28
+                      "fontSize": 28,
+                      "fontWeight": "normal"
                     }
                   ]
                 },
@@ -18523,6 +18527,7 @@
                                   "content": "Balayage a mano alzada",
                                   "fontFamily": "$fb-display",
                                   "fontSize": 24,
+                                  "fontWeight": "normal",
                                   "letterSpacing": -0.5
                                 },
                                 {
@@ -18552,7 +18557,8 @@
                           "fill": "$fb-ink",
                           "content": "$210",
                           "fontFamily": "$fb-display",
-                          "fontSize": 28
+                          "fontSize": 28,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "frame",
@@ -18624,6 +18630,7 @@
                           "content": "4.9",
                           "fontFamily": "$fb-display",
                           "fontSize": 64,
+                          "fontWeight": "normal",
                           "letterSpacing": -2
                         },
                         {
@@ -18695,6 +18702,7 @@
                           "content": "Andrea Ríos",
                           "fontFamily": "$fb-display",
                           "fontSize": 32,
+                          "fontWeight": "normal",
                           "letterSpacing": -0.5
                         },
                         {
@@ -18810,6 +18818,7 @@
                       "lineHeight": 1.25,
                       "fontFamily": "$fb-display",
                       "fontSize": 26,
+                      "fontWeight": "normal",
                       "letterSpacing": -0.3
                     },
                     {
@@ -19378,6 +19387,7 @@
                               "content": "¿Puedo cancelar o mover mi cita?",
                               "fontFamily": "$fb-display",
                               "fontSize": 22,
+                              "fontWeight": "normal",
                               "letterSpacing": -0.3
                             },
                             {
@@ -19522,6 +19532,7 @@
                       "content": "Escoge tus servicios",
                       "fontFamily": "$fb-display",
                       "fontSize": 24,
+                      "fontWeight": "normal",
                       "letterSpacing": -0.3
                     },
                     {
@@ -20050,6 +20061,7 @@
                       "content": "Hoy, 3:00 PM",
                       "fontFamily": "$fb-display",
                       "fontSize": 32,
+                      "fontWeight": "normal",
                       "letterSpacing": -0.5
                     },
                     {
@@ -20150,6 +20162,7 @@
               "content": "Balayage",
               "fontFamily": "$fb-display",
               "fontSize": 30,
+              "fontWeight": "normal",
               "fontStyle": "italic"
             },
             {
@@ -20159,7 +20172,8 @@
               "fill": "$fb-gold",
               "content": "✺",
               "fontFamily": "$fb-display",
-              "fontSize": 30
+              "fontSize": 30,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -20169,6 +20183,7 @@
               "content": "Keratina",
               "fontFamily": "$fb-display",
               "fontSize": 30,
+              "fontWeight": "normal",
               "fontStyle": "italic"
             },
             {
@@ -20178,7 +20193,8 @@
               "fill": "$fb-gold",
               "content": "✺",
               "fontFamily": "$fb-display",
-              "fontSize": 30
+              "fontSize": 30,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -20188,6 +20204,7 @@
               "content": "Manicura en gel",
               "fontFamily": "$fb-display",
               "fontSize": 30,
+              "fontWeight": "normal",
               "fontStyle": "italic"
             },
             {
@@ -20197,7 +20214,8 @@
               "fill": "$fb-gold",
               "content": "✺",
               "fontFamily": "$fb-display",
-              "fontSize": 30
+              "fontSize": 30,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -20207,6 +20225,7 @@
               "content": "Babylights",
               "fontFamily": "$fb-display",
               "fontSize": 30,
+              "fontWeight": "normal",
               "fontStyle": "italic"
             },
             {
@@ -20216,7 +20235,8 @@
               "fill": "$fb-gold",
               "content": "✺",
               "fontFamily": "$fb-display",
-              "fontSize": 30
+              "fontSize": 30,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -20226,6 +20246,7 @@
               "content": "Laminado de cejas",
               "fontFamily": "$fb-display",
               "fontSize": 30,
+              "fontWeight": "normal",
               "fontStyle": "italic"
             },
             {
@@ -20235,7 +20256,8 @@
               "fill": "$fb-gold",
               "content": "✺",
               "fontFamily": "$fb-display",
-              "fontSize": 30
+              "fontSize": 30,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -20245,6 +20267,7 @@
               "content": "Peinados de novia",
               "fontFamily": "$fb-display",
               "fontSize": 30,
+              "fontWeight": "normal",
               "fontStyle": "italic"
             },
             {
@@ -20254,7 +20277,8 @@
               "fill": "$fb-gold",
               "content": "✺",
               "fontFamily": "$fb-display",
-              "fontSize": 30
+              "fontSize": 30,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -20264,6 +20288,7 @@
               "content": "Pedicura spa",
               "fontFamily": "$fb-display",
               "fontSize": 30,
+              "fontWeight": "normal",
               "fontStyle": "italic"
             }
           ]
@@ -20322,6 +20347,7 @@
                           "lineHeight": 1.02,
                           "fontFamily": "$fb-display",
                           "fontSize": 72,
+                          "fontWeight": "normal",
                           "letterSpacing": -2.5
                         },
                         {
@@ -20333,6 +20359,7 @@
                           "lineHeight": 1.02,
                           "fontFamily": "$fb-display",
                           "fontSize": 72,
+                          "fontWeight": "normal",
                           "letterSpacing": -2.5,
                           "fontStyle": "italic"
                         }
@@ -20496,6 +20523,7 @@
                           "content": "¿No sabes qué pedir?",
                           "fontFamily": "$fb-display",
                           "fontSize": 24,
+                          "fontWeight": "normal",
                           "letterSpacing": -0.3
                         },
                         {
@@ -20567,6 +20595,7 @@
                               "content": "Cabello",
                               "fontFamily": "$fb-display",
                               "fontSize": 40,
+                              "fontWeight": "normal",
                               "letterSpacing": -1,
                               "fontStyle": "italic"
                             },
@@ -20697,6 +20726,7 @@
                               "content": "Color",
                               "fontFamily": "$fb-display",
                               "fontSize": 40,
+                              "fontWeight": "normal",
                               "letterSpacing": -1,
                               "fontStyle": "italic"
                             },
@@ -20888,6 +20918,7 @@
                           "lineHeight": 1.02,
                           "fontFamily": "$fb-display",
                           "fontSize": 66,
+                          "fontWeight": "normal",
                           "letterSpacing": -2.5
                         },
                         {
@@ -20899,6 +20930,7 @@
                           "lineHeight": 1.02,
                           "fontFamily": "$fb-display",
                           "fontSize": 66,
+                          "fontWeight": "normal",
                           "letterSpacing": -2.5,
                           "fontStyle": "italic"
                         }
@@ -20956,6 +20988,7 @@
                               "content": "Escoge tus servicios",
                               "fontFamily": "$fb-display",
                               "fontSize": 26,
+                              "fontWeight": "normal",
                               "letterSpacing": -0.3
                             },
                             {
@@ -21018,6 +21051,7 @@
                               "content": "Tu estilista y tu hora",
                               "fontFamily": "$fb-display",
                               "fontSize": 26,
+                              "fontWeight": "normal",
                               "letterSpacing": -0.3
                             },
                             {
@@ -21080,6 +21114,7 @@
                               "content": "Confirma con tu celular",
                               "fontFamily": "$fb-display",
                               "fontSize": 26,
+                              "fontWeight": "normal",
                               "letterSpacing": -0.3
                             },
                             {
@@ -21259,6 +21294,7 @@
                           "content": "Noviembre",
                           "fontFamily": "$fb-display",
                           "fontSize": 28,
+                          "fontWeight": "normal",
                           "letterSpacing": -0.5,
                           "fontStyle": "italic"
                         },
@@ -21756,7 +21792,8 @@
                           "fill": "$fb-ink",
                           "content": "$210",
                           "fontFamily": "$fb-display",
-                          "fontSize": 32
+                          "fontSize": 32,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -21833,6 +21870,7 @@
                           "lineHeight": 1.02,
                           "fontFamily": "$fb-display",
                           "fontSize": 72,
+                          "fontWeight": "normal",
                           "letterSpacing": -2.5
                         },
                         {
@@ -21844,6 +21882,7 @@
                           "lineHeight": 1.02,
                           "fontFamily": "$fb-display",
                           "fontSize": 72,
+                          "fontWeight": "normal",
                           "letterSpacing": -2.5,
                           "fontStyle": "italic"
                         }
@@ -22099,6 +22138,7 @@
                           "lineHeight": 1.02,
                           "fontFamily": "$fb-display",
                           "fontSize": 72,
+                          "fontWeight": "normal",
                           "letterSpacing": -2.5
                         },
                         {
@@ -22110,6 +22150,7 @@
                           "lineHeight": 1.02,
                           "fontFamily": "$fb-display",
                           "fontSize": 72,
+                          "fontWeight": "normal",
                           "letterSpacing": -2.5,
                           "fontStyle": "italic"
                         }
@@ -22238,6 +22279,7 @@
                           "content": "Antes y después, sin filtros.",
                           "fontFamily": "$fb-display",
                           "fontSize": 26,
+                          "fontWeight": "normal",
                           "letterSpacing": -0.3
                         },
                         {
@@ -22423,6 +22465,7 @@
                       "lineHeight": 1.02,
                       "fontFamily": "$fb-display",
                       "fontSize": 60,
+                      "fontWeight": "normal",
                       "letterSpacing": -2
                     },
                     {
@@ -22434,6 +22477,7 @@
                       "lineHeight": 1.02,
                       "fontFamily": "$fb-display",
                       "fontSize": 60,
+                      "fontWeight": "normal",
                       "letterSpacing": -2,
                       "fontStyle": "italic"
                     }
@@ -23312,6 +23356,7 @@
                       "content": "¿Qué te hacemos hoy?",
                       "fontFamily": "$fb-display",
                       "fontSize": 56,
+                      "fontWeight": "normal",
                       "letterSpacing": -2
                     },
                     {
@@ -23576,7 +23621,8 @@
                           "fill": "$fb-ink",
                           "content": "$55",
                           "fontFamily": "$fb-display",
-                          "fontSize": 22
+                          "fontSize": 22,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -23624,7 +23670,8 @@
                           "fill": "$fb-ink",
                           "content": "$210",
                           "fontFamily": "$fb-display",
-                          "fontSize": 22
+                          "fontSize": 22,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -23762,6 +23809,7 @@
                       "content": "$265",
                       "fontFamily": "$fb-display",
                       "fontSize": 40,
+                      "fontWeight": "normal",
                       "letterSpacing": -1
                     }
                   ]
@@ -23990,6 +24038,7 @@
                       "content": "¿Con quién y cuándo?",
                       "fontFamily": "$fb-display",
                       "fontSize": 56,
+                      "fontWeight": "normal",
                       "letterSpacing": -2
                     }
                   ]
@@ -24136,6 +24185,7 @@
                               "content": "Noviembre 2026",
                               "fontFamily": "$fb-display",
                               "fontSize": 28,
+                              "fontWeight": "normal",
                               "letterSpacing": -0.5,
                               "fontStyle": "italic"
                             },
@@ -25160,7 +25210,8 @@
                           "fill": "$fb-ink",
                           "content": "$55",
                           "fontFamily": "$fb-display",
-                          "fontSize": 22
+                          "fontSize": 22,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -25208,7 +25259,8 @@
                           "fill": "$fb-ink",
                           "content": "$210",
                           "fontFamily": "$fb-display",
-                          "fontSize": 22
+                          "fontSize": 22,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -25346,6 +25398,7 @@
                       "content": "$265",
                       "fontFamily": "$fb-display",
                       "fontSize": 40,
+                      "fontWeight": "normal",
                       "letterSpacing": -1
                     }
                   ]
@@ -25580,6 +25633,7 @@
                       "content": "Casi lista. ¿A quién esperamos?",
                       "fontFamily": "$fb-display",
                       "fontSize": 56,
+                      "fontWeight": "normal",
                       "letterSpacing": -2
                     },
                     {
@@ -25836,7 +25890,8 @@
                           "fill": "$fb-ink",
                           "content": "$55",
                           "fontFamily": "$fb-display",
-                          "fontSize": 22
+                          "fontSize": 22,
+                          "fontWeight": "normal"
                         }
                       ]
                     },
@@ -25884,7 +25939,8 @@
                           "fill": "$fb-ink",
                           "content": "$210",
                           "fontFamily": "$fb-display",
-                          "fontSize": 22
+                          "fontSize": 22,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -26022,6 +26078,7 @@
                       "content": "$265",
                       "fontFamily": "$fb-display",
                       "fontSize": 40,
+                      "fontWeight": "normal",
                       "letterSpacing": -1
                     }
                   ]
@@ -26680,7 +26737,8 @@
                       "fill": "$fb-cream",
                       "content": "Hoy, 3:00 PM",
                       "fontFamily": "$fb-display",
-                      "fontSize": 24
+                      "fontSize": 24,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -26785,6 +26843,7 @@
               "content": "Balayage",
               "fontFamily": "$fb-display",
               "fontSize": 22,
+              "fontWeight": "normal",
               "fontStyle": "italic"
             },
             {
@@ -26794,7 +26853,8 @@
               "fill": "$fb-gold",
               "content": "✺",
               "fontFamily": "$fb-display",
-              "fontSize": 22
+              "fontSize": 22,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -26804,6 +26864,7 @@
               "content": "Keratina",
               "fontFamily": "$fb-display",
               "fontSize": 22,
+              "fontWeight": "normal",
               "fontStyle": "italic"
             },
             {
@@ -26813,7 +26874,8 @@
               "fill": "$fb-gold",
               "content": "✺",
               "fontFamily": "$fb-display",
-              "fontSize": 22
+              "fontSize": 22,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -26823,6 +26885,7 @@
               "content": "Manicura en gel",
               "fontFamily": "$fb-display",
               "fontSize": 22,
+              "fontWeight": "normal",
               "fontStyle": "italic"
             },
             {
@@ -26832,7 +26895,8 @@
               "fill": "$fb-gold",
               "content": "✺",
               "fontFamily": "$fb-display",
-              "fontSize": 22
+              "fontSize": 22,
+              "fontWeight": "normal"
             }
           ]
         },
@@ -26876,6 +26940,7 @@
                   "lineHeight": 1.05,
                   "fontFamily": "$fb-display",
                   "fontSize": 42,
+                  "fontWeight": "normal",
                   "letterSpacing": -1.5
                 },
                 {
@@ -26887,6 +26952,7 @@
                   "lineHeight": 1.05,
                   "fontFamily": "$fb-display",
                   "fontSize": 42,
+                  "fontWeight": "normal",
                   "letterSpacing": -1.5,
                   "fontStyle": "italic"
                 }
@@ -27179,6 +27245,7 @@
                   "lineHeight": 1.05,
                   "fontFamily": "$fb-display",
                   "fontSize": 42,
+                  "fontWeight": "normal",
                   "letterSpacing": -1.5
                 },
                 {
@@ -27190,6 +27257,7 @@
                   "lineHeight": 1.05,
                   "fontFamily": "$fb-display",
                   "fontSize": 42,
+                  "fontWeight": "normal",
                   "letterSpacing": -1.5,
                   "fontStyle": "italic"
                 }
@@ -27244,7 +27312,8 @@
                           "fill": "$fb-cream",
                           "content": "Escoge tus servicios",
                           "fontFamily": "$fb-display",
-                          "fontSize": 21
+                          "fontSize": 21,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "text",
@@ -27304,7 +27373,8 @@
                           "fill": "$fb-cream",
                           "content": "Tu estilista y tu hora",
                           "fontFamily": "$fb-display",
-                          "fontSize": 21
+                          "fontSize": 21,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "text",
@@ -27364,7 +27434,8 @@
                           "fill": "$fb-cream",
                           "content": "Confirma con tu celular",
                           "fontFamily": "$fb-display",
-                          "fontSize": 21
+                          "fontSize": 21,
+                          "fontWeight": "normal"
                         },
                         {
                           "type": "text",
@@ -27445,6 +27516,7 @@
                   "lineHeight": 1.05,
                   "fontFamily": "$fb-display",
                   "fontSize": 38,
+                  "fontWeight": "normal",
                   "letterSpacing": -1.5
                 },
                 {
@@ -27456,6 +27528,7 @@
                   "lineHeight": 1.05,
                   "fontFamily": "$fb-display",
                   "fontSize": 38,
+                  "fontWeight": "normal",
                   "letterSpacing": -1.5,
                   "fontStyle": "italic"
                 }
@@ -27774,6 +27847,7 @@
                   "lineHeight": 1.05,
                   "fontFamily": "$fb-display",
                   "fontSize": 42,
+                  "fontWeight": "normal",
                   "letterSpacing": -1.5
                 },
                 {
@@ -27785,6 +27859,7 @@
                   "lineHeight": 1.05,
                   "fontFamily": "$fb-display",
                   "fontSize": 42,
+                  "fontWeight": "normal",
                   "letterSpacing": -1.5,
                   "fontStyle": "italic"
                 }
@@ -28175,6 +28250,4123 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "LS56g",
+      "x": 22120,
+      "y": -452,
+      "name": "Onetouch v3 — Landing (Noir & Oro)",
+      "context": "Sistema v3 'Noir & Oro' — aprobado 2026-11-03 e implementado en src/ (design.md §10). Negro + dorado champán, Cinzel / Playfair Display / Pinyon Script / Manrope.",
+      "clip": true,
+      "width": 1440,
+      "fill": "$nr-black",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "KwnUF",
+          "name": "Nav",
+          "width": "fill_container",
+          "stroke": "$nr-line",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "padding": [
+            24,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "R4z9j",
+              "name": "Nav Links Left",
+              "width": 420,
+              "gap": 36,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UcZSt",
+                  "name": "Nav Servicios",
+                  "fill": "$nr-on-dark",
+                  "content": "Servicios",
+                  "fontFamily": "$nr-caps",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "G76TI",
+                  "name": "Nav Equipo",
+                  "fill": "$nr-on-dark",
+                  "content": "Equipo",
+                  "fontFamily": "$nr-caps",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "tn44b",
+                  "name": "Nav Resultados",
+                  "fill": "$nr-on-dark",
+                  "content": "Resultados",
+                  "fontFamily": "$nr-caps",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pcSXR",
+              "name": "Wordmark",
+              "layout": "vertical",
+              "gap": 2,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rVRva",
+                  "name": "Wordmark Main",
+                  "fill": "$nr-gold",
+                  "content": "ONE TOUCH",
+                  "fontFamily": "$nr-caps",
+                  "fontSize": 28,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "text",
+                  "id": "Kx8lk",
+                  "name": "Wordmark Sub",
+                  "fill": "$nr-gold-light",
+                  "content": "S A L O N",
+                  "fontFamily": "$nr-caps",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 6
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "B7i72",
+              "name": "Nav Actions",
+              "width": 420,
+              "gap": 28,
+              "justifyContent": "end",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pzCo6",
+                  "name": "Nav Phone",
+                  "fill": "$nr-on-dark-muted",
+                  "content": "(000) 000-0000",
+                  "fontFamily": "$nr-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "I8TTje",
+                  "name": "Nav CTA",
+                  "context": "Abre /reservar",
+                  "fill": "$nr-gold",
+                  "cornerRadius": 2,
+                  "gap": 8,
+                  "padding": [
+                    12,
+                    22
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lB89o",
+                      "name": "Nav CTA Label",
+                      "fill": "$nr-black",
+                      "content": "RESERVAR",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Y0wI1",
+          "name": "Hero",
+          "width": "fill_container",
+          "height": 820,
+          "gap": 64,
+          "padding": [
+            0,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "kukVO",
+              "name": "Hero Copy",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SnviQ",
+                  "name": "Hero Kicker",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "MuP6H",
+                      "name": "Rule L",
+                      "fill": "$nr-gold",
+                      "width": 48,
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "jvj2P",
+                      "name": "Kicker Text",
+                      "fill": "$nr-gold",
+                      "content": "SALÓN DE BELLEZA · PUERTO RICO",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "q7Rzvs",
+                      "name": "Rule R",
+                      "fill": "$nr-gold",
+                      "width": 48,
+                      "height": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "DAj8I",
+                  "name": "Hero Headline",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "K4gvj",
+                      "name": "Headline 1",
+                      "fill": "$nr-on-dark",
+                      "content": "TU BELLEZA,",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 84,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "v3229e",
+                      "name": "Headline 2",
+                      "fill": "$nr-gold",
+                      "content": "NUESTRA",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 84,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "cLNk7",
+                      "name": "Headline 3",
+                      "fill": "$nr-gold",
+                      "content": "PASIÓN.",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 84,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "B7mvB",
+                  "name": "Hero Script",
+                  "fill": "$nr-gold-light",
+                  "content": "Un toque de cuidado, toda una vida de belleza",
+                  "fontFamily": "$nr-script",
+                  "fontSize": 38,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "D0eLF",
+                  "name": "Hero Body",
+                  "fill": "$nr-on-dark-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "Cabello, uñas, piel y maquillaje en un solo lugar. Productos premium, manos expertas y una cita que es solo para ti.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$nr-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "s9jj0",
+                  "name": "Hero Actions",
+                  "gap": 28,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "E50PWk",
+                      "name": "Hero CTA",
+                      "context": "Primary CTA → /reservar",
+                      "fill": "$nr-gold",
+                      "cornerRadius": 2,
+                      "gap": 14,
+                      "padding": [
+                        18,
+                        30
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BMgRY",
+                          "name": "CTA Label",
+                          "fill": "$nr-black",
+                          "content": "RESERVA TU CITA",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 14,
+                          "fontWeight": "700",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "icon",
+                          "id": "GieOQ",
+                          "name": "CTA Icon",
+                          "width": 18,
+                          "height": 18,
+                          "icon": "arrow-right",
+                          "library": "lucide",
+                          "fill": "$nr-black"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LhceQ",
+                      "name": "Hero Secondary",
+                      "context": "Scroll a #servicios",
+                      "cornerRadius": 2,
+                      "stroke": "$nr-gold",
+                      "strokeWidth": 1,
+                      "padding": [
+                        17,
+                        28
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZjPlb",
+                          "name": "Secondary Label",
+                          "fill": "$nr-gold",
+                          "content": "VER SERVICIOS",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OgtUM",
+              "name": "Hero Visual",
+              "width": 560,
+              "height": 820,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "WN9wJ",
+                  "x": 20,
+                  "y": 60,
+                  "name": "Arch Line",
+                  "width": 520,
+                  "height": 720,
+                  "cornerRadius": [
+                    260,
+                    260,
+                    0,
+                    0
+                  ],
+                  "stroke": "$nr-gold",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "soqgH",
+                  "x": 50,
+                  "y": 90,
+                  "name": "Arch Portrait",
+                  "clip": true,
+                  "width": 460,
+                  "height": 690,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "generated-9.png",
+                    "mode": "cover"
+                  },
+                  "cornerRadius": [
+                    230,
+                    230,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "u5RIn",
+                  "x": 0,
+                  "y": 600,
+                  "name": "Seal",
+                  "width": 128,
+                  "height": 128,
+                  "fill": "$nr-black",
+                  "cornerRadius": 64,
+                  "stroke": "$nr-gold",
+                  "strokeWidth": 1,
+                  "layout": "vertical",
+                  "gap": 2,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TEhmb",
+                      "name": "Seal Top",
+                      "fill": "$nr-gold-light",
+                      "content": "DESDE",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "BBReB",
+                      "name": "Seal Year",
+                      "fill": "$nr-gold",
+                      "content": "2017",
+                      "fontFamily": "$nr-display",
+                      "fontSize": 34,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "apPGt",
+                      "name": "Seal Bottom",
+                      "fill": "$nr-gold-light",
+                      "content": "PUERTO RICO",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yiXGZ",
+          "name": "Services",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            40,
+            80,
+            96,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "xmu0F",
+              "name": "Services Header",
+              "layout": "vertical",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "w0Di2",
+                  "name": "Header Rule",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "YsqsR",
+                      "name": "Rule L",
+                      "fill": "$nr-gold-deep",
+                      "width": 120,
+                      "height": 1
+                    },
+                    {
+                      "type": "icon",
+                      "id": "w3eAr",
+                      "name": "Ornament",
+                      "width": 10,
+                      "height": 10,
+                      "icon": "diamond",
+                      "library": "lucide",
+                      "fill": "$nr-gold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WGRO1",
+                      "name": "Header Title",
+                      "fill": "$nr-gold",
+                      "content": "TODO PARA TU BELLEZA, EN UN SOLO LUGAR",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 15,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "icon",
+                      "id": "FO4GM",
+                      "name": "Ornament R",
+                      "width": 10,
+                      "height": 10,
+                      "icon": "diamond",
+                      "library": "lucide",
+                      "fill": "$nr-gold"
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "e6Aw5d",
+                      "name": "Rule R",
+                      "fill": "$nr-gold-deep",
+                      "width": 120,
+                      "height": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "lqCC3",
+                  "name": "Header Sub",
+                  "fill": "$nr-on-dark-muted",
+                  "content": "CUIDADO EXPERTO  ·  PRODUCTOS PREMIUM  ·  PRECIOS CLAROS",
+                  "fontFamily": "$nr-caps",
+                  "fontSize": 12,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "B8qmp",
+              "name": "Services Panel",
+              "width": "fill_container",
+              "layout": "vertical",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "x5L2CK",
+                  "name": "Panel Box",
+                  "width": "fill_container",
+                  "cornerRadius": 4,
+                  "stroke": "$nr-gold-deep",
+                  "strokeWidth": 1,
+                  "gap": 16,
+                  "padding": [
+                    48,
+                    32,
+                    32,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c0i5oP",
+                      "name": "Service Card Cortes & peinados",
+                      "context": "Click → /reservar con la categoría preseleccionada",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$nr-black-2",
+                      "cornerRadius": [
+                        100,
+                        100,
+                        2,
+                        2
+                      ],
+                      "stroke": "$nr-line",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "TIvBr",
+                          "name": "Photo",
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-15.png",
+                            "mode": "cover"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "tIEnH",
+                          "name": "Icon Badge Wrap",
+                          "width": "fill_container",
+                          "height": 28,
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "GT8go",
+                              "x": 67,
+                              "y": -28,
+                              "name": "Icon Badge",
+                              "width": 56,
+                              "height": 56,
+                              "fill": "$nr-black",
+                              "cornerRadius": 28,
+                              "stroke": "$nr-gold",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "jRY3l",
+                                  "name": "Icon",
+                                  "width": 22,
+                                  "height": 22,
+                                  "icon": "scissors",
+                                  "library": "lucide",
+                                  "fill": "$nr-gold"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "N5HHp",
+                          "name": "Card Text",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            8,
+                            12,
+                            22,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "r3089",
+                              "name": "Name",
+                              "fill": "$nr-on-dark",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "CORTES & PEINADOS",
+                              "textAlign": "center",
+                              "fontFamily": "$nr-caps",
+                              "fontSize": 13,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "FXUB1",
+                              "name": "Price",
+                              "fill": "$nr-gold-light",
+                              "content": "Desde $55",
+                              "fontFamily": "$nr-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lMkgw",
+                      "name": "Service Card Color & balayage",
+                      "context": "Click → /reservar con la categoría preseleccionada",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$nr-black-2",
+                      "cornerRadius": [
+                        100,
+                        100,
+                        2,
+                        2
+                      ],
+                      "stroke": "$nr-line",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "VgcCD",
+                          "name": "Photo",
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-11.png",
+                            "mode": "cover"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "VwsER",
+                          "name": "Icon Badge Wrap",
+                          "width": "fill_container",
+                          "height": 28,
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "nXEat",
+                              "x": 67,
+                              "y": -28,
+                              "name": "Icon Badge",
+                              "width": 56,
+                              "height": 56,
+                              "fill": "$nr-black",
+                              "cornerRadius": 28,
+                              "stroke": "$nr-gold",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "bnNfz",
+                                  "name": "Icon",
+                                  "width": 22,
+                                  "height": 22,
+                                  "icon": "palette",
+                                  "library": "lucide",
+                                  "fill": "$nr-gold"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "U1uoD3",
+                          "name": "Card Text",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            8,
+                            12,
+                            22,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rhvhg",
+                              "name": "Name",
+                              "fill": "$nr-on-dark",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "COLOR & BALAYAGE",
+                              "textAlign": "center",
+                              "fontFamily": "$nr-caps",
+                              "fontSize": 13,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "tavjn",
+                              "name": "Price",
+                              "fill": "$nr-gold-light",
+                              "content": "Desde $85",
+                              "fontFamily": "$nr-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VzzUe",
+                      "name": "Service Card Keratina",
+                      "context": "Click → /reservar con la categoría preseleccionada",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$nr-black-2",
+                      "cornerRadius": [
+                        100,
+                        100,
+                        2,
+                        2
+                      ],
+                      "stroke": "$nr-line",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "thxTp",
+                          "name": "Photo",
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-13.png",
+                            "mode": "cover"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "KGuuJ",
+                          "name": "Icon Badge Wrap",
+                          "width": "fill_container",
+                          "height": 28,
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "bhGzE",
+                              "x": 67,
+                              "y": -28,
+                              "name": "Icon Badge",
+                              "width": 56,
+                              "height": 56,
+                              "fill": "$nr-black",
+                              "cornerRadius": 28,
+                              "stroke": "$nr-gold",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "Gihh0",
+                                  "name": "Icon",
+                                  "width": 22,
+                                  "height": 22,
+                                  "icon": "sparkles",
+                                  "library": "lucide",
+                                  "fill": "$nr-gold"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "j2963r",
+                          "name": "Card Text",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            8,
+                            12,
+                            22,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "djzNf",
+                              "name": "Name",
+                              "fill": "$nr-on-dark",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "KERATINA",
+                              "textAlign": "center",
+                              "fontFamily": "$nr-caps",
+                              "fontSize": 13,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "F0r2rH",
+                              "name": "Price",
+                              "fill": "$nr-gold-light",
+                              "content": "Desde $180",
+                              "fontFamily": "$nr-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Gho6g",
+                      "name": "Service Card Uñas",
+                      "context": "Click → /reservar con la categoría preseleccionada",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$nr-black-2",
+                      "cornerRadius": [
+                        100,
+                        100,
+                        2,
+                        2
+                      ],
+                      "stroke": "$nr-line",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Ud0iC",
+                          "name": "Photo",
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-10.png",
+                            "mode": "cover"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "pdnuF",
+                          "name": "Icon Badge Wrap",
+                          "width": "fill_container",
+                          "height": 28,
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "ohdJ8",
+                              "x": 67,
+                              "y": -28,
+                              "name": "Icon Badge",
+                              "width": 56,
+                              "height": 56,
+                              "fill": "$nr-black",
+                              "cornerRadius": 28,
+                              "stroke": "$nr-gold",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "M6T0S",
+                                  "name": "Icon",
+                                  "width": 22,
+                                  "height": 22,
+                                  "icon": "hand",
+                                  "library": "lucide",
+                                  "fill": "$nr-gold"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "t8YgH",
+                          "name": "Card Text",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            8,
+                            12,
+                            22,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "utm9b",
+                              "name": "Name",
+                              "fill": "$nr-on-dark",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "UÑAS",
+                              "textAlign": "center",
+                              "fontFamily": "$nr-caps",
+                              "fontSize": 13,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "ZEMnI",
+                              "name": "Price",
+                              "fill": "$nr-gold-light",
+                              "content": "Desde $25",
+                              "fontFamily": "$nr-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Cl39s",
+                      "name": "Service Card Cejas & pestañas",
+                      "context": "Click → /reservar con la categoría preseleccionada",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$nr-black-2",
+                      "cornerRadius": [
+                        100,
+                        100,
+                        2,
+                        2
+                      ],
+                      "stroke": "$nr-line",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "fNuHG",
+                          "name": "Photo",
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-14.png",
+                            "mode": "cover"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "E4O6N",
+                          "name": "Icon Badge Wrap",
+                          "width": "fill_container",
+                          "height": 28,
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "AManQ",
+                              "x": 67,
+                              "y": -28,
+                              "name": "Icon Badge",
+                              "width": 56,
+                              "height": 56,
+                              "fill": "$nr-black",
+                              "cornerRadius": 28,
+                              "stroke": "$nr-gold",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "m62ac5",
+                                  "name": "Icon",
+                                  "width": 22,
+                                  "height": 22,
+                                  "icon": "eye",
+                                  "library": "lucide",
+                                  "fill": "$nr-gold"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "SgvtC",
+                          "name": "Card Text",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            8,
+                            12,
+                            22,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VIgr2",
+                              "name": "Name",
+                              "fill": "$nr-on-dark",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "CEJAS & PESTAÑAS",
+                              "textAlign": "center",
+                              "fontFamily": "$nr-caps",
+                              "fontSize": 13,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "UIofF",
+                              "name": "Price",
+                              "fill": "$nr-gold-light",
+                              "content": "Desde $22",
+                              "fontFamily": "$nr-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DtZ3a",
+                      "name": "Service Card Faciales",
+                      "context": "Click → /reservar con la categoría preseleccionada",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "$nr-black-2",
+                      "cornerRadius": [
+                        100,
+                        100,
+                        2,
+                        2
+                      ],
+                      "stroke": "$nr-line",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "E4BHH",
+                          "name": "Photo",
+                          "width": "fill_container",
+                          "height": 240,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-12.png",
+                            "mode": "cover"
+                          }
+                        },
+                        {
+                          "type": "frame",
+                          "id": "xBt2I",
+                          "name": "Icon Badge Wrap",
+                          "width": "fill_container",
+                          "height": 28,
+                          "layout": "none",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "C1X2w",
+                              "x": 67,
+                              "y": -28,
+                              "name": "Icon Badge",
+                              "width": 56,
+                              "height": 56,
+                              "fill": "$nr-black",
+                              "cornerRadius": 28,
+                              "stroke": "$nr-gold",
+                              "strokeWidth": 1,
+                              "justifyContent": "center",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "jpSFp",
+                                  "name": "Icon",
+                                  "width": 22,
+                                  "height": 22,
+                                  "icon": "flower-2",
+                                  "library": "lucide",
+                                  "fill": "$nr-gold"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "C7lcfu",
+                          "name": "Card Text",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            8,
+                            12,
+                            22,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "O7Cyn",
+                              "name": "Name",
+                              "fill": "$nr-on-dark",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "FACIALES",
+                              "textAlign": "center",
+                              "fontFamily": "$nr-caps",
+                              "fontSize": 13,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "M9gsY",
+                              "name": "Price",
+                              "fill": "$nr-gold-light",
+                              "content": "Desde $70",
+                              "fontFamily": "$nr-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "A4Y7ND",
+                      "layoutPosition": "absolute",
+                      "x": 500,
+                      "y": -22,
+                      "name": "Panel Tab",
+                      "fill": "$nr-black",
+                      "cornerRadius": 2,
+                      "stroke": "$nr-gold-deep",
+                      "strokeWidth": 1,
+                      "padding": [
+                        10,
+                        28
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Q0fNvo",
+                          "name": "Tab Label",
+                          "fill": "$nr-gold",
+                          "content": "NUESTROS SERVICIOS",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 3
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JQrOM",
+          "name": "Info Bar",
+          "width": "fill_container",
+          "stroke": "$nr-gold-deep",
+          "strokeWidth": {
+            "top": 1,
+            "bottom": 1
+          },
+          "padding": [
+            32,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "X2hDtI",
+              "name": "Info VISÍTANOS",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LwrZM",
+                  "name": "Info Icon",
+                  "width": 52,
+                  "height": 52,
+                  "cornerRadius": 26,
+                  "stroke": "$nr-gold",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "QmKRp",
+                      "name": "Icon",
+                      "width": 22,
+                      "height": 22,
+                      "icon": "map-pin",
+                      "library": "lucide",
+                      "fill": "$nr-gold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "b3PSla",
+                  "name": "Info Text",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AVOX3",
+                      "name": "Label",
+                      "fill": "$nr-gold",
+                      "content": "VISÍTANOS",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "cIkpO",
+                      "name": "Value",
+                      "fill": "$nr-on-dark",
+                      "content": "Calle Ejemplo 123, Ciudad, PR 00000",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "jqvg0",
+              "name": "Divider",
+              "fill": "$nr-gold-deep",
+              "width": 1,
+              "height": 56
+            },
+            {
+              "type": "frame",
+              "id": "Y3XXI6",
+              "name": "Info LLÁMANOS",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sTrg2",
+                  "name": "Info Icon",
+                  "width": 52,
+                  "height": 52,
+                  "cornerRadius": 26,
+                  "stroke": "$nr-gold",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "USLmf",
+                      "name": "Icon",
+                      "width": 22,
+                      "height": 22,
+                      "icon": "phone",
+                      "library": "lucide",
+                      "fill": "$nr-gold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HULsw",
+                  "name": "Info Text",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cFfMb",
+                      "name": "Label",
+                      "fill": "$nr-gold",
+                      "content": "LLÁMANOS",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "YFhxx",
+                      "name": "Value",
+                      "fill": "$nr-on-dark",
+                      "content": "(000) 000-0000",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "wdzPL",
+              "name": "Divider",
+              "fill": "$nr-gold-deep",
+              "width": 1,
+              "height": 56
+            },
+            {
+              "type": "frame",
+              "id": "xi1py",
+              "name": "Info RESERVA EN LÍNEA",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GrM6R",
+                  "name": "Info Icon",
+                  "width": 52,
+                  "height": 52,
+                  "cornerRadius": 26,
+                  "stroke": "$nr-gold",
+                  "strokeWidth": 1,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "v9HnP",
+                      "name": "Icon",
+                      "width": 22,
+                      "height": 22,
+                      "icon": "calendar-check",
+                      "library": "lucide",
+                      "fill": "$nr-gold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QJyT7",
+                  "name": "Info Text",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DK3y0",
+                      "name": "Label",
+                      "fill": "$nr-gold",
+                      "content": "RESERVA EN LÍNEA",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "wtvLE",
+                      "name": "Value",
+                      "fill": "$nr-on-dark",
+                      "content": "onetouch.salon/reservar",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "SkUqe",
+              "name": "Divider",
+              "fill": "$nr-gold-deep",
+              "width": 1,
+              "height": 56
+            },
+            {
+              "type": "text",
+              "id": "nUtpr",
+              "name": "Script Tagline",
+              "fill": "$nr-gold-light",
+              "textGrowth": "fixed-width",
+              "width": 300,
+              "content": "Un toque de cuidado, toda una vida de belleza",
+              "lineHeight": 1.2,
+              "fontFamily": "$nr-script",
+              "fontSize": 26,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "drP2z",
+          "name": "Trust",
+          "width": "fill_container",
+          "fill": "$nr-cream",
+          "gap": 72,
+          "padding": [
+            112,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "G8IEz",
+              "name": "Trust Copy",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tnIUk",
+                  "name": "Kicker",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "X66NzE",
+                      "name": "Rule",
+                      "fill": "$nr-gold-deep",
+                      "width": 40,
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "KdSKL",
+                      "name": "Kicker Text",
+                      "fill": "$nr-gold-deep",
+                      "content": "LO QUE DICEN DE NOSOTRAS",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d74e7",
+                  "name": "Headline",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "K7Q9Ls",
+                      "name": "H1",
+                      "fill": "$nr-ink",
+                      "content": "TU CONFIANZA,",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$nr-display",
+                      "fontSize": 64,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "Redun",
+                      "name": "H2",
+                      "fill": "$nr-gold-deep",
+                      "content": "nuestro mayor logro.",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$nr-display",
+                      "fontSize": 64,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.5,
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Iwu9S",
+                  "name": "Body",
+                  "fill": "$nr-ink-soft",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "Cada sonrisa y cada palabra bonita nos inspiran a subir la vara. Esto es lo que nuestras clientas cuentan después de su cita.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$nr-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "mrP7r",
+                  "name": "Reviews",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "E9NkK",
+                      "name": "Review Natalia R.",
+                      "width": "fill_container",
+                      "fill": "$nr-ivory",
+                      "cornerRadius": 2,
+                      "stroke": "$nr-taupe",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 14,
+                      "padding": [
+                        24,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ict63",
+                          "name": "Stars",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "w7Syah",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "U1Rbx5",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "jqMA6",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "Z1Rqt",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "aSzTf",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "JQ430",
+                          "name": "Quote",
+                          "fill": "$nr-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "“Salí con el rubio que llevaba años buscando. Reservé a las 11 de la noche desde el celular.”",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nr-display",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pI1iU",
+                          "name": "Author",
+                          "fill": "$nr-muted",
+                          "content": "— Natalia R.",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 11,
+                          "fontWeight": "normal",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rS4KS",
+                      "name": "Review Gabriela M.",
+                      "width": "fill_container",
+                      "fill": "$nr-ivory",
+                      "cornerRadius": 2,
+                      "stroke": "$nr-taupe",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 14,
+                      "padding": [
+                        24,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "d8iEA",
+                          "name": "Stars",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "g1gPNW",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "U2YPnN",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "y19va",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "qMyTa",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "FOS6b",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "UJU5b",
+                          "name": "Quote",
+                          "fill": "$nr-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "“Camila entendió mis rizos a la primera. Por fin un corte que no tengo que planchar.”",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nr-display",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VHjyn",
+                          "name": "Author",
+                          "fill": "$nr-muted",
+                          "content": "— Gabriela M.",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 11,
+                          "fontWeight": "normal",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "U6jX6",
+                      "name": "Review Yarelis T.",
+                      "width": "fill_container",
+                      "fill": "$nr-ivory",
+                      "cornerRadius": 2,
+                      "stroke": "$nr-taupe",
+                      "strokeWidth": 1,
+                      "layout": "vertical",
+                      "gap": 14,
+                      "padding": [
+                        24,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "I2g1Lg",
+                          "name": "Stars",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "mjWlM",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "HVeeK",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "G7Q6qg",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "Abt81",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "j46ZPr",
+                              "name": "Star",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "star",
+                              "library": "lucide",
+                              "fill": "$nr-gold-deep"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "ovurj",
+                          "name": "Quote",
+                          "fill": "$nr-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "“Puntuales, precios claros y el gel me duró tres semanas completas.”",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nr-display",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "fontStyle": "italic"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dBTBA",
+                          "name": "Author",
+                          "fill": "$nr-muted",
+                          "content": "— Yarelis T.",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 11,
+                          "fontWeight": "normal",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "G65Nll",
+              "name": "Trust Visual",
+              "width": 500,
+              "height": 660,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "mY1va",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Arch Line",
+                  "width": 500,
+                  "height": 660,
+                  "cornerRadius": [
+                    250,
+                    250,
+                    0,
+                    0
+                  ],
+                  "stroke": "$nr-gold-deep",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "JGe5G",
+                  "x": 24,
+                  "y": 24,
+                  "name": "Arch Photo",
+                  "clip": true,
+                  "width": 452,
+                  "height": 636,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "generated-16.png",
+                    "mode": "cover"
+                  },
+                  "cornerRadius": [
+                    226,
+                    226,
+                    0,
+                    0
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RPrtZ",
+                  "x": 330,
+                  "y": 40,
+                  "name": "Hygiene Badge",
+                  "width": 150,
+                  "fill": "$nr-black",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": [
+                    16,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "lSbBt",
+                      "name": "Icon",
+                      "width": 26,
+                      "height": 26,
+                      "icon": "shield-check",
+                      "library": "lucide",
+                      "fill": "$nr-gold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J42q8",
+                      "name": "Text",
+                      "fill": "$nr-on-dark",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "HIGIENE · CALIDAD · EXPERIENCIA",
+                      "lineHeight": 1.4,
+                      "textAlign": "center",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "G65mn",
+                      "name": "Sub",
+                      "fill": "$nr-gold",
+                      "content": "DE CONFIANZA",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 9,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DaZER",
+          "name": "Commitments",
+          "width": "fill_container",
+          "fill": "$nr-cream",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            0,
+            80,
+            112,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ibx22",
+              "name": "Commit Header",
+              "gap": 14,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "rectangle",
+                  "id": "Sx9iI",
+                  "name": "Rule",
+                  "fill": "$nr-gold-deep",
+                  "width": 80,
+                  "height": 1
+                },
+                {
+                  "type": "text",
+                  "id": "HXUxh",
+                  "name": "Title",
+                  "fill": "$nr-gold-deep",
+                  "content": "NUESTRO COMPROMISO CONTIGO",
+                  "fontFamily": "$nr-caps",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 3
+                },
+                {
+                  "type": "rectangle",
+                  "id": "cdYYD",
+                  "name": "Rule",
+                  "fill": "$nr-gold-deep",
+                  "width": 80,
+                  "height": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CWHVH",
+              "name": "Commit Row",
+              "width": "fill_container",
+              "cornerRadius": 2,
+              "stroke": "$nr-taupe",
+              "strokeWidth": 1,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "w7X7Tb",
+                  "name": "Commit Manos expertas",
+                  "width": "fill_container",
+                  "stroke": "$nr-taupe",
+                  "strokeWidth": {
+                    "right": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": [
+                    28,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "zSJEj",
+                      "name": "Icon",
+                      "width": 30,
+                      "height": 30,
+                      "icon": "users",
+                      "library": "lucide",
+                      "fill": "$nr-gold-deep"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SwolY",
+                      "name": "Label",
+                      "fill": "$nr-ink",
+                      "content": "MANOS EXPERTAS",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gfZYB",
+                  "name": "Commit Productos premium",
+                  "width": "fill_container",
+                  "stroke": "$nr-taupe",
+                  "strokeWidth": {
+                    "right": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": [
+                    28,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "pVaG7",
+                      "name": "Icon",
+                      "width": 30,
+                      "height": 30,
+                      "icon": "badge-check",
+                      "library": "lucide",
+                      "fill": "$nr-gold-deep"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CMuMZ",
+                      "name": "Label",
+                      "fill": "$nr-ink",
+                      "content": "PRODUCTOS PREMIUM",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "jmVIn",
+                  "name": "Commit Atención personal",
+                  "width": "fill_container",
+                  "stroke": "$nr-taupe",
+                  "strokeWidth": {
+                    "right": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": [
+                    28,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "khH4g",
+                      "name": "Icon",
+                      "width": 30,
+                      "height": 30,
+                      "icon": "heart-handshake",
+                      "library": "lucide",
+                      "fill": "$nr-gold-deep"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kLQ0B",
+                      "name": "Label",
+                      "fill": "$nr-ink",
+                      "content": "ATENCIÓN PERSONAL",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HvYh3",
+                  "name": "Commit Higiene estricta",
+                  "width": "fill_container",
+                  "stroke": "$nr-taupe",
+                  "strokeWidth": {
+                    "right": 1
+                  },
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": [
+                    28,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "B9FZW",
+                      "name": "Icon",
+                      "width": 30,
+                      "height": 30,
+                      "icon": "shield-plus",
+                      "library": "lucide",
+                      "fill": "$nr-gold-deep"
+                    },
+                    {
+                      "type": "text",
+                      "id": "J2W5cG",
+                      "name": "Label",
+                      "fill": "$nr-ink",
+                      "content": "HIGIENE ESTRICTA",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "evvgK",
+                  "name": "Commit Resultados constantes",
+                  "width": "fill_container",
+                  "stroke": "$nr-taupe",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "padding": [
+                    28,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "pVJ24",
+                      "name": "Icon",
+                      "width": 30,
+                      "height": 30,
+                      "icon": "award",
+                      "library": "lucide",
+                      "fill": "$nr-gold-deep"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Q6T54",
+                      "name": "Label",
+                      "fill": "$nr-ink",
+                      "content": "RESULTADOS CONSTANTES",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pZRWL",
+              "name": "MeTime Band",
+              "width": "fill_container",
+              "fill": "$nr-black",
+              "cornerRadius": 2,
+              "padding": [
+                28,
+                40
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "hW0pV",
+                  "name": "Band Left",
+                  "gap": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OVV53",
+                      "name": "Band Icon",
+                      "width": 56,
+                      "height": 56,
+                      "fill": "$nr-gold",
+                      "cornerRadius": 28,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "dNSct",
+                          "name": "Icon",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "calendar-heart",
+                          "library": "lucide",
+                          "fill": "$nr-black"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nZM3i",
+                      "name": "Band Text",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JFqXR",
+                          "name": "Band Title",
+                          "fill": "$nr-on-dark",
+                          "content": "¿LISTA PARA TU MOMENTO?",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 22,
+                          "fontWeight": "normal",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "pIQUc",
+                          "name": "Band Sub",
+                          "fill": "$nr-on-dark-muted",
+                          "content": "Reserva hoy en un minuto. Porque te lo mereces.",
+                          "fontFamily": "$nr-body",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kBm3R",
+                  "name": "Band CTA",
+                  "context": "Primary CTA → /reservar",
+                  "fill": "$nr-gold",
+                  "cornerRadius": 2,
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LT3AP",
+                      "name": "Label",
+                      "fill": "$nr-black",
+                      "content": "RESERVA TU CITA",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "icon",
+                      "id": "gqkTY",
+                      "name": "Icon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "arrow-right",
+                      "library": "lucide",
+                      "fill": "$nr-black"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FDLX4",
+          "name": "Feature Cabello",
+          "width": "fill_container",
+          "height": 760,
+          "fill": "$nr-black",
+          "children": [
+            {
+              "type": "frame",
+              "id": "xmOCX",
+              "name": "Feature Copy",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": 80,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "G6KxMo",
+                  "name": "Kicker",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "v1vTM",
+                      "name": "Rule",
+                      "fill": "$nr-gold",
+                      "width": 40,
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "u9njOW",
+                      "name": "Kicker Text",
+                      "fill": "$nr-gold",
+                      "content": "01 · CABELLO",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PARRx",
+                  "name": "Headline",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QxDdX",
+                      "name": "H1",
+                      "fill": "$nr-on-dark",
+                      "content": "Cabello sano",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$nr-display",
+                      "fontSize": 60,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "L2x8wb",
+                      "name": "H2",
+                      "fill": "$nr-gold",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "empieza con manos expertas.",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$nr-display",
+                      "fontSize": 60,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.5,
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "cktN2",
+                  "name": "Body",
+                  "fill": "$nr-on-dark-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 460,
+                  "content": "Brillo, suavidad y confianza con tratamientos a la medida de tu cabello.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$nr-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "O6zeSt",
+                  "name": "Service List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "PNWof",
+                      "name": "Row Corte & estilizado",
+                      "context": "Click → añade servicio en /reservar",
+                      "width": "fill_container",
+                      "stroke": "$nr-line",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "gap": 16,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "s5ZCi",
+                          "name": "Dot",
+                          "width": 28,
+                          "height": 28,
+                          "cornerRadius": 14,
+                          "stroke": "$nr-gold-deep",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "wgp1F",
+                              "name": "Icon",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "plus",
+                              "library": "lucide",
+                              "fill": "$nr-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "wn2ZH",
+                          "name": "Name",
+                          "fill": "$nr-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "CORTE & ESTILIZADO",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "VPEG3",
+                          "name": "Duration",
+                          "fill": "$nr-on-dark-muted",
+                          "content": "60 min",
+                          "fontFamily": "$nr-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pWvrL",
+                          "name": "Price",
+                          "fill": "$nr-gold",
+                          "content": "$55",
+                          "fontFamily": "$nr-display",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "y87rd",
+                      "name": "Row Keratina alisadora",
+                      "context": "Click → añade servicio en /reservar",
+                      "width": "fill_container",
+                      "stroke": "$nr-line",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "gap": 16,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "W8femm",
+                          "name": "Dot",
+                          "width": 28,
+                          "height": 28,
+                          "cornerRadius": 14,
+                          "stroke": "$nr-gold-deep",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "N57fY",
+                              "name": "Icon",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "plus",
+                              "library": "lucide",
+                              "fill": "$nr-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "g3eWr",
+                          "name": "Name",
+                          "fill": "$nr-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "KERATINA ALISADORA",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "U6s5U",
+                          "name": "Duration",
+                          "fill": "$nr-on-dark-muted",
+                          "content": "150 min",
+                          "fontFamily": "$nr-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "vsTYv",
+                          "name": "Price",
+                          "fill": "$nr-gold",
+                          "content": "$180",
+                          "fontFamily": "$nr-display",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kXumm",
+                      "name": "Row Balayage a mano alzada",
+                      "context": "Click → añade servicio en /reservar",
+                      "width": "fill_container",
+                      "stroke": "$nr-line",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "gap": 16,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rGLSK",
+                          "name": "Dot",
+                          "width": 28,
+                          "height": 28,
+                          "cornerRadius": 14,
+                          "stroke": "$nr-gold-deep",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "U6yLu",
+                              "name": "Icon",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "plus",
+                              "library": "lucide",
+                              "fill": "$nr-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "t2uczA",
+                          "name": "Name",
+                          "fill": "$nr-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "BALAYAGE A MANO ALZADA",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "PvT3Q",
+                          "name": "Duration",
+                          "fill": "$nr-on-dark-muted",
+                          "content": "180 min",
+                          "fontFamily": "$nr-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kyplR",
+                          "name": "Price",
+                          "fill": "$nr-gold",
+                          "content": "$210",
+                          "fontFamily": "$nr-display",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Uh9NA",
+                      "name": "Row Peinado para eventos",
+                      "context": "Click → añade servicio en /reservar",
+                      "width": "fill_container",
+                      "stroke": "$nr-line",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "gap": 16,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "bFoSB",
+                          "name": "Dot",
+                          "width": 28,
+                          "height": 28,
+                          "cornerRadius": 14,
+                          "stroke": "$nr-gold-deep",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "a5FPlr",
+                              "name": "Icon",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "plus",
+                              "library": "lucide",
+                              "fill": "$nr-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "TFzf5",
+                          "name": "Name",
+                          "fill": "$nr-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "PEINADO PARA EVENTOS",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "C9QJU",
+                          "name": "Duration",
+                          "fill": "$nr-on-dark-muted",
+                          "content": "60 min",
+                          "fontFamily": "$nr-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "fTB73",
+                          "name": "Price",
+                          "fill": "$nr-gold",
+                          "content": "$75",
+                          "fontFamily": "$nr-display",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "K9VeV",
+                  "name": "Feature CTA",
+                  "context": "→ /reservar con categoría",
+                  "cornerRadius": 2,
+                  "stroke": "$nr-gold",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    26
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "g6pauk",
+                      "name": "Label",
+                      "fill": "$nr-gold",
+                      "content": "RESERVA TU CITA",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "icon",
+                      "id": "LTFlU",
+                      "name": "Icon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "arrow-right",
+                      "library": "lucide",
+                      "fill": "$nr-gold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yyiZs",
+              "name": "Feature Photo",
+              "clip": true,
+              "width": 720,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "generated-18.png",
+                "mode": "cover"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "CjwcK",
+          "name": "Feature Uñas",
+          "width": "fill_container",
+          "height": 760,
+          "fill": "$nr-black-2",
+          "children": [
+            {
+              "type": "frame",
+              "id": "uneZe",
+              "name": "Feature Photo",
+              "clip": true,
+              "width": 720,
+              "height": "fill_container",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "generated-17.png",
+                "mode": "cover"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "q5LvGK",
+              "name": "Feature Copy",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "padding": 80,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "T8Nm5w",
+                  "name": "Kicker",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "ggpDw",
+                      "name": "Rule",
+                      "fill": "$nr-gold",
+                      "width": 40,
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "uCHV0",
+                      "name": "Kicker Text",
+                      "fill": "$nr-gold",
+                      "content": "02 · UÑAS",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vRXuW",
+                  "name": "Headline",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jw8ta",
+                      "name": "H1",
+                      "fill": "$nr-on-dark",
+                      "content": "Uñas bonitas,",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$nr-display",
+                      "fontSize": 60,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "x1uVT8",
+                      "name": "H2",
+                      "fill": "$nr-gold",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "tú feliz.",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$nr-display",
+                      "fontSize": 60,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.5,
+                      "fontStyle": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "hbeqm",
+                  "name": "Body",
+                  "fill": "$nr-on-dark-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 460,
+                  "content": "Manicura y pedicura con acabado impecable que dura semanas.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$nr-body",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "SGGDn",
+                  "name": "Service List",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "S5O90d",
+                      "name": "Row Manicura en gel",
+                      "context": "Click → añade servicio en /reservar",
+                      "width": "fill_container",
+                      "stroke": "$nr-line",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "gap": 16,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "i2trW",
+                          "name": "Dot",
+                          "width": 28,
+                          "height": 28,
+                          "cornerRadius": 14,
+                          "stroke": "$nr-gold-deep",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "pHxLb",
+                              "name": "Icon",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "plus",
+                              "library": "lucide",
+                              "fill": "$nr-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "c2ReJ",
+                          "name": "Name",
+                          "fill": "$nr-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "MANICURA EN GEL",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "SZv8T",
+                          "name": "Duration",
+                          "fill": "$nr-on-dark-muted",
+                          "content": "60 min",
+                          "fontFamily": "$nr-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "cG5TQ",
+                          "name": "Price",
+                          "fill": "$nr-gold",
+                          "content": "$40",
+                          "fontFamily": "$nr-display",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "l5WBO",
+                      "name": "Row Pedicura spa",
+                      "context": "Click → añade servicio en /reservar",
+                      "width": "fill_container",
+                      "stroke": "$nr-line",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "gap": 16,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "V7iXP",
+                          "name": "Dot",
+                          "width": 28,
+                          "height": 28,
+                          "cornerRadius": 14,
+                          "stroke": "$nr-gold-deep",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "L9WFWi",
+                              "name": "Icon",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "plus",
+                              "library": "lucide",
+                              "fill": "$nr-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "F38lr",
+                          "name": "Name",
+                          "fill": "$nr-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "PEDICURA SPA",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "RtW9P",
+                          "name": "Duration",
+                          "fill": "$nr-on-dark-muted",
+                          "content": "60 min",
+                          "fontFamily": "$nr-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "lnHSZ",
+                          "name": "Price",
+                          "fill": "$nr-gold",
+                          "content": "$45",
+                          "fontFamily": "$nr-display",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LVAnL",
+                      "name": "Row Uñas esculpidas",
+                      "context": "Click → añade servicio en /reservar",
+                      "width": "fill_container",
+                      "stroke": "$nr-line",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "gap": 16,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Ap7RJ",
+                          "name": "Dot",
+                          "width": 28,
+                          "height": 28,
+                          "cornerRadius": 14,
+                          "stroke": "$nr-gold-deep",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "R7xe1u",
+                              "name": "Icon",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "plus",
+                              "library": "lucide",
+                              "fill": "$nr-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "Qtzq2",
+                          "name": "Name",
+                          "fill": "$nr-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "UÑAS ESCULPIDAS",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "fJMtB",
+                          "name": "Duration",
+                          "fill": "$nr-on-dark-muted",
+                          "content": "90 min",
+                          "fontFamily": "$nr-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wWPd9",
+                          "name": "Price",
+                          "fill": "$nr-gold",
+                          "content": "$65",
+                          "fontFamily": "$nr-display",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "owUPn",
+                      "name": "Row Manicura clásica",
+                      "context": "Click → añade servicio en /reservar",
+                      "width": "fill_container",
+                      "stroke": "$nr-line",
+                      "strokeWidth": {
+                        "bottom": 1
+                      },
+                      "gap": 16,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "m2Yxz",
+                          "name": "Dot",
+                          "width": 28,
+                          "height": 28,
+                          "cornerRadius": 14,
+                          "stroke": "$nr-gold-deep",
+                          "strokeWidth": 1,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "KO3q9",
+                              "name": "Icon",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "plus",
+                              "library": "lucide",
+                              "fill": "$nr-gold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "AqtYf",
+                          "name": "Name",
+                          "fill": "$nr-on-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "MANICURA CLÁSICA",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 14,
+                          "fontWeight": "normal",
+                          "letterSpacing": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "CQzww",
+                          "name": "Duration",
+                          "fill": "$nr-on-dark-muted",
+                          "content": "40 min",
+                          "fontFamily": "$nr-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qZUXC",
+                          "name": "Price",
+                          "fill": "$nr-gold",
+                          "content": "$25",
+                          "fontFamily": "$nr-display",
+                          "fontSize": 22,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "M64doH",
+                  "name": "Feature CTA",
+                  "context": "→ /reservar con categoría",
+                  "cornerRadius": 2,
+                  "stroke": "$nr-gold",
+                  "strokeWidth": 1,
+                  "gap": 12,
+                  "padding": [
+                    16,
+                    26
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "jb2YI",
+                      "name": "Label",
+                      "fill": "$nr-gold",
+                      "content": "RESERVA TU CITA",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "icon",
+                      "id": "olUjE",
+                      "name": "Icon",
+                      "width": 16,
+                      "height": 16,
+                      "icon": "arrow-right",
+                      "library": "lucide",
+                      "fill": "$nr-gold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yCQTl",
+          "name": "Team",
+          "width": "fill_container",
+          "fill": "$nr-black",
+          "stroke": "$nr-line",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 56,
+          "padding": [
+            112,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "e7NmLL",
+              "name": "Team Header",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CtTu9",
+                  "name": "Rule Row",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "id": "Ez5Dy",
+                      "name": "Rule",
+                      "fill": "$nr-gold-deep",
+                      "width": 60,
+                      "height": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZiB3a",
+                      "name": "Kicker",
+                      "fill": "$nr-gold",
+                      "content": "03 · NUESTRO EQUIPO",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "qfC25",
+                      "name": "Rule",
+                      "fill": "$nr-gold-deep",
+                      "width": 60,
+                      "height": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "PbghK",
+                  "name": "Title",
+                  "fill": "$nr-on-dark",
+                  "content": "Las manos detrás de tu look",
+                  "lineHeight": 1.05,
+                  "fontFamily": "$nr-display",
+                  "fontSize": 56,
+                  "fontWeight": "normal",
+                  "letterSpacing": -0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TP5R7",
+              "name": "Team Row",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bLSkf",
+                  "name": "Stylist Andrea Ríos",
+                  "context": "Click → /reservar con estilista preseleccionada",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NyTNo",
+                      "name": "Arch Frame",
+                      "width": "fill_container",
+                      "cornerRadius": [
+                        150,
+                        150,
+                        0,
+                        0
+                      ],
+                      "stroke": "$nr-gold-deep",
+                      "strokeWidth": 1,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "N93Ya",
+                          "name": "Portrait",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 360,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-3.png",
+                            "mode": "cover"
+                          },
+                          "cornerRadius": [
+                            140,
+                            140,
+                            0,
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "gIkRJ",
+                      "name": "Name",
+                      "fill": "$nr-on-dark",
+                      "content": "ANDREA RÍOS",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 17,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "iu6JF",
+                      "name": "Role",
+                      "fill": "$nr-gold-light",
+                      "content": "Colorista senior",
+                      "fontFamily": "$nr-script",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ql40b",
+                      "name": "Specialty",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Balayage · rubios",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QrS5f",
+                  "name": "Stylist Camila Ortiz",
+                  "context": "Click → /reservar con estilista preseleccionada",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "szVgH",
+                      "name": "Arch Frame",
+                      "width": "fill_container",
+                      "cornerRadius": [
+                        150,
+                        150,
+                        0,
+                        0
+                      ],
+                      "stroke": "$nr-gold-deep",
+                      "strokeWidth": 1,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rHkPd",
+                          "name": "Portrait",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 360,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-2.png",
+                            "mode": "cover"
+                          },
+                          "cornerRadius": [
+                            140,
+                            140,
+                            0,
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "t4jL6",
+                      "name": "Name",
+                      "fill": "$nr-on-dark",
+                      "content": "CAMILA ORTIZ",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 17,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "yy51x",
+                      "name": "Role",
+                      "fill": "$nr-gold-light",
+                      "content": "Estilista & cortes",
+                      "fontFamily": "$nr-script",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XFuU5",
+                      "name": "Specialty",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Bob · rizos · novias",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "GObNm",
+                  "name": "Stylist Valeria Cruz",
+                  "context": "Click → /reservar con estilista preseleccionada",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GIIGB",
+                      "name": "Arch Frame",
+                      "width": "fill_container",
+                      "cornerRadius": [
+                        150,
+                        150,
+                        0,
+                        0
+                      ],
+                      "stroke": "$nr-gold-deep",
+                      "strokeWidth": 1,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "PPD7x",
+                          "name": "Portrait",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 360,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-5.png",
+                            "mode": "cover"
+                          },
+                          "cornerRadius": [
+                            140,
+                            140,
+                            0,
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "T9yhWr",
+                      "name": "Name",
+                      "fill": "$nr-on-dark",
+                      "content": "VALERIA CRUZ",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 17,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "h7Obh4",
+                      "name": "Role",
+                      "fill": "$nr-gold-light",
+                      "content": "Colorista",
+                      "fontFamily": "$nr-script",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ylxIJ",
+                      "name": "Specialty",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Babylights · keratina",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n9Pylx",
+                  "name": "Stylist Sofía Méndez",
+                  "context": "Click → /reservar con estilista preseleccionada",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ulpLi",
+                      "name": "Arch Frame",
+                      "width": "fill_container",
+                      "cornerRadius": [
+                        150,
+                        150,
+                        0,
+                        0
+                      ],
+                      "stroke": "$nr-gold-deep",
+                      "strokeWidth": 1,
+                      "padding": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "K13jT",
+                          "name": "Portrait",
+                          "clip": true,
+                          "width": "fill_container",
+                          "height": 360,
+                          "fill": {
+                            "type": "image",
+                            "enabled": true,
+                            "url": "generated-4.png",
+                            "mode": "cover"
+                          },
+                          "cornerRadius": [
+                            140,
+                            140,
+                            0,
+                            0
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "hbwWv",
+                      "name": "Name",
+                      "fill": "$nr-on-dark",
+                      "content": "SOFÍA MÉNDEZ",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 17,
+                      "fontWeight": "normal",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "q9Kdp",
+                      "name": "Role",
+                      "fill": "$nr-gold-light",
+                      "content": "Uñas & cejas",
+                      "fontFamily": "$nr-script",
+                      "fontSize": 24,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NPLJJ",
+                      "name": "Specialty",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Gel · nail art · laminado",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Zsh6o",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "$nr-black-2",
+          "stroke": "$nr-gold-deep",
+          "strokeWidth": {
+            "top": 1
+          },
+          "layout": "vertical",
+          "gap": 56,
+          "padding": [
+            96,
+            80,
+            40,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ocKcH",
+              "name": "Final CTA",
+              "layout": "vertical",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "V2lliG",
+                  "name": "Wordmark",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ws5sZ",
+                      "name": "Wordmark Main",
+                      "fill": "$nr-gold",
+                      "content": "ONE TOUCH",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 64,
+                      "fontWeight": "normal",
+                      "letterSpacing": 6
+                    },
+                    {
+                      "type": "frame",
+                      "id": "e8yCD",
+                      "name": "Wordmark Sub Row",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "QxQ7J",
+                          "name": "Rule",
+                          "fill": "$nr-gold-deep",
+                          "width": 80,
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "WasQ9",
+                          "name": "Wordmark Sub",
+                          "fill": "$nr-gold-light",
+                          "content": "S A L O N",
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 16,
+                          "fontWeight": "normal",
+                          "letterSpacing": 8
+                        },
+                        {
+                          "type": "rectangle",
+                          "id": "dhV9x",
+                          "name": "Rule",
+                          "fill": "$nr-gold-deep",
+                          "width": 80,
+                          "height": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Q9OWJ",
+                  "name": "Script",
+                  "fill": "$nr-gold-light",
+                  "content": "Luce bien · Siéntete bien · Sé tú",
+                  "fontFamily": "$nr-script",
+                  "fontSize": 34,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "O3YCLv",
+                  "name": "Footer CTA",
+                  "context": "Primary CTA → /reservar",
+                  "fill": "$nr-gold",
+                  "cornerRadius": 2,
+                  "gap": 12,
+                  "padding": [
+                    18,
+                    32
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "c3hGb",
+                      "name": "Label",
+                      "fill": "$nr-black",
+                      "content": "RESERVA TU CITA",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "icon",
+                      "id": "JupOC",
+                      "name": "Icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "arrow-right",
+                      "library": "lucide",
+                      "fill": "$nr-black"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Kr4Kb",
+              "name": "Footer Columns",
+              "width": "fill_container",
+              "stroke": "$nr-line",
+              "strokeWidth": {
+                "top": 1,
+                "bottom": 1
+              },
+              "padding": [
+                40,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yp77l",
+                  "name": "Col VISÍTANOS",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "z8ilog",
+                      "name": "Title",
+                      "fill": "$nr-gold",
+                      "content": "VISÍTANOS",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "uxNzi",
+                      "name": "Line",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Calle Ejemplo 123",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "O9KBV",
+                      "name": "Line",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Ciudad, PR 00000",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "b6eWf",
+                      "name": "Line",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Cómo llegar ↗",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Wjg3V",
+                  "name": "Col HORARIO",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Ad1YQ",
+                      "name": "Title",
+                      "fill": "$nr-gold",
+                      "content": "HORARIO",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "Zj6nr",
+                      "name": "Line",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Lun – Sáb · 9:00 AM – 7:00 PM",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bsC56",
+                      "name": "Line",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Domingo cerrado",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "U4BD0P",
+                  "name": "Col CONTACTO",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AgN9Z",
+                      "name": "Title",
+                      "fill": "$nr-gold",
+                      "content": "CONTACTO",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "YCfwv",
+                      "name": "Line",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "(000) 000-0000",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UemDb",
+                      "name": "Line",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "hola@onetouchsalon.com",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NWcar",
+                  "name": "Col SÍGUENOS",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Er69E",
+                      "name": "Title",
+                      "fill": "$nr-gold",
+                      "content": "SÍGUENOS",
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 12,
+                      "fontWeight": "normal",
+                      "letterSpacing": 3
+                    },
+                    {
+                      "type": "text",
+                      "id": "xTZ1D",
+                      "name": "Line",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Instagram",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "C15f7",
+                      "name": "Line",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "Facebook",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "S2Ofm",
+                      "name": "Line",
+                      "fill": "$nr-on-dark-muted",
+                      "content": "TikTok",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WnApN",
+              "name": "Bottom Bar",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "w0Jyl",
+                  "name": "Copyright",
+                  "fill": "$nr-on-dark-muted",
+                  "content": "© 2026 OneTouch Salon · Puerto Rico",
+                  "fontFamily": "$nr-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Rmjfx",
+                  "name": "Legal",
+                  "fill": "$nr-on-dark-muted",
+                  "content": "Privacidad · Términos",
+                  "fontFamily": "$nr-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
@@ -28365,6 +32557,82 @@
     "fb-disabled": {
       "type": "color",
       "value": "#BDB3A6"
+    },
+    "nr-black": {
+      "type": "color",
+      "value": "#0E0D0B"
+    },
+    "nr-black-2": {
+      "type": "color",
+      "value": "#16140F"
+    },
+    "nr-card": {
+      "type": "color",
+      "value": "#1D1A15"
+    },
+    "nr-line": {
+      "type": "color",
+      "value": "#4A3D2A"
+    },
+    "nr-gold": {
+      "type": "color",
+      "value": "#C9A063"
+    },
+    "nr-gold-light": {
+      "type": "color",
+      "value": "#E4C892"
+    },
+    "nr-gold-deep": {
+      "type": "color",
+      "value": "#8E6B3A"
+    },
+    "nr-on-dark": {
+      "type": "color",
+      "value": "#EFE7DA"
+    },
+    "nr-on-dark-muted": {
+      "type": "color",
+      "value": "#A89E8D"
+    },
+    "nr-cream": {
+      "type": "color",
+      "value": "#F5EFE4"
+    },
+    "nr-ivory": {
+      "type": "color",
+      "value": "#FBF8F2"
+    },
+    "nr-taupe": {
+      "type": "color",
+      "value": "#E6DAC6"
+    },
+    "nr-ink": {
+      "type": "color",
+      "value": "#1A1714"
+    },
+    "nr-ink-soft": {
+      "type": "color",
+      "value": "#4D463D"
+    },
+    "nr-muted": {
+      "type": "color",
+      "value": "#7E7466"
+    },
+    "nr-caps": {
+      "type": "string",
+      "value": "Cinzel"
+    },
+    "nr-display": {
+      "type": "string",
+      "value": "Playfair Display"
+    },
+    "nr-script": {
+      "type": "string",
+      "value": "Pinyon Script"
+    },
+    "nr-body": {
+      "type": "string",
+      "value": "Manrope"
     }
   },
   "fileToken": "5c645716-b532-4f04-98d2-7fea569af40e"

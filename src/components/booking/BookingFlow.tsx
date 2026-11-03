@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import {
@@ -19,6 +18,7 @@ import {
   X,
 } from "lucide-react";
 import {
+  ArchPhoto,
   Chip,
   DayCell,
   Field,
@@ -114,20 +114,20 @@ export function BookingFlow() {
   const stepState = (n: number) => (view === n ? "current" : (view as number) > n ? "done" : "pending");
 
   return (
-    <div className="flex min-h-full flex-col bg-cream">
-      <header className="sticky top-0 z-20 border-b border-line bg-cream/95 px-5 py-4 backdrop-blur-none md:px-12 md:py-5">
+    <div className="flex min-h-full flex-col bg-ivory text-ink">
+      <header className="sticky top-0 z-20 border-b border-taupe bg-ivory/95 px-5 py-4 backdrop-blur-none md:px-12 md:py-5">
         <div className="flex items-center justify-between gap-4">
           <span className="md:hidden">
-            <Logo compact />
+            <Logo compact tone="light" />
           </span>
           <span className="max-md:hidden">
-            <Logo />
+            <Logo tone="light" />
           </span>
           <nav aria-label="Pasos" className="flex items-center gap-3 md:gap-4">
             <Step num={1} label="Servicios" state={stepState(1)} />
-            <span aria-hidden className="h-px w-4 bg-line md:w-8" />
+            <span aria-hidden className="h-px w-4 bg-taupe md:w-8" />
             <Step num={2} label="Estilista y hora" state={stepState(2)} />
-            <span aria-hidden className="h-px w-4 bg-line md:w-8" />
+            <span aria-hidden className="h-px w-4 bg-taupe md:w-8" />
             <Step num={3} label="Tus datos" state={stepState(3)} />
           </nav>
           <Link href="/" className="flex items-center gap-2 text-[14px] font-semibold text-ink-soft hover:text-ink" aria-label="Volver al sitio">
@@ -148,7 +148,7 @@ export function BookingFlow() {
                   return <Chip key={c.name} label={c.name} count={n ? `${n} ✓` : c.items.length} active={category === c.name} onClick={() => setCategory(c.name)} />;
                 })}
               </div>
-              <div className="border-t border-line">
+              <div className="border-t border-taupe">
                 {serviceCategories
                   .find((c) => c.name === category)!
                   .items.map((item) => (
@@ -243,20 +243,20 @@ export function BookingFlow() {
                   role="switch"
                   aria-checked={sms}
                   onClick={() => setSms(!sms)}
-                  className="flex items-center gap-[14px] rounded-[14px] bg-sand px-[18px] py-4 text-left text-[14px] font-semibold"
+                  className="flex items-center gap-[14px] rounded-[2px] bg-cream px-[18px] py-4 text-left text-[14px] font-semibold"
                 >
-                  <span className={`flex h-[22px] w-10 shrink-0 items-center rounded-full p-[2px] transition-colors ${sms ? "justify-end bg-palm" : "justify-start bg-line"}`}>
+                  <span className={`flex h-[22px] w-10 shrink-0 items-center rounded-full p-[2px] transition-colors ${sms ? "justify-end bg-noir" : "justify-start bg-taupe"}`}>
                     <span className="h-[18px] w-[18px] rounded-full bg-white" />
                   </span>
                   Recordarme por SMS 24 horas antes
                 </button>
                 <p className="flex items-center gap-[10px] text-[13px] text-ink-soft">
-                  <ShieldCheck size={16} className="shrink-0 text-leaf" />
+                  <ShieldCheck size={16} className="shrink-0 text-gold-deep" />
                   Cancela o cambia gratis hasta 2 horas antes, con el enlace de tu confirmación.
                 </p>
                 {!live && (
-                  <div className="card-tail flex flex-col gap-2 bg-flame-soft p-5" role="status">
-                    <p className="text-[15px] font-bold text-flame-deep">La reserva en línea abre muy pronto.</p>
+                  <div className="flex flex-col gap-2 rounded-[2px] border border-gold-deep bg-cream p-5" role="status">
+                    <p className="text-[15px] font-bold text-gold-deep">La reserva en línea abre muy pronto.</p>
                     <p className="text-[14px] leading-[1.55] text-ink-soft">
                       Por ahora confirma esta cita llamando al{" "}
                       <a href={contact.phoneHref} className="font-bold text-ink underline">
@@ -281,8 +281,8 @@ export function BookingFlow() {
         </main>
 
         <aside className="lg:w-[340px] lg:shrink-0">
-          <div className="card-tail flex flex-col gap-5 bg-sand p-7 max-lg:fixed max-lg:inset-x-0 max-lg:bottom-0 max-lg:z-30 max-lg:rounded-b-none max-lg:rounded-t-[24px] max-lg:border-t max-lg:border-line max-lg:p-5 lg:sticky lg:top-28">
-            <p className="text-[12px] font-bold tracking-[0.12em] text-muted max-lg:hidden">TU CITA</p>
+          <div className="flex flex-col gap-5 rounded-[2px] border border-taupe bg-cream p-7 max-lg:fixed max-lg:inset-x-0 max-lg:bottom-0 max-lg:z-30 max-lg:border-t max-lg:border-taupe max-lg:p-5 lg:sticky lg:top-28">
+            <p className="font-caps text-[12px] tracking-[0.25em] text-gold-deep max-lg:hidden">TU CITA</p>
             <div className="flex flex-col gap-[14px] max-lg:hidden">
               {chosen.length === 0 && <p className="text-[14px] text-muted">Aún no has escogido servicios.</p>}
               {chosen.map((s) => (
@@ -295,7 +295,7 @@ export function BookingFlow() {
                 </div>
               ))}
             </div>
-            <div className="flex flex-col gap-[10px] border-y border-line py-4 max-lg:hidden">
+            <div className="flex flex-col gap-[10px] border-y border-taupe py-4 max-lg:hidden">
               <MetaRow icon={User} label={view >= 2 || view === 3 ? stylist : "Estilista · por escoger"} strong={view !== 1} />
               <MetaRow icon={Calendar} label={dateLabel && time ? `${dateLabel} · ${time}` : "Fecha y hora · por escoger"} strong={Boolean(dateLabel && time)} />
               <MetaRow icon={Timer} label={`Duración total · ${totalMin ? fmtDuration(totalMin) : "—"}`} />
@@ -313,6 +313,7 @@ export function BookingFlow() {
               <PrimaryButton label={`Llamar al ${contact.phone}`} href={contact.phoneHref} full icon={ArrowRight} />
             ) : (
               <PrimaryButton
+                size="sm"
                 label={view === 1 ? "Escoger estilista y hora" : view === 2 ? "Continuar a tus datos" : "Confirmar cita"}
                 icon={view === 3 ? Check : ArrowRight}
                 full
@@ -333,15 +334,15 @@ export function BookingFlow() {
 function StepHead({ n, title, sub }: { n: number; title: string; sub?: string }) {
   return (
     <div className="flex flex-col gap-[10px]">
-      <p className="text-[12px] font-bold tracking-[0.12em] text-flame">PASO {n} DE 3</p>
-      <h1 className="font-display text-[clamp(34px,4vw,56px)] leading-[1.05] tracking-[-0.035em]">{title}</h1>
+      <p className="font-caps text-[12px] tracking-[0.25em] text-gold-deep">PASO {n} DE 3</p>
+      <h1 className="font-display text-[clamp(34px,4vw,56px)] leading-[1.05] tracking-[-0.01em]">{title}</h1>
       {sub && <p className="text-[15px] text-ink-soft md:text-[16px]">{sub}</p>}
     </div>
   );
 }
 
 function Label({ children }: { children: React.ReactNode }) {
-  return <p className="text-[11px] font-bold uppercase tracking-[0.1em] text-muted">{children}</p>;
+  return <p className="font-caps text-[11px] uppercase tracking-[0.2em] text-gold-deep">{children}</p>;
 }
 
 function MetaRow({ icon: Icon, label, strong }: { icon: typeof User; label: string; strong?: boolean }) {
@@ -383,14 +384,14 @@ function MonthCalendar({
   return (
     <div className="flex flex-col gap-[14px] md:max-w-[420px] md:flex-1">
       <div className="flex items-center justify-between">
-        <p className="font-display text-[26px] italic tracking-[-0.02em] md:text-[28px]">
+        <p className="font-display text-[26px] italic md:text-[28px]">
           {cap(MONTHS[month.m])} {month.y}
         </p>
         <div className="flex gap-2">
-          <button type="button" aria-label="Mes anterior" disabled={isCurrent} onClick={() => shift(-1)} className="flex h-[34px] w-[34px] items-center justify-center rounded-full border border-line disabled:opacity-30">
+          <button type="button" aria-label="Mes anterior" disabled={isCurrent} onClick={() => shift(-1)} className="flex h-[34px] w-[34px] items-center justify-center rounded-full border border-taupe disabled:opacity-30">
             <ChevronLeft size={16} />
           </button>
-          <button type="button" aria-label="Mes siguiente" disabled={new Date(month.y, month.m + 1, 1) > limit} onClick={() => shift(1)} className="flex h-[34px] w-[34px] items-center justify-center rounded-full border border-line disabled:opacity-30">
+          <button type="button" aria-label="Mes siguiente" disabled={new Date(month.y, month.m + 1, 1) > limit} onClick={() => shift(1)} className="flex h-[34px] w-[34px] items-center justify-center rounded-full border border-taupe disabled:opacity-30">
             <ChevronRight size={16} />
           </button>
         </div>
@@ -414,7 +415,7 @@ function MonthCalendar({
       </div>
       <div className="flex flex-wrap gap-x-6 gap-y-2 pt-1 text-[12px] text-muted">
         <span className="flex items-center gap-2">
-          <span aria-hidden className="h-1 w-1 rounded-full bg-leaf" /> Con horarios libres
+          <span aria-hidden className="h-1 w-1 rounded-full bg-gold-deep" /> Con horarios libres
         </span>
         <span className="flex items-center gap-2">
           <span aria-hidden className="text-disabled line-through">12</span> Agotado
@@ -453,35 +454,33 @@ function Confirmation({
     { icon: MapPin, a: `${contact.street}, ${contact.city}`, b: "Cómo llegar ↗", href: contact.mapsHref },
   ];
   return (
-    <div className="min-h-full bg-palm px-5 py-10 md:px-20 md:py-0">
+    <div className="min-h-full bg-noir px-5 py-10 md:px-20 md:py-0">
       <div className="mx-auto flex min-h-[100dvh] max-w-[1280px] flex-col gap-10 md:flex-row md:items-center md:gap-24">
-        <div className="arch relative mx-auto aspect-[460/640] w-full max-w-[300px] overflow-hidden md:max-w-[460px] md:shrink-0">
-          <Image src="/images/generated-7.png" alt="" fill priority sizes="460px" className="object-cover" />
-        </div>
+        <ArchPhoto src="/images/v3/hero.jpg" alt="" sizes="460px" priority className="mx-auto aspect-[460/640] w-full max-w-[300px] md:max-w-[460px] md:shrink-0" />
         <div className="flex flex-1 flex-col gap-7 md:gap-8">
-          <span className="flex items-center gap-3 text-[12px] font-bold tracking-[0.12em] text-gold">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-palm">
+          <span className="flex items-center gap-3 font-caps text-[12px] tracking-[0.25em] text-gold">
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-noir">
               <Check size={18} strokeWidth={2.4} />
             </span>
             CITA CONFIRMADA
           </span>
-          <h1 className="font-display text-[clamp(48px,6vw,80px)] font-light leading-none tracking-[-0.04em] text-cream">
+          <h1 className="font-display text-[clamp(48px,6vw,80px)] leading-none tracking-[-0.01em] text-on-dark">
             ¡Te esperamos,
             <br />
             <em className="italic text-gold">{name}!</em>
           </h1>
-          <ul className="card-tail flex max-w-[560px] flex-col bg-palm-2 px-6 py-2 md:px-7">
+          <ul className="flex max-w-[560px] flex-col rounded-[2px] border border-noir-line bg-noir-2 px-6 py-2 md:px-7">
             {rows.map(({ icon: Icon, a, b, href }, i) => (
-              <li key={i} className={`flex items-center gap-4 py-[18px] ${i < rows.length - 1 ? "border-b border-palm-line" : ""}`}>
+              <li key={i} className={`flex items-center gap-4 py-[18px] ${i < rows.length - 1 ? "border-b border-noir-line" : ""}`}>
                 <Icon size={18} className="shrink-0 text-gold" />
                 <span className="flex flex-col gap-[2px]">
-                  <span className="text-[16px] font-bold text-cream">{a}</span>
+                  <span className="text-[16px] font-bold text-on-dark">{a}</span>
                   {href ? (
                     <a href={href} className="text-[13px] text-gold hover:underline">
                       {b}
                     </a>
                   ) : (
-                    <span className="text-[13px] text-palm-muted">{b}</span>
+                    <span className="text-[13px] text-on-dark-muted">{b}</span>
                   )}
                 </span>
               </li>
@@ -489,9 +488,9 @@ function Confirmation({
           </ul>
           <div className="flex flex-col gap-3 sm:flex-row">
             <LightButton label="Añadir a mi calendario" icon={CalendarPlus} />
-            <OutlineButton label="Volver al sitio" href="/" dark />
+            <OutlineButton label="Volver al sitio" href="/" />
           </div>
-          {phone && <p className="text-[14px] text-palm-muted">Te enviamos la confirmación al {phone}.</p>}
+          {phone && <p className="text-[14px] text-on-dark-muted">Te enviamos la confirmación al {phone}.</p>}
         </div>
       </div>
     </div>

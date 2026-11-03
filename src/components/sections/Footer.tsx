@@ -1,67 +1,57 @@
-import Link from "next/link";
-import { Phone } from "lucide-react";
 import { FacebookIcon, InstagramIcon, TikTokIcon } from "@/components/SocialIcons";
-import { FooterColumn, LightButton, Logo, PrimaryButton, SectionTitle } from "@/components/primitives";
+import { FooterColumn, Logo, PrimaryButton } from "@/components/primitives";
 import { contact } from "@/lib/data";
 
-export function Footer({ showCta = true }: { showCta?: boolean }) {
+export function Footer() {
   return (
-    <footer id="contacto" className="overflow-hidden bg-palm px-5 pb-8 pt-16 md:px-20 md:pb-10 md:pt-[120px]">
-      <div className="ot-container flex flex-col gap-12 md:gap-20">
-        {showCta && (
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-            <SectionTitle line1="¿Lista para tu" line2="próximo cambio?" dark accent="gold" size="cta" />
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <PrimaryButton label="Reservar mi cita" href="/reservar" size="lg" />
-              <LightButton label="Llamar al salón" href={contact.phoneHref} icon={Phone} size="lg" />
-            </div>
-          </div>
-        )}
-        <div className="grid gap-10 border-t border-palm-line pt-12 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-16">
-          <div className="flex flex-col gap-4">
-            <Logo dark />
-            <p className="max-w-[300px] text-[15px] leading-[1.55] text-palm-muted">Salón de belleza y estudio de color en Ciudad, Puerto Rico.</p>
-          </div>
+    <footer id="contacto" className="border-t border-gold-deep bg-noir-2 px-5 pb-8 pt-16 md:px-20 md:pb-10 md:pt-24">
+      <div className="ot-container flex flex-col items-center gap-12 md:gap-14">
+        <div className="flex flex-col items-center gap-6 text-center">
+          <Logo size="xl" />
+          <p className="font-script text-[28px] leading-[1.2] text-gold-light md:text-[34px]">Luce bien · Siéntete bien · Sé tú</p>
+          <PrimaryButton label="Reserva tu cita" href="/reservar" size="lg" />
+        </div>
+        <div className="grid w-full gap-10 border-y border-noir-line py-10 sm:grid-cols-2 lg:grid-cols-4">
           <FooterColumn
             heading="Visítanos"
             lines={[
               contact.street,
               contact.city,
-              <Link key="maps" href={contact.mapsHref} className="text-gold hover:underline">
+              <a key="maps" href={contact.mapsHref} className="text-gold hover:underline">
                 Cómo llegar ↗
-              </Link>,
+              </a>,
             ]}
           />
-          <FooterColumn heading="Horario" lines={[contact.hoursShort, "Domingo · cerrado", <span key="h" className="text-palm-muted">Feriados: horario especial</span>]} />
+          <FooterColumn heading="Horario" lines={[contact.hours, contact.closed]} />
           <FooterColumn
             heading="Contacto"
             lines={[
-              <a key="p" href={contact.phoneHref} className="hover:underline">
+              <a key="p" href={contact.phoneHref} className="hover:text-on-dark">
                 {contact.phone}
               </a>,
-              <a key="e" href={`mailto:${contact.email}`} className="hover:underline">
+              <a key="e" href={`mailto:${contact.email}`} className="hover:text-on-dark">
                 {contact.email}
               </a>,
-              <span key="i" className="text-palm-muted">{contact.instagram}</span>,
+            ]}
+          />
+          <FooterColumn
+            heading="Síguenos"
+            lines={[
+              <a key="i" href="https://instagram.com/onetouchsalon" className="inline-flex items-center gap-2 hover:text-on-dark">
+                <InstagramIcon size={16} /> Instagram
+              </a>,
+              <a key="f" href="#" className="inline-flex items-center gap-2 hover:text-on-dark">
+                <FacebookIcon size={16} /> Facebook
+              </a>,
+              <a key="t" href="#" className="inline-flex items-center gap-2 hover:text-on-dark">
+                <TikTokIcon size={16} /> TikTok
+              </a>,
             ]}
           />
         </div>
-        <p aria-hidden className="select-none font-display text-[clamp(110px,20vw,280px)] font-light italic leading-[0.8] tracking-[-0.045em] text-palm-2">
-          onetouch
-        </p>
-        <div className="flex items-center justify-between gap-4">
-          <p className="text-[12px] text-palm-muted md:text-[13px]">© 2026 Onetouch Salon. Todos los derechos reservados.</p>
-          <div className="flex gap-[18px] text-palm-muted">
-            <a href="https://instagram.com/onetouchsalon" aria-label="Instagram" className="hover:text-cream">
-              <InstagramIcon />
-            </a>
-            <a href="#" aria-label="Facebook" className="hover:text-cream">
-              <FacebookIcon />
-            </a>
-            <a href="#" aria-label="TikTok" className="hover:text-cream">
-              <TikTokIcon />
-            </a>
-          </div>
+        <div className="flex w-full flex-col gap-2 text-[13px] text-on-dark-muted sm:flex-row sm:justify-between">
+          <p>© 2026 OneTouch Salon · Puerto Rico</p>
+          <p>Privacidad · Términos</p>
         </div>
       </div>
     </footer>

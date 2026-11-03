@@ -183,9 +183,9 @@ Vive en el frame **"Onetouch — Reservas (flujo)"** (hermano del admin): fila d
 
 ---
 
-## 9. Sistema v2 “Flamboyán” (2026-11-03 · aprobado e implementado — **sistema activo**)
+## 9. Sistema v2 “Flamboyán” (2026-11-03 · reemplazado por v3 el mismo día — legacy)
 
-> Desde el 2026-11-03 este es el sistema vigente en `src/` (tokens `fb-*` → `src/app/globals.css` sin prefijo: `bg-cream`, `text-flame`, `bg-palm`…). Las secciones §1–§8 describen el sistema anterior `ot-*` (warm editorial) y quedan como referencia histórica; las pantallas de admin del lienzo aún usan `ot-*` y se migrarán al construir el admin.
+> **Legacy:** reemplazado por v3 “Noir & Oro” (§10). Antes era el sistema vigente en `src/` (tokens `fb-*` → `src/app/globals.css` sin prefijo: `bg-cream`, `text-flame`, `bg-palm`…). Las secciones §1–§8 describen el sistema anterior `ot-*` (warm editorial) y quedan como referencia histórica; las pantallas de admin del lienzo aún usan `ot-*` y se migrarán al construir el admin.
 
 Rediseño completo en el mismo lienzo, en frames nuevos:
 `Onetouch v2 — Componentes` · `Onetouch v2 — Landing` (1440) · `Onetouch v2 — Landing móvil` (390) · `Onetouch v2 — Reservar · 1 Servicios / 2 Estilista y hora / 3 Tus datos / Confirmada`.
@@ -197,3 +197,19 @@ Rediseño completo en el mismo lienzo, en frames nuevos:
 - **Landing:** Nav → Hero (titular con arco de imagen en línea, sello “9 años”, tarjeta de próximo horario) → franja marquee flamboyán → 01 Menú (sand) → 02 Reserva (palma + widget con semana) → 03 Equipo (tarjetas escalonadas) → 04 Resultados (blush, galería de arcos + testimonios) → 05 Visítanos + 06 FAQ (sand) → CTA final + footer (palma, wordmark gigante).
 - **Código:** `src/components/primitives.tsx` (equivalente de la biblioteca v2) · secciones en `src/components/sections/` (Nav, Hero, Marquee, Services, Booking, Team, Results, VisitFaq, Footer) · flujo `/reservar` en `src/components/booking/BookingFlow.tsx`. `BOOKING_LIVE = false` hasta conectar Supabase: el paso 3 no confirma nada y remite al teléfono; la pantalla de confirmación se previsualiza con `/reservar?demo=1`.
 - **Placeholders a confirmar con el salón:** dirección, teléfono, horario, email; stat “87 % clientas que regresan”; testimonios de Gabriela M. y Yarelis T.; “Aceptan ATH Móvil?”; consulta gratis de 15 min; estacionamiento.
+
+---
+
+## 10. Sistema v3 “Noir & Oro” (2026-11-03 · aprobado e implementado — **sistema activo**)
+
+> Sustituye a v2 (§9). Dirección tomada de los posts de Instagram de referencia (negro + dorado, mayúsculas romanas, reglas finas con rombo, arcos). Sin copiar logo ni contenido de esa cuenta: wordmark solo tipográfico, copy propio de PR.
+
+- **Lienzo:** frame `Onetouch v3 — Landing (Noir & Oro)` (1440). Pendiente en lienzo: frame móvil 390 y biblioteca `reusable` v3 (el código es responsive y ya cubre móvil).
+- **Tokens `nr-*` (lienzo) → código sin prefijo (`globals.css`):** `nr-black #0E0D0B` → `noir` (base) · `nr-black-2 #16140F` → `noir-2` · `nr-card #1D1A15` → `noir-card` · `nr-line #4A3D2A` → `noir-line` · `nr-gold #C9A063` → `gold` (CTA, acentos) · `nr-gold-light #E4C892` → `gold-light` · `nr-gold-deep #8E6B3A` → `gold-deep` (reglas; acento sobre claro) · `nr-on-dark #EFE7DA` → `on-dark` · `nr-on-dark-muted #A89E8D` → `on-dark-muted` · `nr-cream #F5EFE4` → `cream` (secciones claras) · `nr-ivory #FBF8F2` → `ivory` (tarjetas, fondo de /reservar) · `nr-taupe #E6DAC6` → `taupe` (bordes sobre claro) · `nr-ink #1A1714` · `nr-ink-soft #4D463D` · `nr-muted #7E7466` · `disabled #BDB3A6`.
+- **Tipografía:** `font-caps` = **Cinzel** (wordmark, kickers, nav, botones, nombres; tracking 0.1–0.6em) · `font-display` = **Playfair Display** (titulares de sección y precios, 2ª línea en itálica dorada; `lining-nums` global) · `font-script` = **Pinyon Script** (taglines y roles de estilistas) · `font-sans` = **Manrope** (body).
+- **Formas:** arcos `arch` (tope semicircular, base recta) con contorno dorado de 1 px desplazado (`ArchPhoto`); tarjeta de servicio `arch-card` (100 px arriba / 2 px abajo); botones y tarjetas radio 2; reglas de 1 px y ornamento `Diamond`. Sin sombras, gradientes ni glass.
+- **Landing (orden):** Nav (links · wordmark centrado · teléfono + Reservar) → Hero (caps “TU BELLEZA, / NUESTRA / PASIÓN.”, script, arco + sello “Desde 2017”) → Servicios (título ornamental + panel con pestaña “Nuestros servicios” y 6 tarjetas en arco con icono) → Barra de contacto (Visítanos / Llámanos / Reserva en línea + script) → Confianza (crema: testimonios + foto del salón + sello de higiene) → Compromiso (5 iconos) + banda “¿Lista para tu momento?” → Destacados Cabello / Uñas (split foto/lista con precio) → Equipo (4 arcos) → Footer (wordmark XL, columnas, legal).
+- **Código:** `src/components/primitives.tsx` (Logo, Primary/Outline/LightButton, Kicker, OrnamentTitle, SectionTitle, ArchPhoto, Chip, Tag, ServiceItem, FeatureRow, Step, DayCell, TimeSlot, StylistOption, Field, FooterColumn) · secciones: Nav, Hero, Services (+ InfoBar), Trust, Features, Team, Footer · `/reservar` reestilizado (fondo `ivory`, selección = `noir` + `gold`; confirmación sobre `noir`).
+- **Imágenes:** `public/images/v3/*.jpg` (generadas en pen.dev = `onetouch/generated-9…18.png`); equipo reusa `generated-2…5`.
+- **Se retiró de la landing:** marquee, widget de reserva en línea, galería de resultados, FAQ y “Visítanos” (datos en `src/lib/data.ts` se conservan para reutilizar).
+- **Placeholders a confirmar:** “Desde 2017” (`since` en data.ts), dirección, teléfono, horario, email, testimonios 2 y 3, link de Facebook/TikTok.
