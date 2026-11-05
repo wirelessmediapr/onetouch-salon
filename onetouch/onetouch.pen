@@ -6437,6 +6437,540 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "ABmlQ",
+      "x": 25520,
+      "y": -452,
+      "name": "Onetouch v3 — Favicon",
+      "context": "Favicon aprobado (concepto B, 2026-11-05): arco dorado relleno con O en negro. 16 y 32 px son versiones ajustadas a mano; se exportan a src/app (favicon.ico, icon.png, apple-icon.png).",
+      "width": 1280,
+      "fill": "$nr-black-2",
+      "layout": "vertical",
+      "gap": 56,
+      "padding": [
+        72,
+        64
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "T5ldRH",
+          "name": "Concept B",
+          "width": "fill_container",
+          "gap": 40,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "jHsMR",
+              "name": "Concept Info",
+              "width": 230,
+              "layout": "vertical",
+              "gap": 10,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "baSyS",
+                  "name": "Concept Title",
+                  "fill": "$nr-gold",
+                  "content": "Favicon · Arco sólido",
+                  "fontFamily": "$nr-caps",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "SD6OO",
+                  "name": "Concept Description",
+                  "fill": "$nr-on-dark-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 230,
+                  "content": "Arco dorado relleno con O en negro. 16 y 32 px van ajustados a mano.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$nr-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FRYHq",
+              "name": "Sizes",
+              "gap": 28,
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oD4nr",
+                  "name": "Icon B 180",
+                  "clip": true,
+                  "width": 180,
+                  "height": 180,
+                  "fill": "$nr-black",
+                  "cornerRadius": 18,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RZLRD",
+                      "name": "Arch",
+                      "width": 119,
+                      "height": 144,
+                      "fill": "$nr-gold",
+                      "cornerRadius": [
+                        59.5,
+                        59.5,
+                        0,
+                        0
+                      ],
+                      "padding": [
+                        14,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CmMMI",
+                          "name": "Initial",
+                          "fill": "$nr-black",
+                          "content": "O",
+                          "lineHeight": 1,
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 76,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q9jvop",
+                  "name": "Icon B 64",
+                  "clip": true,
+                  "width": 64,
+                  "height": 64,
+                  "fill": "$nr-black",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "gGGto",
+                      "name": "Arch",
+                      "width": 42,
+                      "height": 51,
+                      "fill": "$nr-gold",
+                      "cornerRadius": [
+                        21,
+                        21,
+                        0,
+                        0
+                      ],
+                      "padding": [
+                        5,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "I9ooI",
+                          "name": "Initial",
+                          "fill": "$nr-black",
+                          "content": "O",
+                          "lineHeight": 1,
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 27,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mjaL9",
+                  "name": "Icon B 32",
+                  "clip": true,
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$nr-black",
+                  "cornerRadius": 3,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NAnUf",
+                      "name": "Arch",
+                      "width": 26,
+                      "height": 28,
+                      "fill": "$nr-gold",
+                      "cornerRadius": [
+                        13,
+                        13,
+                        0,
+                        0
+                      ],
+                      "padding": [
+                        3,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FCdfQ",
+                          "name": "Initial",
+                          "fill": "$nr-black",
+                          "content": "O",
+                          "lineHeight": 1,
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 17,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iy8Pl",
+                  "name": "Icon B 16",
+                  "clip": true,
+                  "width": 16,
+                  "height": 16,
+                  "fill": "$nr-black",
+                  "cornerRadius": 2,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZbTKC",
+                      "name": "Arch",
+                      "width": 12,
+                      "height": 14,
+                      "fill": "$nr-gold",
+                      "cornerRadius": [
+                        6,
+                        6,
+                        0,
+                        0
+                      ],
+                      "padding": [
+                        2,
+                        0,
+                        0,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bR2Ym",
+                          "name": "Initial",
+                          "fill": "$nr-black",
+                          "content": "O",
+                          "lineHeight": 1,
+                          "fontFamily": "$nr-caps",
+                          "fontSize": 9,
+                          "fontWeight": "900"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CEgX8",
+              "name": "Tabs",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l2DGt",
+                  "name": "Browser Tab",
+                  "width": 280,
+                  "height": 40,
+                  "fill": "$nr-card",
+                  "cornerRadius": 2,
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "X3GAf",
+                      "name": "Icon B 16",
+                      "clip": true,
+                      "width": 16,
+                      "height": 16,
+                      "fill": "$nr-black",
+                      "cornerRadius": 2,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "P8ktC",
+                          "name": "Arch",
+                          "width": 12,
+                          "height": 14,
+                          "fill": "$nr-gold",
+                          "cornerRadius": [
+                            6,
+                            6,
+                            0,
+                            0
+                          ],
+                          "padding": [
+                            2,
+                            0,
+                            0,
+                            0
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vkJuo",
+                              "name": "Initial",
+                              "fill": "$nr-black",
+                              "content": "O",
+                              "lineHeight": 1,
+                              "fontFamily": "$nr-caps",
+                              "fontSize": 9,
+                              "fontWeight": "900"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "I1MusT",
+                      "name": "Tab Title",
+                      "fill": "$nr-on-dark",
+                      "content": "OneTouch Salon by Grace",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VssSB",
+                  "name": "Browser Tab",
+                  "width": 280,
+                  "height": 40,
+                  "fill": "$nr-cream",
+                  "cornerRadius": 2,
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eqXOJ",
+                      "name": "Icon B 16",
+                      "clip": true,
+                      "width": 16,
+                      "height": 16,
+                      "fill": "$nr-black",
+                      "cornerRadius": 2,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "VxZYm",
+                          "name": "Arch",
+                          "width": 12,
+                          "height": 14,
+                          "fill": "$nr-gold",
+                          "cornerRadius": [
+                            6,
+                            6,
+                            0,
+                            0
+                          ],
+                          "padding": [
+                            2,
+                            0,
+                            0,
+                            0
+                          ],
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rwvG9",
+                              "name": "Initial",
+                              "fill": "$nr-black",
+                              "content": "O",
+                              "lineHeight": 1,
+                              "fontFamily": "$nr-caps",
+                              "fontSize": 9,
+                              "fontWeight": "900"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "nP6l6",
+                      "name": "Tab Title",
+                      "fill": "$nr-ink",
+                      "content": "OneTouch Salon by Grace",
+                      "fontFamily": "$nr-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wdEYc",
+          "name": "Export Masters",
+          "context": "Nodos que se exportan a archivos del sitio. Apple Touch va sin radio porque iOS aplica su propia máscara.",
+          "gap": 28,
+          "alignItems": "end",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ZlIXU",
+              "name": "Master Apple Touch 180",
+              "clip": true,
+              "width": 180,
+              "height": 180,
+              "fill": "$nr-black",
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tOerS",
+                  "name": "Arch",
+                  "width": 119,
+                  "height": 144,
+                  "fill": "$nr-gold",
+                  "cornerRadius": [
+                    59.5,
+                    59.5,
+                    0,
+                    0
+                  ],
+                  "padding": [
+                    14,
+                    0,
+                    0,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Dfs2q",
+                      "name": "Initial",
+                      "fill": "$nr-black",
+                      "content": "O",
+                      "lineHeight": 1,
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 76,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "b6RAw0",
+              "name": "Master Icon 48",
+              "clip": true,
+              "width": 48,
+              "height": 48,
+              "fill": "$nr-black",
+              "cornerRadius": 5,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "G37lV",
+                  "name": "Arch",
+                  "width": 32,
+                  "height": 38,
+                  "fill": "$nr-gold",
+                  "cornerRadius": [
+                    16,
+                    16,
+                    0,
+                    0
+                  ],
+                  "padding": [
+                    4,
+                    0,
+                    0,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kSnPN",
+                      "name": "Initial",
+                      "fill": "$nr-black",
+                      "content": "O",
+                      "lineHeight": 1,
+                      "fontFamily": "$nr-caps",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
