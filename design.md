@@ -2,7 +2,9 @@
 
 > **Fuente de verdad:** `onetouch/onetouch.pen` (abrir en pen.dev). Este documento describe los tokens y componentes extraídos del lienzo. Si el diseño cambia, actualizar `onetouch.pen` primero y luego este documento.
 >
-> **Biblioteca de componentes:** frame `Onetouch — Componentes` en el mismo lienzo (componentes reutilizables marcados con `reusable: true`). Las pantallas instancian esos componentes.
+> **Sistema activo:** v3 “Noir & Oro” — ver **§10**. Las secciones §1–§9 son referencia histórica de sistemas anteriores: sus frames (landing, componentes, admin y reservas de v1; todos los de v2) se eliminaron del lienzo el 2026-11-05 y solo quedan en git, en el commit `2a52de1` (`git show 2a52de1:onetouch/onetouch.pen`).
+>
+> **Biblioteca de componentes:** frame `Onetouch v3 — Componentes` (`GUbJg`) en el mismo lienzo (componentes `NR *` marcados con `reusable: true`). Las pantallas nuevas instancian esos componentes.
 
 ---
 
@@ -204,7 +206,7 @@ Rediseño completo en el mismo lienzo, en frames nuevos:
 
 > Sustituye a v2 (§9). Dirección tomada de los posts de Instagram de referencia (negro + dorado, mayúsculas romanas, reglas finas con rombo, arcos). Sin copiar logo ni contenido de esa cuenta: wordmark solo tipográfico, copy propio de PR.
 
-- **Lienzo:** frame `Onetouch v3 — Landing (Noir & Oro)` (1440). Pendiente en lienzo: frame móvil 390 y biblioteca `reusable` v3 (el código es responsive y ya cubre móvil).
+- **Lienzo:** frame `Onetouch v3 — Landing (Noir & Oro)` (`LS56g`, 1440) y biblioteca `Onetouch v3 — Componentes` (`GUbJg`, ver §10.1). Pendiente en lienzo: frame móvil 390 (el código es responsive y ya cubre móvil) y pasar el landing a instancias (ver §10.1).
 - **Tokens `nr-*` (lienzo) → código sin prefijo (`globals.css`):** `nr-black #0E0D0B` → `noir` (base) · `nr-black-2 #16140F` → `noir-2` · `nr-card #1D1A15` → `noir-card` · `nr-line #4A3D2A` → `noir-line` · `nr-gold #C9A063` → `gold` (CTA, acentos) · `nr-gold-light #E4C892` → `gold-light` · `nr-gold-deep #8E6B3A` → `gold-deep` (reglas; acento sobre claro) · `nr-on-dark #EFE7DA` → `on-dark` · `nr-on-dark-muted #A89E8D` → `on-dark-muted` · `nr-cream #F5EFE4` → `cream` (secciones claras) · `nr-ivory #FBF8F2` → `ivory` (tarjetas, fondo de /reservar) · `nr-taupe #E6DAC6` → `taupe` (bordes sobre claro) · `nr-ink #1A1714` · `nr-ink-soft #4D463D` · `nr-muted #7E7466` · `disabled #BDB3A6`.
 - **Tipografía:** `font-caps` = **Cinzel** (wordmark, kickers, nav, botones, nombres; tracking 0.1–0.6em) · `font-display` = **Playfair Display** (titulares de sección y precios, 2ª línea en itálica dorada; `lining-nums` global) · `font-script` = **Pinyon Script** (taglines y roles de estilistas) · `font-sans` = **Manrope** (body).
 - **Nombre / lockup:** “OneTouch Salon by Grace” (confirmado 2026-11-03). Lockup “firma editorial”: `ONE TOUCH` / `SALON` (Cinzel, centrados entre sí, sin cambios) · línea vertical `gold-deep` de 1 px · “by” (Cinzel caps, `gold`) sobre **Grace** (Playfair Display itálica, `ivory` sobre oscuro / `ink` sobre claro). Nada encima de `ONE TOUCH`. Footer = mismo lockup ×1.9.
@@ -214,3 +216,48 @@ Rediseño completo en el mismo lienzo, en frames nuevos:
 - **Imágenes:** `public/images/v3/*.jpg` (generadas en pen.dev = `onetouch/generated-9…18.png`); equipo reusa `generated-2…5`.
 - **Se retiró de la landing:** marquee, widget de reserva en línea, galería de resultados, FAQ y “Visítanos” (datos en `src/lib/data.ts` se conservan para reutilizar).
 - **Placeholders a confirmar:** “Desde 2017” (`since` en data.ts), dirección, teléfono, horario, email, testimonios 2 y 3. Redes: Instagram `@one_touch_salon_by_grace` y Facebook (id 100071769011368) confirmados 2026-11-03; TikTok retirado (sin perfil).
+
+### 10.1 Biblioteca v3 en el lienzo (2026-11-05)
+
+Frame `Onetouch v3 — Componentes` (`GUbJg`), extraído de `LS56g`. Los valores se copiaron del landing; `LS56g` **no** se modificó y todavía no usa instancias (0 `ref`), así que un cambio en la biblioteca no se propaga al landing.
+
+**Escala tipográfica del landing**
+
+| Estilo | Fuente | Tamaño / peso / tracking (px) |
+| --- | --- | --- |
+| Caps Hero | `nr-caps` | 84 / 400 / +1 |
+| Caps Wordmark | `nr-caps` | 28 / 400 / +3 (footer: 64 / 400 / +6) |
+| Caps Botón | `nr-caps` | 14, 13 o 12 / 700 / +2 |
+| Caps Kicker | `nr-caps` | 12 / 400 / +3 |
+| Display Sección | `nr-display` | 64, 60 o 56 / 400 / -0.5 (2ª línea en itálica) |
+| Display Precio | `nr-display` | 22 / 400 |
+| Script Tagline | `nr-script` | 38 / 400 |
+| Script Rol | `nr-script` | 24 / 400 |
+| Body | `nr-body` | 18, 17, 15, 14 o 13 / 400 |
+
+**Forma y espacio:** botones y tarjetas radio `2` · panel `4` · tarjeta de servicio `100/100/2/2` · arcos con base recta (`[r,r,0,0]`) · círculos para iconos y sello · bordes de 1 px · contenedor 1280 sobre 1440 · padding de sección `[112,80]`.
+
+**Componentes**
+
+| Grupo | Componente (`id`) | Código |
+| --- | --- | --- |
+| Tokens | NR Swatch (`Q6mFzy`) · NR Type Spec (`qW74c`) · NR Shape (`s3Gn6p`) | `globals.css` (solo documentan tokens) |
+| Marca | NR Logo (`t8CMl`) · NR Logo XL (`GgIT5`) | `Logo` · `Logo size="xl"` |
+| Acciones | NR Button Primary (`jn1lo`) · NR Button Outline (`r1xMX`) · NR Nav Link (`A3ufVc`) | `PrimaryButton` · `OutlineButton` · enlaces de `Nav.tsx` |
+| Títulos | NR Kicker (`lJwvu`) · NR Ornament Title (`JQh75`) · NR Section Title (`v45zJ`) | `Kicker` · `OrnamentTitle` · `SectionTitle` |
+| Contenido | NR Service Card (`PEBJF`) · NR Panel Tab (`UllEV`) · NR Info Item (`tsN3u`) | `Services.tsx` (`Services`, `InfoBar`) |
+| Contenido | NR Stylist Card (`Ff8Xr`) · NR Arch Photo (`EPxVH`) | `Team.tsx` · `ArchPhoto` |
+| Contenido | NR Feature Row (`TDemg`) · NR Footer Column (`amBir`) | `FeatureRow` · `FooterColumn` |
+| Sobre claro | NR Review (`F63W55`) · NR Commit Item (`XJqpt`) · NR Hygiene Badge (`LAdBD`) | `Trust.tsx` |
+| Sello | NR Seal (`QozZP`) | `Hero.tsx` |
+
+Variantes: tamaños de botón y tono claro de `NR Kicker` / `NR Section Title` se resuelven como instancias con overrides (visibles en la hoja).
+
+**Fuera de la biblioteca:** `LightButton`, `Chip`, `Tag`, `ServiceItem`, `Step`, `DayCell`, `TimeSlot`, `StylistOption` y `Field` existen en `primitives.tsx`, pero no aparecen en `LS56g`.
+
+**Diferencias conocidas lienzo ↔ código**
+
+- Tokens sin uso en `LS56g`: `nr-card` (sí se usa en código como `noir-card`) y `nr-silver`, `nr-silver-light`, `nr-silver-deep` (sin equivalente en `globals.css` ni uso en `src/`).
+- `disabled` (`#BDB3A6`) solo existe en código; el lienzo no tiene variable `nr-disabled`.
+- Padding de botones: lienzo sm `[12,22]`, md `[16,28]`, lg `[18,30]`; código sm `[12,20]`, md `[16,26]`, lg `[18,32]`.
+- El lienzo muestra los precios en Playfair con numerales old-style; el código aplica `lining-nums`.
